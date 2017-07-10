@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A625C0871F13115900C28072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0861F13115900C28072 /* main.m */; };
 		A625C08A1F13115900C28072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0891F13115900C28072 /* AppDelegate.m */; };
-		A625C08D1F13115A00C28072 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C08C1F13115A00C28072 /* ViewController.m */; };
 		A625C0901F13115A00C28072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A625C08E1F13115A00C28072 /* Main.storyboard */; };
 		A625C0921F13115A00C28072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A625C0911F13115A00C28072 /* Assets.xcassets */; };
 		A625C0951F13115A00C28072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A625C0931F13115A00C28072 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,11 @@
 		A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0AE1F1313DC00C28072 /* FoodViewController.m */; };
 		A625C0B21F13140400C28072 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0B11F13140400C28072 /* BaseNavigationController.m */; };
 		A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0B41F1314A800C28072 /* BaseTabViewController.m */; };
+		A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0B91F131B6E00C28072 /* TourTableViewCell.m */; };
+		A625C0BC1F131B6E00C28072 /* TourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A625C0BA1F131B6E00C28072 /* TourTableViewCell.xib */; };
+		A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0BE1F132A9300C28072 /* FoodTableViewCell.m */; };
+		A625C0C11F132A9300C28072 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A625C0BF1F132A9300C28072 /* FoodTableViewCell.xib */; };
+		A625C0C41F132E9300C28072 /* BaseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0C31F132E9300C28072 /* BaseHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +30,6 @@
 		A625C0861F13115900C28072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A625C0881F13115900C28072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A625C0891F13115900C28072 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A625C08B1F13115900C28072 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A625C08C1F13115A00C28072 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A625C08F1F13115A00C28072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A625C0911F13115A00C28072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A625C0941F13115A00C28072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 		A625C0B11F13140400C28072 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		A625C0B31F1314A800C28072 /* BaseTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabViewController.h; sourceTree = "<group>"; };
 		A625C0B41F1314A800C28072 /* BaseTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabViewController.m; sourceTree = "<group>"; };
+		A625C0B81F131B6E00C28072 /* TourTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourTableViewCell.h; sourceTree = "<group>"; };
+		A625C0B91F131B6E00C28072 /* TourTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourTableViewCell.m; sourceTree = "<group>"; };
+		A625C0BA1F131B6E00C28072 /* TourTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourTableViewCell.xib; sourceTree = "<group>"; };
+		A625C0BD1F132A9300C28072 /* FoodTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewCell.h; sourceTree = "<group>"; };
+		A625C0BE1F132A9300C28072 /* FoodTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewCell.m; sourceTree = "<group>"; };
+		A625C0BF1F132A9300C28072 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
+		A625C0C21F132E9300C28072 /* BaseHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHeaderView.h; sourceTree = "<group>"; };
+		A625C0C31F132E9300C28072 /* BaseHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				A625C0A01F13137A00C28072 /* Base */,
-				A625C09C1F13136B00C28072 /* 我的 */,
+				A625C09F1F13136B00C28072 /* 美食 */,
 				A625C09D1F13136B00C28072 /* 旅游 */,
 				A625C09E1F13136B00C28072 /* 生活 */,
-				A625C09F1F13136B00C28072 /* 美食 */,
+				A625C09C1F13136B00C28072 /* 我的 */,
 				A625C0881F13115900C28072 /* AppDelegate.h */,
 				A625C0891F13115900C28072 /* AppDelegate.m */,
-				A625C08B1F13115900C28072 /* ViewController.h */,
-				A625C08C1F13115A00C28072 /* ViewController.m */,
 				A625C08E1F13115A00C28072 /* Main.storyboard */,
 				A625C0911F13115A00C28072 /* Assets.xcassets */,
 				A625C0931F13115A00C28072 /* LaunchScreen.storyboard */,
@@ -116,6 +124,9 @@
 			children = (
 				A625C0A41F13139C00C28072 /* TourViewController.h */,
 				A625C0A51F13139C00C28072 /* TourViewController.m */,
+				A625C0B81F131B6E00C28072 /* TourTableViewCell.h */,
+				A625C0B91F131B6E00C28072 /* TourTableViewCell.m */,
+				A625C0BA1F131B6E00C28072 /* TourTableViewCell.xib */,
 			);
 			path = "旅游";
 			sourceTree = "<group>";
@@ -134,6 +145,9 @@
 			children = (
 				A625C0AD1F1313DC00C28072 /* FoodViewController.h */,
 				A625C0AE1F1313DC00C28072 /* FoodViewController.m */,
+				A625C0BD1F132A9300C28072 /* FoodTableViewCell.h */,
+				A625C0BE1F132A9300C28072 /* FoodTableViewCell.m */,
+				A625C0BF1F132A9300C28072 /* FoodTableViewCell.xib */,
 			);
 			path = "美食";
 			sourceTree = "<group>";
@@ -145,6 +159,8 @@
 				A625C0B11F13140400C28072 /* BaseNavigationController.m */,
 				A625C0B31F1314A800C28072 /* BaseTabViewController.h */,
 				A625C0B41F1314A800C28072 /* BaseTabViewController.m */,
+				A625C0C21F132E9300C28072 /* BaseHeaderView.h */,
+				A625C0C31F132E9300C28072 /* BaseHeaderView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -210,7 +226,9 @@
 			files = (
 				A625C0951F13115A00C28072 /* LaunchScreen.storyboard in Resources */,
 				A625C0921F13115A00C28072 /* Assets.xcassets in Resources */,
+				A625C0C11F132A9300C28072 /* FoodTableViewCell.xib in Resources */,
 				A625C0901F13115A00C28072 /* Main.storyboard in Resources */,
+				A625C0BC1F131B6E00C28072 /* TourTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A625C08D1F13115A00C28072 /* ViewController.m in Sources */,
+				A625C0C41F132E9300C28072 /* BaseHeaderView.m in Sources */,
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
 				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
 				A625C0AC1F1313D000C28072 /* LifeViewController.m in Sources */,
@@ -230,6 +248,8 @@
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
+				A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */,
+				A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +369,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4F64Q2U6MC;
 				INFOPLIST_FILE = Phippy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kg.app.Phippy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -361,9 +383,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4F64Q2U6MC;
 				INFOPLIST_FILE = Phippy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kg.app.Phippy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

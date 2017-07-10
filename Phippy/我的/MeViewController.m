@@ -14,9 +14,20 @@
 
 @implementation MeViewController
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"meCell"];
+    
+    cell.textLabel.text = self.dataArray[indexPath.row];
+    return cell;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.dataArray = @[@"我的收藏",@"商务合作",@"关于我们",@"应急求助",@"退出登录"];
 }
 
 - (void)didReceiveMemoryWarning {

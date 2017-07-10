@@ -1,5 +1,5 @@
 //
-//  LifeViewController.h
+//  FoodTableViewCell.h
 //  Phippy
 //
 //  Created by toby on 10/07/2017.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LifeViewController : UIViewController
+@interface FoodTableViewCell : UITableViewCell
 
 @end

@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface TourTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *tilte;
+@property (strong, nonatomic) IBOutlet UIImageView *iamgeView;
+@property (strong, nonatomic) IBOutlet UILabel *content;
+@property (strong, nonatomic) IBOutlet UILabel *author;
+@property (strong, nonatomic) IBOutlet UILabel *time;
+@property (strong, nonatomic) IBOutlet UILabel *hot;
 
 @end

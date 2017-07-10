@@ -16,12 +16,18 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return self.dataArray.count;
+//    return self.dataArray.count;
+    return 5;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
 //    cell.textLabel.text = self.dataArray[indexPath.row];
+
     return cell;
 }
 
@@ -30,6 +36,9 @@
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.estimatedRowHeight = 100;  //  随便设个不那么离谱的值
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
     [self.view addSubview:self.tableView];
     
 //    self.dataArray = @[@"sss"];

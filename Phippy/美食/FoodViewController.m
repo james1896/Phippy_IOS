@@ -7,12 +7,17 @@
 //
 
 #import "FoodViewController.h"
-
+#import "FoodTableViewCell.h"
 @interface FoodViewController ()
 
 @end
 
 @implementation FoodViewController
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    FoodTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"FoodTableViewCell" owner:nil options:nil]lastObject];
+    return cell;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

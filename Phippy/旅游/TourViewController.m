@@ -7,7 +7,7 @@
 //
 
 #import "TourViewController.h"
-
+#import "TourTableViewCell.h"
 @interface TourViewController ()
 
 @end
@@ -22,6 +22,21 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 170;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    TourTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"TourTableViewCell" owner:nil options:nil]lastObject];
+    cell.tilte.text = @"title";
+    cell.content.text = @"fdsafdsa";
+    cell.author.text = @"dafda";
+    cell.time.text = @"d";
+    cell.hot.text = @"ddddd";
+    
+    return cell;
 }
 
 /*
