@@ -13,6 +13,12 @@
 		A625C0901F13115A00C28072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A625C08E1F13115A00C28072 /* Main.storyboard */; };
 		A625C0921F13115A00C28072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A625C0911F13115A00C28072 /* Assets.xcassets */; };
 		A625C0951F13115A00C28072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A625C0931F13115A00C28072 /* LaunchScreen.storyboard */; };
+		A625C0A31F13138F00C28072 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0A21F13138F00C28072 /* MeViewController.m */; };
+		A625C0A61F13139C00C28072 /* TourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0A51F13139C00C28072 /* TourViewController.m */; };
+		A625C0AC1F1313D000C28072 /* LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0AB1F1313D000C28072 /* LifeViewController.m */; };
+		A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0AE1F1313DC00C28072 /* FoodViewController.m */; };
+		A625C0B21F13140400C28072 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0B11F13140400C28072 /* BaseNavigationController.m */; };
+		A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0B41F1314A800C28072 /* BaseTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		A625C0911F13115A00C28072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A625C0941F13115A00C28072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A625C0961F13115A00C28072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A625C0A11F13138F00C28072 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		A625C0A21F13138F00C28072 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		A625C0A41F13139C00C28072 /* TourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourViewController.h; sourceTree = "<group>"; };
+		A625C0A51F13139C00C28072 /* TourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourViewController.m; sourceTree = "<group>"; };
+		A625C0AA1F1313D000C28072 /* LifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeViewController.h; sourceTree = "<group>"; };
+		A625C0AB1F1313D000C28072 /* LifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeViewController.m; sourceTree = "<group>"; };
+		A625C0AD1F1313DC00C28072 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		A625C0AE1F1313DC00C28072 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		A625C0B01F13140400C28072 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		A625C0B11F13140400C28072 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		A625C0B31F1314A800C28072 /* BaseTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabViewController.h; sourceTree = "<group>"; };
+		A625C0B41F1314A800C28072 /* BaseTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,11 @@
 		A625C0841F13115900C28072 /* Phippy */ = {
 			isa = PBXGroup;
 			children = (
+				A625C0A01F13137A00C28072 /* Base */,
+				A625C09C1F13136B00C28072 /* 我的 */,
+				A625C09D1F13136B00C28072 /* 旅游 */,
+				A625C09E1F13136B00C28072 /* 生活 */,
+				A625C09F1F13136B00C28072 /* 美食 */,
 				A625C0881F13115900C28072 /* AppDelegate.h */,
 				A625C0891F13115900C28072 /* AppDelegate.m */,
 				A625C08B1F13115900C28072 /* ViewController.h */,
@@ -77,6 +100,53 @@
 				A625C0861F13115900C28072 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A625C09C1F13136B00C28072 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				A625C0A11F13138F00C28072 /* MeViewController.h */,
+				A625C0A21F13138F00C28072 /* MeViewController.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		A625C09D1F13136B00C28072 /* 旅游 */ = {
+			isa = PBXGroup;
+			children = (
+				A625C0A41F13139C00C28072 /* TourViewController.h */,
+				A625C0A51F13139C00C28072 /* TourViewController.m */,
+			);
+			path = "旅游";
+			sourceTree = "<group>";
+		};
+		A625C09E1F13136B00C28072 /* 生活 */ = {
+			isa = PBXGroup;
+			children = (
+				A625C0AA1F1313D000C28072 /* LifeViewController.h */,
+				A625C0AB1F1313D000C28072 /* LifeViewController.m */,
+			);
+			path = "生活";
+			sourceTree = "<group>";
+		};
+		A625C09F1F13136B00C28072 /* 美食 */ = {
+			isa = PBXGroup;
+			children = (
+				A625C0AD1F1313DC00C28072 /* FoodViewController.h */,
+				A625C0AE1F1313DC00C28072 /* FoodViewController.m */,
+			);
+			path = "美食";
+			sourceTree = "<group>";
+		};
+		A625C0A01F13137A00C28072 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A625C0B01F13140400C28072 /* BaseNavigationController.h */,
+				A625C0B11F13140400C28072 /* BaseNavigationController.m */,
+				A625C0B31F1314A800C28072 /* BaseTabViewController.h */,
+				A625C0B41F1314A800C28072 /* BaseTabViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +180,7 @@
 				TargetAttributes = {
 					A625C0811F13115600C28072 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4F64Q2U6MC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,7 +223,13 @@
 			files = (
 				A625C08D1F13115A00C28072 /* ViewController.m in Sources */,
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
+				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
+				A625C0AC1F1313D000C28072 /* LifeViewController.m in Sources */,
+				A625C0B21F13140400C28072 /* BaseNavigationController.m in Sources */,
 				A625C0871F13115900C28072 /* main.m in Sources */,
+				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
+				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
+				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4F64Q2U6MC;
 				INFOPLIST_FILE = Phippy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kg.app.Phippy;
@@ -281,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4F64Q2U6MC;
 				INFOPLIST_FILE = Phippy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kg.app.Phippy;
