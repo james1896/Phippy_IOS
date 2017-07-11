@@ -23,6 +23,12 @@
 		A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0BE1F132A9300C28072 /* FoodTableViewCell.m */; };
 		A625C0C11F132A9300C28072 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A625C0BF1F132A9300C28072 /* FoodTableViewCell.xib */; };
 		A625C0C41F132E9300C28072 /* BaseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0C31F132E9300C28072 /* BaseHeaderView.m */; };
+		A625C0D11F13A25100C28072 /* food_rec_header_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A625C0CF1F13A25100C28072 /* food_rec_header_img.jpg */; };
+		A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */; };
+		A625C0D51F1477BF00C28072 /* NavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0D41F1477BF00C28072 /* NavigationBarView.m */; };
+		A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0D71F14A2B500C28072 /* PhippyViewController.m */; };
+		A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */; };
+		A625C0DF1F14B3E100C28072 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A625C0DE1F14B3E100C28072 /* logo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,17 @@
 		A625C0BF1F132A9300C28072 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
 		A625C0C21F132E9300C28072 /* BaseHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHeaderView.h; sourceTree = "<group>"; };
 		A625C0C31F132E9300C28072 /* BaseHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHeaderView.m; sourceTree = "<group>"; };
+		A625C0C71F13561100C28072 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A625C0C81F13571A00C28072 /* MacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
+		A625C0CF1F13A25100C28072 /* food_rec_header_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_rec_header_img.jpg; sourceTree = "<group>"; };
+		A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tour_rec_header_img.jpg; sourceTree = "<group>"; };
+		A625C0D31F1477BF00C28072 /* NavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarView.h; sourceTree = "<group>"; };
+		A625C0D41F1477BF00C28072 /* NavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarView.m; sourceTree = "<group>"; };
+		A625C0D61F14A2B500C28072 /* PhippyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhippyViewController.h; sourceTree = "<group>"; };
+		A625C0D71F14A2B500C28072 /* PhippyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyViewController.m; sourceTree = "<group>"; };
+		A625C0DB1F14ADC000C28072 /* PhippyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhippyTabBarController.h; sourceTree = "<group>"; };
+		A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyTabBarController.m; sourceTree = "<group>"; };
+		A625C0DE1F14B3E100C28072 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +103,13 @@
 		A625C0841F13115900C28072 /* Phippy */ = {
 			isa = PBXGroup;
 			children = (
+				A625C0C81F13571A00C28072 /* MacroDefinition.h */,
 				A625C0A01F13137A00C28072 /* Base */,
 				A625C09F1F13136B00C28072 /* 美食 */,
 				A625C09D1F13136B00C28072 /* 旅游 */,
 				A625C09E1F13136B00C28072 /* 生活 */,
 				A625C09C1F13136B00C28072 /* 我的 */,
+				A625C0CE1F13A25100C28072 /* res */,
 				A625C0881F13115900C28072 /* AppDelegate.h */,
 				A625C0891F13115900C28072 /* AppDelegate.m */,
 				A625C08E1F13115A00C28072 /* Main.storyboard */,
@@ -105,6 +124,7 @@
 		A625C0851F13115900C28072 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A625C0C71F13561100C28072 /* PrefixHeader.pch */,
 				A625C0861F13115900C28072 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -155,14 +175,30 @@
 		A625C0A01F13137A00C28072 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A625C0DE1F14B3E100C28072 /* logo@2x.png */,
 				A625C0B01F13140400C28072 /* BaseNavigationController.h */,
 				A625C0B11F13140400C28072 /* BaseNavigationController.m */,
 				A625C0B31F1314A800C28072 /* BaseTabViewController.h */,
 				A625C0B41F1314A800C28072 /* BaseTabViewController.m */,
 				A625C0C21F132E9300C28072 /* BaseHeaderView.h */,
 				A625C0C31F132E9300C28072 /* BaseHeaderView.m */,
+				A625C0D31F1477BF00C28072 /* NavigationBarView.h */,
+				A625C0D41F1477BF00C28072 /* NavigationBarView.m */,
+				A625C0D61F14A2B500C28072 /* PhippyViewController.h */,
+				A625C0D71F14A2B500C28072 /* PhippyViewController.m */,
+				A625C0DB1F14ADC000C28072 /* PhippyTabBarController.h */,
+				A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		A625C0CE1F13A25100C28072 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				A625C0CF1F13A25100C28072 /* food_rec_header_img.jpg */,
+				A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */,
+			);
+			path = res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,9 +262,12 @@
 			files = (
 				A625C0951F13115A00C28072 /* LaunchScreen.storyboard in Resources */,
 				A625C0921F13115A00C28072 /* Assets.xcassets in Resources */,
+				A625C0DF1F14B3E100C28072 /* logo@2x.png in Resources */,
 				A625C0C11F132A9300C28072 /* FoodTableViewCell.xib in Resources */,
+				A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */,
 				A625C0901F13115A00C28072 /* Main.storyboard in Resources */,
 				A625C0BC1F131B6E00C28072 /* TourTableViewCell.xib in Resources */,
+				A625C0D11F13A25100C28072 /* food_rec_header_img.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +287,11 @@
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
+				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
 				A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */,
+				A625C0D51F1477BF00C28072 /* NavigationBarView.m in Sources */,
 				A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */,
+				A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4F64Q2U6MC;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Phippy/PrefixHeader.pch";
 				INFOPLIST_FILE = Phippy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -382,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4F64Q2U6MC;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Phippy/PrefixHeader.pch";
 				INFOPLIST_FILE = Phippy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -410,6 +454,7 @@
 				A625C09B1F13115A00C28072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

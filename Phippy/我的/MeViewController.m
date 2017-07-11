@@ -7,7 +7,7 @@
 //
 
 #import "MeViewController.h"
-
+#import "BaseHeaderView.h"
 @interface MeViewController ()
 
 @end
@@ -27,7 +27,10 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"我的收藏",@"商务合作",@"关于我们",@"应急求助",@"退出登录"];
+    self.dataArray = @[@"我的收藏",@"应急求助",@"商务合作",@"关于我们",@"退出登录"];
+    
+    BaseHeaderView *headerView = [BaseHeaderView  initFoodHeaderView];
+    self.tableView.tableHeaderView = headerView;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -18,4 +18,25 @@
 }
 */
 
+- (void)addLogo{
+    UIImageView *logo = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 75, 44)];
+    logo.image = [UIImage imageNamed:@"logo"];
+    
+    [self addSubview:logo];
+}
+
++ (instancetype)standardNavigationBarView{
+    NavigationBarView *barView = [[NavigationBarView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
+//    barView.backgroundColor = [UIColor purpleColor];
+    [barView addLogo];
+    return barView;
+}
+
+
++ (instancetype)translucentAndCenterTitleNavigationBarView{
+    NavigationBarView *barView = [[NavigationBarView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
+
+    return barView;
+}
+
 @end

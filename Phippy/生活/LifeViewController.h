@@ -6,8 +6,8 @@
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "PhippyViewController.h"
 
-@interface LifeViewController : UIViewController
+@interface LifeViewController : PhippyViewController
 
 @end

@@ -8,6 +8,7 @@
 
 #import "TourViewController.h"
 #import "TourTableViewCell.h"
+#import "BaseHeaderView.h"
 @interface TourViewController ()
 
 @end
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    BaseHeaderView *headerView = [BaseHeaderView  initFoodHeaderView];
+    headerView.backGroundImageView.image = [UIImage imageNamed:@"tour_rec_header_img.jpg"];
+    self.tableView.tableHeaderView = headerView;
 }
 
 - (void)didReceiveMemoryWarning {

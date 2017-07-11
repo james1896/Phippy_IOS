@@ -10,4 +10,8 @@
 
 @interface NavigationBarView : UIView
 
+@property (nonatomic,strong) NSString *title;
+
++(instancetype)standardNavigationBarView;
++(instancetype)translucentAndCenterTitleNavigationBarView;
 @end

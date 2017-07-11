@@ -8,6 +8,7 @@
 
 #import "FoodViewController.h"
 #import "FoodTableViewCell.h"
+#import "BaseHeaderView.h"
 @interface FoodViewController ()
 
 @end
@@ -21,7 +22,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    BaseHeaderView *headerView = [BaseHeaderView  initFoodHeaderView];
+    self.tableView.tableHeaderView = headerView;
+     headerView.backGroundImageView.image = [UIImage imageNamed:@"food_rec_header_img.jpg"];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

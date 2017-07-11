@@ -6,9 +6,9 @@
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "PhippyViewController.h"
 
-@interface BaseTabViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface BaseTabViewController : PhippyViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray     *dataArray;

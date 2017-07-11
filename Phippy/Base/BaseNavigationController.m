@@ -16,7 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //1.去掉nav下方的 黑线
+//     2.
+    [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.9]] forBarMetrics:UIBarMetricsDefault];
+    self.navigationBar.barStyle = UIBarStyleDefault;
+    
+    //navbar自带的 透明
+//    self.navigationBar.translucent = NO;
+    [self.navigationBar setShadowImage:[UIImage new]];
+    self.extendedLayoutIncludesOpaqueBars = YES;
+}
+
+- (UIImage*) createImageWithColor:(UIColor*) color
+{
+    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="991" y="-863"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Phippy Tab Bar Controller-->
         <scene sceneID="l0b-Xq-oVN">
             <objects>
-                <tabBarController id="YEf-oi-fl1" sceneMemberID="viewController">
+                <tabBarController id="YEf-oi-fl1" customClass="PhippyTabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="2BT-33-foq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

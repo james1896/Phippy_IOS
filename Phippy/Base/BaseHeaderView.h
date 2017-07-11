@@ -10,4 +10,10 @@
 
 @interface BaseHeaderView : UIView
 
+@property (nonatomic,strong) UIImageView *backGroundImageView;
+@property (nonatomic,strong) UILabel *titleOfLeftDonw;
+
++ (instancetype)initFoodHeaderView;
++ (instancetype)initTourHeaderView;
++ (instancetype)initMeHeaderView;
 @end
