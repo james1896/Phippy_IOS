@@ -7,7 +7,7 @@
 //
 
 #import "PhippyViewController.h"
-#import "NavigationBarView.h"
+
 
 @interface PhippyViewController ()
 
@@ -19,7 +19,8 @@
     [super viewDidLoad];
     
     //设置 navbar
-     self.navigationItem.titleView = [NavigationBarView standardNavigationBarView];
+    //默认是 standard 的
+    [self.phippyNavigationController standardNavigationBarView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,5 +37,30 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+@end
+
+
+/*  ~~~~~~~     UIViewController(UIViewControllerItem)     ~~~~~~~~~~~~~~~   */
+
+#pragma mark UIViewController(UIViewControllerItem)
+@implementation UIViewController(UIViewControllerItem)
+
+
+//- (BaseTabBarController *)baseTabbarController{
+//    if([self.tabBarController isMemberOfClass:[BaseTabBarController class]]){
+//        return (BaseTabBarController *)self.tabBarController;
+//    }
+//    return nil;
+//}
+
+- (BaseNavigationController *)phippyNavigationController{
+    
+    if([self.navigationController isMemberOfClass:[BaseNavigationController class]]){
+        return (BaseNavigationController *)self.navigationController;
+    }
+    return nil;
+    
+}
 
 @end

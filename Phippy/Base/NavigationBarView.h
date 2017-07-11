@@ -12,6 +12,7 @@
 
 @property (nonatomic,strong) NSString *title;
 
++ (instancetype)originalNavigationBarView;
 +(instancetype)standardNavigationBarView;
 +(instancetype)translucentAndCenterTitleNavigationBarView;
 @end

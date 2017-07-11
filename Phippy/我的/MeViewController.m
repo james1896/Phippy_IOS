@@ -28,8 +28,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataArray = @[@"我的收藏",@"应急求助",@"商务合作",@"关于我们",@"退出登录"];
+    [self.phippyNavigationController translucentAndCenterTitleNavigationBarView];
+    
+    //当前controller 在nav中 需要这样设置
+//    -(UIStatusBarStyle)preferredStatusBarStyle {
+//        
+//        return UIStatusBarStyleLightContent; //白色
+//        
+//        return UIStatusBarStyleDefault; //黑色
+//        
+//    } 在导航控制器中，以上代码不起作用。
+    
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+//    self.navigationController.navigationBar.barStyle = UIBarStyleDefault; //状态栏改为黑色
     
     BaseHeaderView *headerView = [BaseHeaderView  initFoodHeaderView];
+    headerView.backgroundColor = [UIColor redColor];
+//    headerView.height = 300;
     self.tableView.tableHeaderView = headerView;
 }
 

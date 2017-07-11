@@ -13,6 +13,9 @@
 @property (nonatomic,strong) UIImageView *backGroundImageView;
 @property (nonatomic,strong) UILabel *titleOfLeftDonw;
 
+//默认是 SCREEN_HEIGHT/3.7
+@property (nonatomic) NSInteger height;
+
 + (instancetype)initFoodHeaderView;
 + (instancetype)initTourHeaderView;
 + (instancetype)initMeHeaderView;

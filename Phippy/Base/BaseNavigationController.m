@@ -7,25 +7,54 @@
 //
 
 #import "BaseNavigationController.h"
+#import "NavigationBarView.h"
 
-@interface BaseNavigationController ()
+@interface BaseNavigationController (){
+    
+    NavigationBarView *_navBarView;
+}
 
+@property (nonatomic,strong)NavigationBarView *navBarView;
 @end
 
 @implementation BaseNavigationController
+
+- (void)setNavBarView:(NavigationBarView *)navBarView{
+    _navBarView = navBarView;
+    self.visibleViewController.navigationItem.titleView = navBarView;
+}
+
+- (void)originalNavigationBarView{
+    self.navBarView = [NavigationBarView originalNavigationBarView];
+    
+}
+
+- (void)standardNavigationBarView{
+    self.navBarView = [NavigationBarView standardNavigationBarView];
+}
+
+- (void)translucentAndCenterTitleNavigationBarView{
+    self.navBarView = [NavigationBarView translucentAndCenterTitleNavigationBarView];
+    
+     [self.visibleViewController.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0]] forBarMetrics:UIBarMetricsDefault];
+    
+    self.visibleViewController.automaticallyAdjustsScrollViewInsets = NO;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     //1.去掉nav下方的 黑线
 //     2.
-    [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.9]] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.8]] forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.barStyle = UIBarStyleDefault;
     
     //navbar自带的 透明
 //    self.navigationBar.translucent = NO;
     [self.navigationBar setShadowImage:[UIImage new]];
     self.extendedLayoutIncludesOpaqueBars = YES;
+    
+//    self.visibleViewController
 }
 
 - (UIImage*) createImageWithColor:(UIColor*) color

@@ -18,6 +18,11 @@
 }
 */
 
+- (void)setHeight:(NSInteger)height{
+    CGRect frame = self.frame;
+    self.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, height);
+}
+
 - (UIImageView *)backGroundImageView{
     if(!_backGroundImageView){
         _backGroundImageView = [[UIImageView alloc]initWithFrame:self.bounds];
