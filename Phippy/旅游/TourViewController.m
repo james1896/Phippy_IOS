@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.phippyNavigationController originalNavigationBarView];
     BaseHeaderView *headerView = [BaseHeaderView  initFoodHeaderView];
     headerView.backGroundImageView.image = [UIImage imageNamed:@"tour_rec_header_img.jpg"];
     self.tableView.tableHeaderView = headerView;

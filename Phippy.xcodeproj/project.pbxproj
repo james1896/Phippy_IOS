@@ -70,7 +70,7 @@
 		A625C0D71F14A2B500C28072 /* PhippyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyViewController.m; sourceTree = "<group>"; };
 		A625C0DB1F14ADC000C28072 /* PhippyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhippyTabBarController.h; sourceTree = "<group>"; };
 		A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyTabBarController.m; sourceTree = "<group>"; };
-		A625C0DE1F14B3E100C28072 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		A625C0DE1F14B3E100C28072 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "../Base/logo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +175,6 @@
 		A625C0A01F13137A00C28072 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				A625C0DE1F14B3E100C28072 /* logo@2x.png */,
 				A625C0B01F13140400C28072 /* BaseNavigationController.h */,
 				A625C0B11F13140400C28072 /* BaseNavigationController.m */,
 				A625C0B31F1314A800C28072 /* BaseTabViewController.h */,
@@ -195,6 +194,7 @@
 		A625C0CE1F13A25100C28072 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				A625C0DE1F14B3E100C28072 /* logo@2x.png */,
 				A625C0CF1F13A25100C28072 /* food_rec_header_img.jpg */,
 				A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */,
 			);
