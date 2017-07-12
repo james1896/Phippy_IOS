@@ -20,8 +20,8 @@
 
 - (void)addBackButton{
     
-        [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0]] forBarMetrics:UIBarMetricsDefault];
-     self.visibleViewController.automaticallyAdjustsScrollViewInsets = NO;
+        [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.7]] forBarMetrics:UIBarMetricsDefault];
+//     self.visibleViewController.automaticallyAdjustsScrollViewInsets = NO;
     //自定义一个按钮
     UIButton  *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 
