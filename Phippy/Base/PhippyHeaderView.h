@@ -16,7 +16,11 @@
 //默认是 SCREEN_HEIGHT/3.7
 @property (nonatomic) NSInteger height;
 
-+ (instancetype)headerViewForFood;
-+ (instancetype)headerViewForTour;
-+ (instancetype)headerViewForMe;
++ (instancetype)headerViewMe;
++ (instancetype)headerViewFood;
++ (instancetype)headerViewTour;
+
++ (instancetype)headerViewFoodDetail;
++ (instancetype)headerViewTourDetail;
+
 @end

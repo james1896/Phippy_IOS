@@ -45,7 +45,7 @@
 //    self.navigationController.navigationBar.barStyle = UIBarStyleDefault; //状态栏改为黑色
     /***************************************/
     
-    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewForMe];
+    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewMe];
     headerView.backgroundColor = [UIColor redColor];
 //    headerView.height = 300;
     self.tableView.tableHeaderView = headerView;

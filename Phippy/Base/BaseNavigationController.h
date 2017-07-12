@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#pragma mark - BaseNavigationController
 @interface BaseNavigationController : UINavigationController
 
 - (void)addBackButton;
@@ -16,4 +17,16 @@
 - (void)standardNavigationBarView;
 - (void)translucentAndCenterTitleNavigationBarView;
 
+//- (void)navigationBarViewFoodDetail;
+
+@end
+
+#pragma mark - NavigationBarView
+@interface NavigationBarView : UIView
+
+@property (nonatomic,strong) NSString *title;
+
++(instancetype)originalNavigationBarView;
++(instancetype)standardNavigationBarView;
++(instancetype)translucentAndCenterTitleNavigationBarView;
 @end

@@ -23,7 +23,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.phippyNavigationController addBackButton];
+    PhippyHeaderView *headerView = [PhippyHeaderView headerViewTourDetail];
+    headerView.titleOfLeftDonw.text = @"旅游详情";
+    headerView.backGroundImageView.image = [UIImage imageNamed:@"tour_rec_header_img.jpg"];
+    self.tableView.tableHeaderView = headerView;
 }
 
 - (void)didReceiveMemoryWarning {

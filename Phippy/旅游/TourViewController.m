@@ -20,7 +20,8 @@
     [super viewDidLoad];
   
     [self.phippyNavigationController standardNavigationBarView];
-    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewForTour];
+    
+    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewTour];
     headerView.titleOfLeftDonw.text = @"旅游";
     headerView.backGroundImageView.image = [UIImage imageNamed:@"tour_rec_header_img.jpg"];
     self.tableView.tableHeaderView = headerView;

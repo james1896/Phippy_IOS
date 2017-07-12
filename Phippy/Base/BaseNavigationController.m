@@ -7,7 +7,6 @@
 //
 
 #import "BaseNavigationController.h"
-#import "NavigationBarView.h"
 
 @interface BaseNavigationController ()<UIGestureRecognizerDelegate>{
     
@@ -20,16 +19,19 @@
 @implementation BaseNavigationController
 
 - (void)addBackButton{
+    
+        [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0]] forBarMetrics:UIBarMetricsDefault];
+     self.visibleViewController.automaticallyAdjustsScrollViewInsets = NO;
     //自定义一个按钮
     UIButton  *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 
     [leftBtn addTarget:self action:@selector(backLastView) forControlEvents:UIControlEventTouchUpInside];
-    leftBtn.frame = CGRectMake(-12, -17, 30, 22);
+    leftBtn.frame = CGRectMake(-6, 5, 30, 22);
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
     [leftBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     //将leftItem设置为自定义按钮
     
-    UIView *backView = [[UIView alloc]init];
+    UIView *backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
     [backView addSubview:leftBtn];
     UIBarButtonItem  *leftItem =[[UIBarButtonItem alloc]initWithCustomView: backView];
     self.topViewController.navigationItem.leftBarButtonItem = leftItem;
@@ -47,7 +49,6 @@
 
 - (void)originalNavigationBarView{
     self.navBarView = [NavigationBarView originalNavigationBarView];
-    
 }
 
 - (void)standardNavigationBarView{
@@ -62,6 +63,8 @@
     self.visibleViewController.automaticallyAdjustsScrollViewInsets = NO;
 }
 
+#pragma mark - life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -75,9 +78,9 @@
     [self.navigationBar setShadowImage:[UIImage new]];
     self.extendedLayoutIncludesOpaqueBars = YES;
     
-    //解决自定义返回按钮 手势返回消失问题
-    self.interactivePopGestureRecognizer.enabled = YES;
-    self.interactivePopGestureRecognizer.delegate = self;
+//    //解决自定义返回按钮 手势返回消失问题
+//    self.interactivePopGestureRecognizer.enabled = YES;
+//    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 -(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
@@ -113,3 +116,50 @@
 */
 
 @end
+
+
+
+@implementation NavigationBarView
+
+/*
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
+
+- (void)addLogo{
+    UIImageView *logo = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 75, 44)];
+    logo.image = [UIImage imageNamed:@"logo"];
+    
+    [self addSubview:logo];
+}
+
++ (instancetype)originalNavigationBarView{
+    NavigationBarView *barView = [[NavigationBarView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
+    //    barView.backgroundColor = [UIColor purpleColor];
+    
+    return barView;
+}
+
++ (instancetype)standardNavigationBarView{
+    NavigationBarView *barView = [[NavigationBarView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
+    //    barView.backgroundColor = [UIColor purpleColor];
+    [barView addLogo];
+    return barView;
+}
+
+
++ (instancetype)translucentAndCenterTitleNavigationBarView{
+    NavigationBarView *barView = [[NavigationBarView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
+    return barView;
+}
+
+@end
+
+
+
+
+
+

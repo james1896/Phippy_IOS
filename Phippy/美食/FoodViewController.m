@@ -31,7 +31,7 @@
     [super viewDidLoad];
 
     [self.phippyNavigationController standardNavigationBarView];
-    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewForFood];
+    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewFood];
     self.tableView.tableHeaderView = headerView;
      headerView.backGroundImageView.image = [UIImage imageNamed:@"food_rec_header_img.jpg"];
     headerView.titleOfLeftDonw.text = @"美食";

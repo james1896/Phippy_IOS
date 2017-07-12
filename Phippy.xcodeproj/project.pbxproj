@@ -25,7 +25,6 @@
 		A625C0C41F132E9300C28072 /* PhippyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0C31F132E9300C28072 /* PhippyHeaderView.m */; };
 		A625C0D11F13A25100C28072 /* food_rec_header_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A625C0CF1F13A25100C28072 /* food_rec_header_img.jpg */; };
 		A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */; };
-		A625C0D51F1477BF00C28072 /* NavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0D41F1477BF00C28072 /* NavigationBarView.m */; };
 		A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0D71F14A2B500C28072 /* PhippyViewController.m */; };
 		A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */; };
 		A625C0DF1F14B3E100C28072 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A625C0DE1F14B3E100C28072 /* logo@2x.png */; };
@@ -66,8 +65,6 @@
 		A625C0C81F13571A00C28072 /* MacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
 		A625C0CF1F13A25100C28072 /* food_rec_header_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_rec_header_img.jpg; sourceTree = "<group>"; };
 		A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tour_rec_header_img.jpg; sourceTree = "<group>"; };
-		A625C0D31F1477BF00C28072 /* NavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarView.h; sourceTree = "<group>"; };
-		A625C0D41F1477BF00C28072 /* NavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarView.m; sourceTree = "<group>"; };
 		A625C0D61F14A2B500C28072 /* PhippyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhippyViewController.h; sourceTree = "<group>"; };
 		A625C0D71F14A2B500C28072 /* PhippyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyViewController.m; sourceTree = "<group>"; };
 		A625C0DB1F14ADC000C28072 /* PhippyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhippyTabBarController.h; sourceTree = "<group>"; };
@@ -191,8 +188,6 @@
 				A625C0B41F1314A800C28072 /* BaseTabViewController.m */,
 				A625C0C21F132E9300C28072 /* PhippyHeaderView.h */,
 				A625C0C31F132E9300C28072 /* PhippyHeaderView.m */,
-				A625C0D31F1477BF00C28072 /* NavigationBarView.h */,
-				A625C0D41F1477BF00C28072 /* NavigationBarView.m */,
 				A625C0D61F14A2B500C28072 /* PhippyViewController.h */,
 				A625C0D71F14A2B500C28072 /* PhippyViewController.m */,
 				A625C0DB1F14ADC000C28072 /* PhippyTabBarController.h */,
@@ -301,7 +296,6 @@
 				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
 				A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */,
 				A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */,
-				A625C0D51F1477BF00C28072 /* NavigationBarView.m in Sources */,
 				A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */,
 				A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */,
 			);

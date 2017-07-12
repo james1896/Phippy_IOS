@@ -14,15 +14,13 @@
 @end
 @implementation PhippyHeaderView
 
-
-+ (instancetype)headerViewForFood{
+#pragma mark - 公开方法
++ (instancetype)headerViewFood{
     
-    PhippyHeaderView *header = [[PhippyHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3.7+30)];
-
-    header.backGroundImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3.7)];
-    [header addSubview:header.backGroundImageView];
+    PhippyHeaderView *header = [[self initHeaderView] addBackGroundImageView];
+    header.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3.7+30);
     
-    UILabel *bottomLab = [[UILabel alloc]initWithFrame:CGRectMake(0, header.frame.size.height-30, header.bounds.size.width, 30)];
+    UILabel *bottomLab = [[UILabel alloc] initWithFrame:CGRectMake(0, header.frame.size.height-30, header.bounds.size.width, 30)];
     bottomLab.textAlignment = NSTextAlignmentCenter;
     bottomLab.text = @"猜你喜欢";
     bottomLab.backgroundColor = [UIColor colorWithRed:188/255.0 green:188/255.0 blue:188/255.0 alpha:1];
@@ -30,13 +28,10 @@
     return header;
 }
 
-+ (instancetype)headerViewForTour{
++ (instancetype)headerViewTour{
     
-    PhippyHeaderView *header = [[PhippyHeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3.7+30)];
-
-    header.backGroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3.7)];
-    
-    [header addSubview:header.titleOfLeftDonw];
+    PhippyHeaderView *header = [[self initHeaderView] addBackGroundImageView];
+    header.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3.7+30);
    
     UILabel *bottomLab = [[UILabel alloc] initWithFrame:CGRectMake(0, header.frame.size.height-30, header.bounds.size.width, 30)];
     bottomLab.textAlignment = NSTextAlignmentCenter;
@@ -47,13 +42,34 @@
     return header;
 }
 
-+ (instancetype)headerViewForMe{
-    
-    PhippyHeaderView *header = [[PhippyHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3.7)];
++ (instancetype)headerViewFoodDetail{
+    return [[self initHeaderView] addBackGroundImageView];
+}
 
++ (instancetype)headerViewTourDetail{
+    return [[self initHeaderView] addBackGroundImageView];
+}
+
++ (instancetype)headerViewMe{
+    
+   return [self initHeaderView];
+}
+
+#pragma mark - init
+//(1)初始化headerView
++ (instancetype)initHeaderView{
+    PhippyHeaderView *header = [[PhippyHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3.7)];
     return header;
 }
 
+//(2)
+//添加背景image 添加左下方标题
+- (instancetype)addBackGroundImageView{
+  
+    self.backGroundImageView = [[UIImageView alloc] initWithFrame:self.bounds];
+    [self addSubview:self.titleOfLeftDonw];
+    return self;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -65,6 +81,7 @@
 }
 
 
+#pragma mark - set get
 - (void)setHeight:(NSInteger)height{
     CGRect frame = self.frame;
     self.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, height);
