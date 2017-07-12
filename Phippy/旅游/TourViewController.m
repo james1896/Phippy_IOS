@@ -8,7 +8,8 @@
 
 #import "TourViewController.h"
 #import "TourTableViewCell.h"
-#import "BaseHeaderView.h"
+#import "PhippyHeaderView.h"
+#import "TourDetailViewController.h"
 @interface TourViewController ()
 
 @end
@@ -17,10 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    BaseHeaderView *headerView = [BaseHeaderView  initFoodHeaderView];
+  
+    [self.phippyNavigationController standardNavigationBarView];
+    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewForTour];
+    headerView.titleOfLeftDonw.text = @"旅游";
     headerView.backGroundImageView.image = [UIImage imageNamed:@"tour_rec_header_img.jpg"];
     self.tableView.tableHeaderView = headerView;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,8 +36,15 @@
     return 170;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    TourDetailViewController *detail = [[TourDetailViewController alloc]init];
+    detail.hidesBottomBarWhenPushed = YES;
+    [self.phippyNavigationController pushViewController:detail animated:YES];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     TourTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"TourTableViewCell" owner:nil options:nil]lastObject];
+   
     cell.tilte.text = @"title";
     cell.content.text = @"fdsafdsa";
     cell.author.text = @"dafda";

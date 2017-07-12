@@ -9,7 +9,7 @@
 #import "BaseNavigationController.h"
 #import "NavigationBarView.h"
 
-@interface BaseNavigationController (){
+@interface BaseNavigationController ()<UIGestureRecognizerDelegate>{
     
     NavigationBarView *_navBarView;
 }
@@ -18,6 +18,27 @@
 @end
 
 @implementation BaseNavigationController
+
+- (void)addBackButton{
+    //自定义一个按钮
+    UIButton  *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+
+    [leftBtn addTarget:self action:@selector(backLastView) forControlEvents:UIControlEventTouchUpInside];
+    leftBtn.frame = CGRectMake(-12, -17, 30, 22);
+    [leftBtn setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+    [leftBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    //将leftItem设置为自定义按钮
+    
+    UIView *backView = [[UIView alloc]init];
+    [backView addSubview:leftBtn];
+    UIBarButtonItem  *leftItem =[[UIBarButtonItem alloc]initWithCustomView: backView];
+    self.topViewController.navigationItem.leftBarButtonItem = leftItem;
+
+}
+
+- (void)backLastView{
+    [self popViewControllerAnimated:YES];
+}
 
 - (void)setNavBarView:(NavigationBarView *)navBarView{
     _navBarView = navBarView;
@@ -54,7 +75,14 @@
     [self.navigationBar setShadowImage:[UIImage new]];
     self.extendedLayoutIncludesOpaqueBars = YES;
     
-//    self.visibleViewController
+    //解决自定义返回按钮 手势返回消失问题
+    self.interactivePopGestureRecognizer.enabled = YES;
+    self.interactivePopGestureRecognizer.delegate = self;
+}
+
+-(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    
+    return YES;
 }
 
 - (UIImage*) createImageWithColor:(UIColor*) color

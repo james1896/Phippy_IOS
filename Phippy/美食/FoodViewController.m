@@ -8,7 +8,8 @@
 
 #import "FoodViewController.h"
 #import "FoodTableViewCell.h"
-#import "BaseHeaderView.h"
+#import "PhippyHeaderView.h"
+#import "FoodDetailViewController.h"
 @interface FoodViewController ()
 
 @end
@@ -20,13 +21,20 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    FoodDetailViewController *detail = [[FoodDetailViewController alloc]init];
+    detail.hidesBottomBarWhenPushed = YES;
+    [self.phippyNavigationController pushViewController:detail animated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    BaseHeaderView *headerView = [BaseHeaderView  initFoodHeaderView];
+
+    [self.phippyNavigationController standardNavigationBarView];
+    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewForFood];
     self.tableView.tableHeaderView = headerView;
      headerView.backGroundImageView.image = [UIImage imageNamed:@"food_rec_header_img.jpg"];
-    
+    headerView.titleOfLeftDonw.text = @"美食";
     
 }
 

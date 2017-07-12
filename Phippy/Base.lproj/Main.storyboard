@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YEf-oi-fl1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YEf-oi-fl1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,7 +52,7 @@
         <scene sceneID="uOQ-Ew-tdl">
             <objects>
                 <navigationController id="pZF-nv-d8x" customClass="BaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="生活" id="zmC-oo-KXn"/>
+                    <tabBarItem key="tabBarItem" title="生活" image="life_normal" selectedImage="life_press" id="zmC-oo-KXn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1m7-If-pkN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -69,7 +69,7 @@
         <scene sceneID="KSu-pW-Pyc">
             <objects>
                 <navigationController id="bry-gD-drz" customClass="BaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="cej-5I-aiR"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="me_normal" selectedImage="me_press" id="cej-5I-aiR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bga-No-wYi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3o-qv-jgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="1628"/>
+            <point key="canvasLocation" x="1199" y="1621"/>
         </scene>
         <!--Life View Controller-->
         <scene sceneID="rIe-fW-s9p">
@@ -118,13 +118,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N74-ll-9rs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978" y="803"/>
+            <point key="canvasLocation" x="1100" y="774"/>
         </scene>
         <!--旅游-->
         <scene sceneID="1DD-Vy-ZNI">
             <objects>
                 <navigationController id="bPO-QQ-gPq" customClass="BaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="旅游" id="z9z-34-GCX"/>
+                    <tabBarItem key="tabBarItem" title="旅游" image="tour_normal" selectedImage="tour_press" id="z9z-34-GCX"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6PE-v2-BYu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -160,7 +160,7 @@
         <scene sceneID="rvw-Ta-GyR">
             <objects>
                 <navigationController id="xiD-Zu-qya" customClass="BaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="美食" id="Lq4-Z6-4qS"/>
+                    <tabBarItem key="tabBarItem" title="美食" image="food_normal" selectedImage="food_press" id="Lq4-Z6-4qS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w1z-Pm-eT1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -174,4 +174,14 @@
             <point key="canvasLocation" x="287" y="-848"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food_normal" width="24" height="24"/>
+        <image name="food_press" width="24" height="24"/>
+        <image name="life_normal" width="24" height="24"/>
+        <image name="life_press" width="24" height="24"/>
+        <image name="me_normal" width="24" height="24"/>
+        <image name="me_press" width="24" height="24"/>
+        <image name="tour_normal" width="24" height="24"/>
+        <image name="tour_press" width="24" height="24"/>
+    </resources>
 </document>

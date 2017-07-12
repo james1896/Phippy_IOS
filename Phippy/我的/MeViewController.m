@@ -7,7 +7,7 @@
 //
 
 #import "MeViewController.h"
-#import "BaseHeaderView.h"
+#import "PhippyHeaderView.h"
 @interface MeViewController ()
 
 @end
@@ -30,6 +30,8 @@
     self.dataArray = @[@"我的收藏",@"应急求助",@"商务合作",@"关于我们",@"退出登录"];
     [self.phippyNavigationController translucentAndCenterTitleNavigationBarView];
     
+    
+    /***************************************/
     //当前controller 在nav中 需要这样设置
 //    -(UIStatusBarStyle)preferredStatusBarStyle {
 //        
@@ -41,8 +43,9 @@
     
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 //    self.navigationController.navigationBar.barStyle = UIBarStyleDefault; //状态栏改为黑色
+    /***************************************/
     
-    BaseHeaderView *headerView = [BaseHeaderView  initFoodHeaderView];
+    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewForMe];
     headerView.backgroundColor = [UIColor redColor];
 //    headerView.height = 300;
     self.tableView.tableHeaderView = headerView;

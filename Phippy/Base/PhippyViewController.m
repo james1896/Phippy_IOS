@@ -18,9 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //设置 navbar
-    //默认是 standard 的
-    [self.phippyNavigationController standardNavigationBarView];
+  
 }
 
 - (void)didReceiveMemoryWarning {

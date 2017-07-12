@@ -22,13 +22,15 @@
 		A625C0BC1F131B6E00C28072 /* TourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A625C0BA1F131B6E00C28072 /* TourTableViewCell.xib */; };
 		A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0BE1F132A9300C28072 /* FoodTableViewCell.m */; };
 		A625C0C11F132A9300C28072 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A625C0BF1F132A9300C28072 /* FoodTableViewCell.xib */; };
-		A625C0C41F132E9300C28072 /* BaseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0C31F132E9300C28072 /* BaseHeaderView.m */; };
+		A625C0C41F132E9300C28072 /* PhippyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0C31F132E9300C28072 /* PhippyHeaderView.m */; };
 		A625C0D11F13A25100C28072 /* food_rec_header_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A625C0CF1F13A25100C28072 /* food_rec_header_img.jpg */; };
 		A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */; };
 		A625C0D51F1477BF00C28072 /* NavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0D41F1477BF00C28072 /* NavigationBarView.m */; };
 		A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0D71F14A2B500C28072 /* PhippyViewController.m */; };
 		A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */; };
 		A625C0DF1F14B3E100C28072 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A625C0DE1F14B3E100C28072 /* logo@2x.png */; };
+		A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67744481F15C8C900A269DE /* FoodDetailViewController.m */; };
+		A677444C1F15C8DD00A269DE /* TourDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A677444B1F15C8DD00A269DE /* TourDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +60,8 @@
 		A625C0BD1F132A9300C28072 /* FoodTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewCell.h; sourceTree = "<group>"; };
 		A625C0BE1F132A9300C28072 /* FoodTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewCell.m; sourceTree = "<group>"; };
 		A625C0BF1F132A9300C28072 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
-		A625C0C21F132E9300C28072 /* BaseHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHeaderView.h; sourceTree = "<group>"; };
-		A625C0C31F132E9300C28072 /* BaseHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHeaderView.m; sourceTree = "<group>"; };
+		A625C0C21F132E9300C28072 /* PhippyHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhippyHeaderView.h; sourceTree = "<group>"; };
+		A625C0C31F132E9300C28072 /* PhippyHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyHeaderView.m; sourceTree = "<group>"; };
 		A625C0C71F13561100C28072 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A625C0C81F13571A00C28072 /* MacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
 		A625C0CF1F13A25100C28072 /* food_rec_header_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_rec_header_img.jpg; sourceTree = "<group>"; };
@@ -71,6 +73,10 @@
 		A625C0DB1F14ADC000C28072 /* PhippyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhippyTabBarController.h; sourceTree = "<group>"; };
 		A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyTabBarController.m; sourceTree = "<group>"; };
 		A625C0DE1F14B3E100C28072 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "../Base/logo@2x.png"; sourceTree = "<group>"; };
+		A67744471F15C8C900A269DE /* FoodDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDetailViewController.h; sourceTree = "<group>"; };
+		A67744481F15C8C900A269DE /* FoodDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDetailViewController.m; sourceTree = "<group>"; };
+		A677444A1F15C8DD00A269DE /* TourDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourDetailViewController.h; sourceTree = "<group>"; };
+		A677444B1F15C8DD00A269DE /* TourDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,8 @@
 				A625C0B81F131B6E00C28072 /* TourTableViewCell.h */,
 				A625C0B91F131B6E00C28072 /* TourTableViewCell.m */,
 				A625C0BA1F131B6E00C28072 /* TourTableViewCell.xib */,
+				A677444A1F15C8DD00A269DE /* TourDetailViewController.h */,
+				A677444B1F15C8DD00A269DE /* TourDetailViewController.m */,
 			);
 			path = "旅游";
 			sourceTree = "<group>";
@@ -168,6 +176,8 @@
 				A625C0BD1F132A9300C28072 /* FoodTableViewCell.h */,
 				A625C0BE1F132A9300C28072 /* FoodTableViewCell.m */,
 				A625C0BF1F132A9300C28072 /* FoodTableViewCell.xib */,
+				A67744471F15C8C900A269DE /* FoodDetailViewController.h */,
+				A67744481F15C8C900A269DE /* FoodDetailViewController.m */,
 			);
 			path = "美食";
 			sourceTree = "<group>";
@@ -179,8 +189,8 @@
 				A625C0B11F13140400C28072 /* BaseNavigationController.m */,
 				A625C0B31F1314A800C28072 /* BaseTabViewController.h */,
 				A625C0B41F1314A800C28072 /* BaseTabViewController.m */,
-				A625C0C21F132E9300C28072 /* BaseHeaderView.h */,
-				A625C0C31F132E9300C28072 /* BaseHeaderView.m */,
+				A625C0C21F132E9300C28072 /* PhippyHeaderView.h */,
+				A625C0C31F132E9300C28072 /* PhippyHeaderView.m */,
 				A625C0D31F1477BF00C28072 /* NavigationBarView.h */,
 				A625C0D41F1477BF00C28072 /* NavigationBarView.m */,
 				A625C0D61F14A2B500C28072 /* PhippyViewController.h */,
@@ -278,7 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A625C0C41F132E9300C28072 /* BaseHeaderView.m in Sources */,
+				A625C0C41F132E9300C28072 /* PhippyHeaderView.m in Sources */,
+				A677444C1F15C8DD00A269DE /* TourDetailViewController.m in Sources */,
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
 				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
 				A625C0AC1F1313D000C28072 /* LifeViewController.m in Sources */,
@@ -288,6 +299,7 @@
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
 				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
+				A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */,
 				A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */,
 				A625C0D51F1477BF00C28072 /* NavigationBarView.m in Sources */,
 				A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */,

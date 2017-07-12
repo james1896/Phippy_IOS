@@ -10,6 +10,8 @@
 
 @interface BaseNavigationController : UINavigationController
 
+- (void)addBackButton;
+
 - (void)originalNavigationBarView;
 - (void)standardNavigationBarView;
 - (void)translucentAndCenterTitleNavigationBarView;

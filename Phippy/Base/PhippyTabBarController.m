@@ -17,13 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-
+    self.tabBar.tintColor = [UIColor blackColor];
+    // 字体颜色 选中
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Bold" size:12.0F], NSForegroundColorAttributeName : [UIColor blackColor]} forState:UIControlStateSelected];
+    
+    // 字体颜色 未选中
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:12.0F],  NSForegroundColorAttributeName:[UIColor grayColor]} forState:UIControlStateNormal];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
     if (self) {
+        
+        //去掉上面的黑线
         CGRect rect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width);
         
         UIGraphicsBeginImageContext(rect.size);
