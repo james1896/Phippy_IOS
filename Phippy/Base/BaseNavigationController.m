@@ -78,9 +78,9 @@
     [self.navigationBar setShadowImage:[UIImage new]];
     self.extendedLayoutIncludesOpaqueBars = YES;
     
-//    //解决自定义返回按钮 手势返回消失问题
-//    self.interactivePopGestureRecognizer.enabled = YES;
-//    self.interactivePopGestureRecognizer.delegate = self;
+    //解决自定义返回按钮 手势返回消失问题
+    self.interactivePopGestureRecognizer.enabled = YES;
+    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 -(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{

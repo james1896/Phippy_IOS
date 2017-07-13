@@ -23,7 +23,7 @@
     UILabel *bottomLab = [[UILabel alloc] initWithFrame:CGRectMake(0, header.frame.size.height-30, header.bounds.size.width, 30)];
     bottomLab.textAlignment = NSTextAlignmentCenter;
     bottomLab.text = @"猜你喜欢";
-    bottomLab.backgroundColor = [UIColor colorWithRed:188/255.0 green:188/255.0 blue:188/255.0 alpha:1];
+    bottomLab.backgroundColor = [UIColor colorWithRed:222/255.0 green:222/255.0 blue:222/255.0 alpha:1];
     [header addSubview:bottomLab];
     return header;
 }
@@ -36,7 +36,7 @@
     UILabel *bottomLab = [[UILabel alloc] initWithFrame:CGRectMake(0, header.frame.size.height-30, header.bounds.size.width, 30)];
     bottomLab.textAlignment = NSTextAlignmentCenter;
     bottomLab.text = @"推荐攻略";
-    bottomLab.backgroundColor = [UIColor colorWithRed:188/255.0 green:188/255.0 blue:188/255.0 alpha:1];
+    bottomLab.backgroundColor = [UIColor colorWithRed:222/255.0 green:222/255.0 blue:222/255.0 alpha:1];
     [header addSubview:bottomLab];
     
     return header;

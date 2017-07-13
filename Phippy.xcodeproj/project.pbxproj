@@ -30,6 +30,10 @@
 		A625C0DF1F14B3E100C28072 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A625C0DE1F14B3E100C28072 /* logo@2x.png */; };
 		A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67744481F15C8C900A269DE /* FoodDetailViewController.m */; };
 		A677444C1F15C8DD00A269DE /* TourDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A677444B1F15C8DD00A269DE /* TourDetailViewController.m */; };
+		A68394361F170F6700790D30 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394351F170F6700790D30 /* EmergencyViewController.m */; };
+		A68394391F170FA400790D30 /* CooperateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394381F170FA400790D30 /* CooperateViewController.m */; };
+		A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A683943B1F170FC400790D30 /* AboutUsViewController.m */; };
+		A683943F1F170FED00790D30 /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A683943E1F170FED00790D30 /* CollectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +78,14 @@
 		A67744481F15C8C900A269DE /* FoodDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDetailViewController.m; sourceTree = "<group>"; };
 		A677444A1F15C8DD00A269DE /* TourDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourDetailViewController.h; sourceTree = "<group>"; };
 		A677444B1F15C8DD00A269DE /* TourDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourDetailViewController.m; sourceTree = "<group>"; };
+		A68394341F170F6700790D30 /* EmergencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyViewController.h; sourceTree = "<group>"; };
+		A68394351F170F6700790D30 /* EmergencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyViewController.m; sourceTree = "<group>"; };
+		A68394371F170FA400790D30 /* CooperateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CooperateViewController.h; sourceTree = "<group>"; };
+		A68394381F170FA400790D30 /* CooperateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CooperateViewController.m; sourceTree = "<group>"; };
+		A683943A1F170FC400790D30 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		A683943B1F170FC400790D30 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		A683943D1F170FED00790D30 /* CollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectViewController.h; sourceTree = "<group>"; };
+		A683943E1F170FED00790D30 /* CollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +150,14 @@
 			children = (
 				A625C0A11F13138F00C28072 /* MeViewController.h */,
 				A625C0A21F13138F00C28072 /* MeViewController.m */,
+				A68394341F170F6700790D30 /* EmergencyViewController.h */,
+				A68394351F170F6700790D30 /* EmergencyViewController.m */,
+				A68394371F170FA400790D30 /* CooperateViewController.h */,
+				A68394381F170FA400790D30 /* CooperateViewController.m */,
+				A683943A1F170FC400790D30 /* AboutUsViewController.h */,
+				A683943B1F170FC400790D30 /* AboutUsViewController.m */,
+				A683943D1F170FED00790D30 /* CollectViewController.h */,
+				A683943E1F170FED00790D30 /* CollectViewController.m */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -237,7 +257,7 @@
 				TargetAttributes = {
 					A625C0811F13115600C28072 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4F64Q2U6MC;
+						DevelopmentTeam = FJ8N4S5A53;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -285,15 +305,19 @@
 			files = (
 				A625C0C41F132E9300C28072 /* PhippyHeaderView.m in Sources */,
 				A677444C1F15C8DD00A269DE /* TourDetailViewController.m in Sources */,
+				A68394361F170F6700790D30 /* EmergencyViewController.m in Sources */,
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
 				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
 				A625C0AC1F1313D000C28072 /* LifeViewController.m in Sources */,
 				A625C0B21F13140400C28072 /* BaseNavigationController.m in Sources */,
 				A625C0871F13115900C28072 /* main.m in Sources */,
+				A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */,
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
+				A68394391F170FA400790D30 /* CooperateViewController.m in Sources */,
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
 				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
+				A683943F1F170FED00790D30 /* CollectViewController.m in Sources */,
 				A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */,
 				A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */,
 				A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */,
@@ -415,7 +439,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4F64Q2U6MC;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FJ8N4S5A53;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Phippy/PrefixHeader.pch";
 				INFOPLIST_FILE = Phippy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
@@ -430,7 +455,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4F64Q2U6MC;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FJ8N4S5A53;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Phippy/PrefixHeader.pch";
 				INFOPLIST_FILE = Phippy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
