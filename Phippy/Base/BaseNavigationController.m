@@ -11,6 +11,7 @@
 @interface BaseNavigationController ()<UIGestureRecognizerDelegate>{
     
     NavigationBarView *_navBarView;
+    UIView *systemTitleView;
 }
 
 @property (nonatomic,strong)NavigationBarView *navBarView;
@@ -20,11 +21,11 @@
 
 - (void)addBackButton{
     
-        [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.7]] forBarMetrics:UIBarMetricsDefault];
-//     self.visibleViewController.automaticallyAdjustsScrollViewInsets = NO;
+    [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.7]] forBarMetrics:UIBarMetricsDefault];
+    //     self.visibleViewController.automaticallyAdjustsScrollViewInsets = NO;
+    
     //自定义一个按钮
     UIButton  *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-
     [leftBtn addTarget:self action:@selector(backLastView) forControlEvents:UIControlEventTouchUpInside];
     leftBtn.frame = CGRectMake(-6, 5, 30, 22);
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
@@ -35,7 +36,7 @@
     [backView addSubview:leftBtn];
     UIBarButtonItem  *leftItem =[[UIBarButtonItem alloc]initWithCustomView: backView];
     self.topViewController.navigationItem.leftBarButtonItem = leftItem;
-
+    
 }
 
 - (void)backLastView{
@@ -44,11 +45,13 @@
 
 - (void)setNavBarView:(NavigationBarView *)navBarView{
     _navBarView = navBarView;
+    systemTitleView = self.visibleViewController.navigationItem.titleView;
     self.visibleViewController.navigationItem.titleView = navBarView;
 }
 
 - (void)originalNavigationBarView{
-    self.navBarView = [NavigationBarView originalNavigationBarView];
+    //    self.navBarView = [NavigationBarView originalNavigationBarView];
+    self.visibleViewController.navigationItem.titleView = systemTitleView;
 }
 
 - (void)standardNavigationBarView{
@@ -58,8 +61,10 @@
 - (void)translucentAndCenterTitleNavigationBarView{
     self.navBarView = [NavigationBarView translucentAndCenterTitleNavigationBarView];
     
-     [self.visibleViewController.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0]] forBarMetrics:UIBarMetricsDefault];
+    //设置系统navbar背景透明
+    [self.visibleViewController.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0]] forBarMetrics:UIBarMetricsDefault];
     
+    //scrollView 忽略navbar高度
     self.visibleViewController.automaticallyAdjustsScrollViewInsets = NO;
 }
 
@@ -69,14 +74,18 @@
     [super viewDidLoad];
     
     //1.去掉nav下方的 黑线
-//     2.
+    //     2.
     [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.8]] forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.barStyle = UIBarStyleDefault;
     
     //navbar自带的 透明
-//    self.navigationBar.translucent = NO;
+    //    self.navigationBar.translucent = NO;
     [self.navigationBar setShadowImage:[UIImage new]];
     self.extendedLayoutIncludesOpaqueBars = YES;
+    
+    //设置默认title的字体颜色
+    [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1]}];
+    
     
     //解决自定义返回按钮 手势返回消失问题
     self.interactivePopGestureRecognizer.enabled = YES;
@@ -106,14 +115,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
 

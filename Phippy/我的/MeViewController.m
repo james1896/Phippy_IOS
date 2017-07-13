@@ -8,6 +8,13 @@
 
 #import "MeViewController.h"
 #import "PhippyHeaderView.h"
+#import "BaseTableViewCell.h"
+#import "CollectViewController.h"
+#import "EmergencyViewController.h"
+#import "FeedbackViewController.h"
+#import "CooperateViewController.h"
+#import "AboutUsViewController.h"
+
 @interface MeViewController ()
 
 @end
@@ -20,15 +27,77 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"meCell"];
+    BaseTableViewCell *cell = [[BaseTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"meCell"];
     
     cell.textLabel.text = self.dataArray[indexPath.row];
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    PhippyViewController *controller = nil;
+    
+    switch (indexPath.row) {
+        case 0:{
+            controller = [[CollectViewController alloc]init];
+            controller.title = @"我的收藏";
+            break;
+        }
+        case 1:{
+            controller = [[EmergencyViewController alloc]init];
+            controller.title = @"应急求助";
+            break;
+        }
+        case 2:{
+            controller = [[FeedbackViewController alloc]init];
+            controller.title = @"意见反馈";
+            break;
+        }
+        case 3:{
+            controller = [[CooperateViewController alloc]init];
+            controller.title = @"商家入驻";
+            break;
+        }
+        case 4:{
+            controller = [[AboutUsViewController alloc]init];
+            controller.title = @"关于我们";
+            break;
+        }
+          
+    }
+    
+    if(controller){
+        controller.hidesBottomBarWhenPushed = YES;
+        [self.phippyNavigationController pushViewController:controller animated:YES];
+    }
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+
+     [self.phippyNavigationController translucentAndCenterTitleNavigationBarView];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+ 
+//    [self.phippyNavigationController originalNavigationBarView];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"我的收藏",@"应急求助",@"商务合作",@"关于我们",@"退出登录"];
-    [self.phippyNavigationController translucentAndCenterTitleNavigationBarView];
+    self.dataArray = @[@"我的收藏",@"应急求助",@"意见反馈",@"商务合作",@"关于我们",@"退出登录"];
+   
     
     
     /***************************************/
@@ -41,14 +110,16 @@
 //        
 //    } 在导航控制器中，以上代码不起作用。
     
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
 //    self.navigationController.navigationBar.barStyle = UIBarStyleDefault; //状态栏改为黑色
     /***************************************/
     
     PhippyHeaderView *headerView = [PhippyHeaderView  headerViewMe];
     headerView.backgroundColor = [UIColor redColor];
-//    headerView.height = 300;
     self.tableView.tableHeaderView = headerView;
+    
+    //因为设置了 automaticallyAdjustsScrollViewInsets = no
+    self.tableViewHeight = SCREEN_HEIGHT-TABBAR_HEIGHT;
 }
 
 - (void)didReceiveMemoryWarning {

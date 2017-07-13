@@ -22,6 +22,7 @@
 #define STATUSBAR_HEIGHT    20
 
 //获取屏幕 宽度、高度
+#define TABBAR_HEIGHT 49
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define CONTENT_HEIGHT ([UIScreen mainScreen].bounds.size.height) - 48

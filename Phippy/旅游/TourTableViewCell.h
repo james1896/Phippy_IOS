@@ -6,9 +6,10 @@
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseTableViewCell.h"
 
-@interface TourTableViewCell : UITableViewCell
+@interface TourTableViewCell : BaseTableViewCell
+
 @property (strong, nonatomic) IBOutlet UILabel *tilte;
 @property (strong, nonatomic) IBOutlet UIImageView *iamgeView;
 @property (strong, nonatomic) IBOutlet UILabel *content;

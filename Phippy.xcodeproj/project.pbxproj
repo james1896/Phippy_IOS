@@ -34,6 +34,11 @@
 		A68394391F170FA400790D30 /* CooperateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394381F170FA400790D30 /* CooperateViewController.m */; };
 		A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A683943B1F170FC400790D30 /* AboutUsViewController.m */; };
 		A683943F1F170FED00790D30 /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A683943E1F170FED00790D30 /* CollectViewController.m */; };
+		A68394421F171CEA00790D30 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394411F171CEA00790D30 /* FeedbackViewController.m */; };
+		A68394461F171D5900790D30 /* EmergencyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394441F171D5900790D30 /* EmergencyTableViewCell.m */; };
+		A68394471F171D5900790D30 /* EmergencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68394451F171D5900790D30 /* EmergencyTableViewCell.xib */; };
+		A6D654391F174F24000D3FBB /* logo_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6D654381F174F24000D3FBB /* logo_girl.jpg */; };
+		A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +91,14 @@
 		A683943B1F170FC400790D30 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
 		A683943D1F170FED00790D30 /* CollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectViewController.h; sourceTree = "<group>"; };
 		A683943E1F170FED00790D30 /* CollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectViewController.m; sourceTree = "<group>"; };
+		A68394401F171CEA00790D30 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		A68394411F171CEA00790D30 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		A68394431F171D5900790D30 /* EmergencyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyTableViewCell.h; sourceTree = "<group>"; };
+		A68394441F171D5900790D30 /* EmergencyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyTableViewCell.m; sourceTree = "<group>"; };
+		A68394451F171D5900790D30 /* EmergencyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmergencyTableViewCell.xib; sourceTree = "<group>"; };
+		A6D654381F174F24000D3FBB /* logo_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_girl.jpg; sourceTree = "<group>"; };
+		A6D6543A1F17507B000D3FBB /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,14 +163,19 @@
 			children = (
 				A625C0A11F13138F00C28072 /* MeViewController.h */,
 				A625C0A21F13138F00C28072 /* MeViewController.m */,
+				A683943D1F170FED00790D30 /* CollectViewController.h */,
+				A683943E1F170FED00790D30 /* CollectViewController.m */,
 				A68394341F170F6700790D30 /* EmergencyViewController.h */,
 				A68394351F170F6700790D30 /* EmergencyViewController.m */,
+				A68394431F171D5900790D30 /* EmergencyTableViewCell.h */,
+				A68394441F171D5900790D30 /* EmergencyTableViewCell.m */,
+				A68394451F171D5900790D30 /* EmergencyTableViewCell.xib */,
+				A68394401F171CEA00790D30 /* FeedbackViewController.h */,
+				A68394411F171CEA00790D30 /* FeedbackViewController.m */,
 				A68394371F170FA400790D30 /* CooperateViewController.h */,
 				A68394381F170FA400790D30 /* CooperateViewController.m */,
 				A683943A1F170FC400790D30 /* AboutUsViewController.h */,
 				A683943B1F170FC400790D30 /* AboutUsViewController.m */,
-				A683943D1F170FED00790D30 /* CollectViewController.h */,
-				A683943E1F170FED00790D30 /* CollectViewController.m */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -212,6 +230,8 @@
 				A625C0D71F14A2B500C28072 /* PhippyViewController.m */,
 				A625C0DB1F14ADC000C28072 /* PhippyTabBarController.h */,
 				A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */,
+				A6D6543A1F17507B000D3FBB /* BaseTableViewCell.h */,
+				A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -219,6 +239,7 @@
 		A625C0CE1F13A25100C28072 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				A6D654381F174F24000D3FBB /* logo_girl.jpg */,
 				A625C0DE1F14B3E100C28072 /* logo@2x.png */,
 				A625C0CF1F13A25100C28072 /* food_rec_header_img.jpg */,
 				A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */,
@@ -293,6 +314,8 @@
 				A625C0901F13115A00C28072 /* Main.storyboard in Resources */,
 				A625C0BC1F131B6E00C28072 /* TourTableViewCell.xib in Resources */,
 				A625C0D11F13A25100C28072 /* food_rec_header_img.jpg in Resources */,
+				A6D654391F174F24000D3FBB /* logo_girl.jpg in Resources */,
+				A68394471F171D5900790D30 /* EmergencyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,15 +329,18 @@
 				A625C0C41F132E9300C28072 /* PhippyHeaderView.m in Sources */,
 				A677444C1F15C8DD00A269DE /* TourDetailViewController.m in Sources */,
 				A68394361F170F6700790D30 /* EmergencyViewController.m in Sources */,
+				A68394461F171D5900790D30 /* EmergencyTableViewCell.m in Sources */,
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
 				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
 				A625C0AC1F1313D000C28072 /* LifeViewController.m in Sources */,
 				A625C0B21F13140400C28072 /* BaseNavigationController.m in Sources */,
+				A68394421F171CEA00790D30 /* FeedbackViewController.m in Sources */,
 				A625C0871F13115900C28072 /* main.m in Sources */,
 				A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */,
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
 				A68394391F170FA400790D30 /* CooperateViewController.m in Sources */,
+				A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */,
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
 				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
 				A683943F1F170FED00790D30 /* CollectViewController.m in Sources */,

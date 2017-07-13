@@ -16,8 +16,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-//    return self.dataArray.count;
-    return 5;
+    return self.dataArray.count;
+//    return 5;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -26,9 +26,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
-//    cell.textLabel.text = self.dataArray[indexPath.row];
-
     return cell;
+}
+
+- (void)setTableViewHeight:(CGFloat)tableViewHeight{
+    _tableViewHeight = tableViewHeight;
+    CGRect frame = self.tableView.frame;
+    self.tableView.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, tableViewHeight);
 }
 
 - (void)viewDidLoad {
@@ -37,7 +41,15 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.estimatedRowHeight = 100;  //  随便设个不那么离谱的值
+    self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
+    
+    UIImageView *img = [[UIImageView alloc] initWithFrame:self.tableView.bounds];
+    
+#warning 需要全局设置tabview背景
+    img.image = [UIImage imageNamed:@"logo_girl.jpg"];
+    self.tableView.backgroundView = img;
     
     [self.view addSubview:self.tableView];
     
@@ -59,5 +71,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+@end
+
+@implementation FooterView
+
++(instancetype)standardBottomLineFooterViewWithFrame:(CGRect)frame{
+    FooterView *footer = [[FooterView alloc]initWithFrame:frame];
+    footer.backgroundColor = COLOR(51, 51, 51, 1);
+    return footer;
+}
 
 @end

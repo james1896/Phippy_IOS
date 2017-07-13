@@ -13,4 +13,10 @@
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray     *dataArray;
 
+@property (nonatomic) CGFloat tableViewHeight;
+
+@end
+
+@interface FooterView : UIView
+
 @end

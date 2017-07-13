@@ -1,23 +1,22 @@
 //
-//  CollectViewController.m
+//  FeedbackViewController.m
 //  Phippy
 //
 //  Created by toby on 13/07/2017.
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import "CollectViewController.h"
+#import "FeedbackViewController.h"
 
-@interface CollectViewController ()
+@interface FeedbackViewController ()
 
 @end
 
-@implementation CollectViewController
+@implementation FeedbackViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.phippyNavigationController addBackButton];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

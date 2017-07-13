@@ -1,18 +1,18 @@
 //
-//  FoodTableViewCell.m
+//  EmergencyCellTableViewCell.m
 //  Phippy
 //
-//  Created by toby on 10/07/2017.
+//  Created by toby on 13/07/2017.
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import "FoodTableViewCell.h"
+#import "EmergencyTableViewCell.h"
 
-@implementation FoodTableViewCell
+@implementation EmergencyTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
- 
+    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

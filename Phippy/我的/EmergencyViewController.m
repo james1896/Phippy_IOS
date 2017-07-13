@@ -7,16 +7,32 @@
 //
 
 #import "EmergencyViewController.h"
-
+#import "EmergencyTableViewCell.h"
 @interface EmergencyViewController ()
 
 @end
 
 @implementation EmergencyViewController
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    EmergencyTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"EmergencyTableViewCell" owner:nil options:nil]lastObject];
+    
+    NSDictionary *dict = self.dataArray[indexPath.row];
+    cell.title.text = dict[@"title"];
+    cell.phoneNumber.text = dict[@"number"];
+    cell.address.text = dict[@"address"];
+    
+    return cell;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.phippyNavigationController addBackButton];
+  
+    self.dataArray = @[@{@"title":@"驻菲大使馆",@"number":@"1234567",@"address":@"abcd"},
+                    @{@"title":@"驻菲大使馆",@"number":@"1234567",@"address":@"abcd"},
+                    @{@"title":@"驻菲大使馆",@"number":@"1234567",@"address":@"abcd"}];
 }
 
 - (void)didReceiveMemoryWarning {
