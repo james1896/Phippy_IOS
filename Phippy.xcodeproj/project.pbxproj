@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DF6A024699DAC0C80EB3874 /* libPods-Phippy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0089FD8250DEF449F6F864 /* libPods-Phippy.a */; };
 		A625C0871F13115900C28072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0861F13115900C28072 /* main.m */; };
 		A625C08A1F13115900C28072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0891F13115900C28072 /* AppDelegate.m */; };
 		A625C0901F13115A00C28072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A625C08E1F13115A00C28072 /* Main.storyboard */; };
@@ -37,11 +38,13 @@
 		A68394421F171CEA00790D30 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394411F171CEA00790D30 /* FeedbackViewController.m */; };
 		A68394461F171D5900790D30 /* EmergencyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394441F171D5900790D30 /* EmergencyTableViewCell.m */; };
 		A68394471F171D5900790D30 /* EmergencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68394451F171D5900790D30 /* EmergencyTableViewCell.xib */; };
+		A6D23F081F1CA06E00F0C62E /* PHIDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D23F071F1CA06E00F0C62E /* PHIDBHelper.m */; };
 		A6D654391F174F24000D3FBB /* logo_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6D654381F174F24000D3FBB /* logo_girl.jpg */; };
 		A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53C4987B9C185EF7D67A4E8C /* Pods-Phippy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phippy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phippy/Pods-Phippy.debug.xcconfig"; sourceTree = "<group>"; };
 		A625C0821F13115900C28072 /* Phippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A625C0861F13115900C28072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A625C0881F13115900C28072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,9 +99,13 @@
 		A68394431F171D5900790D30 /* EmergencyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyTableViewCell.h; sourceTree = "<group>"; };
 		A68394441F171D5900790D30 /* EmergencyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyTableViewCell.m; sourceTree = "<group>"; };
 		A68394451F171D5900790D30 /* EmergencyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmergencyTableViewCell.xib; sourceTree = "<group>"; };
+		A6D23F061F1CA06E00F0C62E /* PHIDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIDBHelper.h; sourceTree = "<group>"; };
+		A6D23F071F1CA06E00F0C62E /* PHIDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIDBHelper.m; sourceTree = "<group>"; };
 		A6D654381F174F24000D3FBB /* logo_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_girl.jpg; sourceTree = "<group>"; };
 		A6D6543A1F17507B000D3FBB /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		ADC4174BD22103F7F3F371AC /* Pods-Phippy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phippy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phippy/Pods-Phippy.release.xcconfig"; sourceTree = "<group>"; };
+		CA0089FD8250DEF449F6F864 /* libPods-Phippy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Phippy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,17 +113,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF6A024699DAC0C80EB3874 /* libPods-Phippy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		445EEE1E183325C112F180A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53C4987B9C185EF7D67A4E8C /* Pods-Phippy.debug.xcconfig */,
+				ADC4174BD22103F7F3F371AC /* Pods-Phippy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95C5247DF23C69D43B803DF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA0089FD8250DEF449F6F864 /* libPods-Phippy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A625C0791F13115600C28072 = {
 			isa = PBXGroup;
 			children = (
 				A625C0841F13115900C28072 /* Phippy */,
 				A625C0831F13115900C28072 /* Products */,
+				445EEE1E183325C112F180A8 /* Pods */,
+				95C5247DF23C69D43B803DF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				A625C0C81F13571A00C28072 /* MacroDefinition.h */,
+				A6D23F0A1F1CB13400F0C62E /* MessageScheduler */,
 				A625C0A01F13137A00C28072 /* Base */,
 				A625C09F1F13136B00C28072 /* 美食 */,
 				A625C09D1F13136B00C28072 /* 旅游 */,
@@ -220,6 +248,7 @@
 		A625C0A01F13137A00C28072 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A6D23F051F1C9F2700F0C62E /* DB */,
 				A625C0B01F13140400C28072 /* BaseNavigationController.h */,
 				A625C0B11F13140400C28072 /* BaseNavigationController.m */,
 				A625C0B31F1314A800C28072 /* BaseTabViewController.h */,
@@ -247,6 +276,54 @@
 			path = res;
 			sourceTree = "<group>";
 		};
+		A6D23F051F1C9F2700F0C62E /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A6D23F061F1CA06E00F0C62E /* PHIDBHelper.h */,
+				A6D23F071F1CA06E00F0C62E /* PHIDBHelper.m */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		A6D23F0A1F1CB13400F0C62E /* MessageScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				A6D23F0B1F1CB13400F0C62E /* DataAgent */,
+			);
+			path = MessageScheduler;
+			sourceTree = "<group>";
+		};
+		A6D23F0B1F1CB13400F0C62E /* DataAgent */ = {
+			isa = PBXGroup;
+			children = (
+				A6D23F0C1F1CB13400F0C62E /* parser */,
+				A6D23F0D1F1CB13400F0C62E /* processor */,
+				A6D23F0E1F1CB13400F0C62E /* verification */,
+			);
+			path = DataAgent;
+			sourceTree = "<group>";
+		};
+		A6D23F0C1F1CB13400F0C62E /* parser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		A6D23F0D1F1CB13400F0C62E /* processor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = processor;
+			sourceTree = "<group>";
+		};
+		A6D23F0E1F1CB13400F0C62E /* verification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = verification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,9 +331,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A625C0991F13115A00C28072 /* Build configuration list for PBXNativeTarget "Phippy" */;
 			buildPhases = (
+				83ABA3294863ED6189786419 /* [CP] Check Pods Manifest.lock */,
 				A625C07E1F13115600C28072 /* Sources */,
 				A625C07F1F13115600C28072 /* Frameworks */,
 				A625C0801F13115600C28072 /* Resources */,
+				8ECB7A3736F6B30D33CA6C9D /* [CP] Embed Pods Frameworks */,
+				1C4ECD14BB27BC42137ACB5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,6 +401,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C4ECD14BB27BC42137ACB5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Phippy/Pods-Phippy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83ABA3294863ED6189786419 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8ECB7A3736F6B30D33CA6C9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Phippy/Pods-Phippy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A625C07E1F13115600C28072 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -339,6 +467,7 @@
 				A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */,
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
+				A6D23F081F1CA06E00F0C62E /* PHIDBHelper.m in Sources */,
 				A68394391F170FA400790D30 /* CooperateViewController.m in Sources */,
 				A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */,
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
@@ -463,6 +592,7 @@
 		};
 		A625C09A1F13115A00C28072 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C4987B9C185EF7D67A4E8C /* Pods-Phippy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -479,6 +609,7 @@
 		};
 		A625C09B1F13115A00C28072 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC4174BD22103F7F3F371AC /* Pods-Phippy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
