@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-  
+    self.view.backgroundColor = COLOR(232, 232, 232, 1);
 }
 
 - (void)didReceiveMemoryWarning {

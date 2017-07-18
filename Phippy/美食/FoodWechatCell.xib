@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="202" id="KGk-i7-Jjw" customClass="FoodWechatCell">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="201.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S3Z-X4-qMa">
+                        <rect key="frame" x="8" y="8" width="159.5" height="185.5"/>
+                        <color key="backgroundColor" red="0.38544379340277779" green="0.49481879340277779" blue="0.65448676215277779" alpha="0.41058433219178081" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="S3Z-X4-qMa" secondAttribute="height" multiplier="0.86:1" id="zUr-a9-5oh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送餐时间 8:00 ～ 24:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj6-W5-gge">
+                        <rect key="frame" x="177.5" y="44.5" width="182" height="37"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300P起送" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBq-GY-5go" userLabel="qisong">
+                        <rect key="frame" x="177.5" y="81.5" width="76" height="36.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址:abcdefg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGN-Z3-4m2" userLabel="add">
+                        <rect key="frame" x="177.5" y="118" width="103" height="37"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wey-ff-ZLv">
+                        <rect key="frame" x="177.5" y="155" width="70" height="36.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="餐厅名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVu-ws-r6n">
+                        <rect key="frame" x="177.5" y="8" width="52" height="36.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PVu-ws-r6n" firstAttribute="height" secondItem="S3Z-X4-qMa" secondAttribute="height" multiplier="0.2" id="2qb-UJ-8q7"/>
+                    <constraint firstItem="Qj6-W5-gge" firstAttribute="leading" secondItem="PVu-ws-r6n" secondAttribute="leading" id="6nS-V6-Ysv"/>
+                    <constraint firstItem="pGN-Z3-4m2" firstAttribute="height" secondItem="PVu-ws-r6n" secondAttribute="height" id="EQj-B1-McC"/>
+                    <constraint firstItem="Wey-ff-ZLv" firstAttribute="leading" secondItem="PVu-ws-r6n" secondAttribute="leading" id="FLG-fc-5Rp"/>
+                    <constraint firstItem="S3Z-X4-qMa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="IXE-BV-sXm"/>
+                    <constraint firstItem="PVu-ws-r6n" firstAttribute="leading" secondItem="S3Z-X4-qMa" secondAttribute="trailing" constant="10" id="SgB-vD-dsU"/>
+                    <constraint firstItem="Wey-ff-ZLv" firstAttribute="top" secondItem="pGN-Z3-4m2" secondAttribute="bottom" id="T5d-xR-bjR"/>
+                    <constraint firstItem="S3Z-X4-qMa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="TQ2-iy-Yud"/>
+                    <constraint firstItem="Qj6-W5-gge" firstAttribute="top" secondItem="PVu-ws-r6n" secondAttribute="bottom" id="UaA-fE-64A"/>
+                    <constraint firstItem="pGN-Z3-4m2" firstAttribute="leading" secondItem="PVu-ws-r6n" secondAttribute="leading" id="XuW-Bo-JrY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="S3Z-X4-qMa" secondAttribute="bottom" id="deg-sp-GKy"/>
+                    <constraint firstItem="PVu-ws-r6n" firstAttribute="top" secondItem="S3Z-X4-qMa" secondAttribute="top" id="dsv-ou-CyU"/>
+                    <constraint firstItem="Wey-ff-ZLv" firstAttribute="height" secondItem="PVu-ws-r6n" secondAttribute="height" id="fA6-3o-dIg"/>
+                    <constraint firstItem="pGN-Z3-4m2" firstAttribute="top" secondItem="FBq-GY-5go" secondAttribute="bottom" id="fdl-1V-FHB"/>
+                    <constraint firstItem="FBq-GY-5go" firstAttribute="height" secondItem="PVu-ws-r6n" secondAttribute="height" id="gRf-9o-f6k"/>
+                    <constraint firstItem="FBq-GY-5go" firstAttribute="top" secondItem="Qj6-W5-gge" secondAttribute="bottom" id="lFv-20-sMd"/>
+                    <constraint firstItem="FBq-GY-5go" firstAttribute="leading" secondItem="PVu-ws-r6n" secondAttribute="leading" id="qg5-6z-YZs"/>
+                    <constraint firstItem="PVu-ws-r6n" firstAttribute="height" secondItem="Qj6-W5-gge" secondAttribute="height" id="rEt-UZ-QsO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adress" destination="FBq-GY-5go" id="AWD-dQ-gr3"/>
+                <outlet property="contact" destination="pGN-Z3-4m2" id="K1y-7W-yVm"/>
+                <outlet property="deliveryTime" destination="Qj6-W5-gge" id="w5t-sE-0yN"/>
+                <outlet property="imgView" destination="S3Z-X4-qMa" id="rTJ-la-PZ0"/>
+                <outlet property="title" destination="PVu-ws-r6n" id="Jii-0V-W5J"/>
+            </connections>
+            <point key="canvasLocation" x="145" y="64"/>
+        </tableViewCell>
+    </objects>
+</document>

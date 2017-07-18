@@ -37,6 +37,10 @@
     return 170;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 5;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     TourDetailViewController *detail = [[TourDetailViewController alloc]init];
     detail.hidesBottomBarWhenPushed = YES;

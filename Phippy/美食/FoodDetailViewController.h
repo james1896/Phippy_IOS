@@ -6,8 +6,8 @@
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import "BaseTabViewController.h"
+#import "PhippyViewController.h"
 
-@interface FoodDetailViewController : BaseTabViewController
+@interface FoodDetailViewController : PhippyViewController
 
 @end

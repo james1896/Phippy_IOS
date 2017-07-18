@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,11 +17,12 @@
             <rect key="frame" x="0.0" y="0.0" width="435" height="184"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="435" height="183"/>
+                <rect key="frame" x="0.0" y="0.0" width="435" height="184"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nJW-QM-azX">
                         <rect key="frame" x="10" y="10" width="143" height="163.5"/>
+                        <color key="backgroundColor" red="0.38544379340277779" green="0.49481879340277779" blue="0.65448676215277779" alpha="0.41058433219178081" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="nJW-QM-azX" secondAttribute="height" multiplier="79:90" id="Jf2-dz-juT"/>
                         </constraints>
@@ -73,7 +74,7 @@
                     <constraint firstItem="uf4-QW-oG4" firstAttribute="leading" secondItem="nJW-QM-azX" secondAttribute="trailing" constant="10" id="xhV-Zq-Roj"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-193.5" y="18"/>
+            <point key="canvasLocation" x="-83" y="-35"/>
         </tableViewCell>
     </objects>
 </document>

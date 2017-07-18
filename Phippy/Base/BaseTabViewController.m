@@ -48,7 +48,7 @@
     UIImageView *img = [[UIImageView alloc] initWithFrame:self.tableView.bounds];
     
 #warning 需要全局设置tabview背景
-    img.image = [UIImage imageNamed:@"logo_girl.jpg"];
+//    img.image = [UIImage imageNamed:@"logo_girl.jpg"];
     self.tableView.backgroundView = img;
     
     [self.view addSubview:self.tableView];
