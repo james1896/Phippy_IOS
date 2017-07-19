@@ -39,7 +39,7 @@
     
 }
 
-- (void)addRightButtonWithTilte:(NSString *)title image:(UIImage *)image action:(SEL)action{
+- (void)addRightButtonWithTilte:(NSString *)title image:(UIImage *)image targat:(UIViewController *)targat action:(SEL)action{
     //自定义一个按钮
     UIButton  *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -48,7 +48,7 @@
 
     if (image) [rightBtn setBackgroundImage:image forState:UIControlStateNormal];
     if(title) [rightBtn setTitle:title forState:UIControlStateNormal];
-    if(action)[rightBtn addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    if(action && targat)[rightBtn addTarget:targat action:action forControlEvents:UIControlEventTouchUpInside];
     [rightBtn setTitleColor: COLOR(168, 168, 168, 1) forState:UIControlStateNormal];
     //将leftItem设置为自定义按钮
     

@@ -9,7 +9,7 @@
 #import "FoodDetailViewController.h"
 #import "PhippyHeaderView.h"
 #import "FoodDetailCollectionViewCell.h"
-@interface FoodDetailViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface FoodDetailViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIActionSheetDelegate>
 
 @property (nonatomic,strong) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic,strong) UICollectionView *collectionView;
@@ -63,8 +63,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.phippyNavigationController addBackButton];
-    [self.phippyNavigationController addRightButtonWithTilte:@"联系商家" image:nil action:nil];
+    [self.phippyNavigationController addRightButtonWithTilte:@"联系商家" image:nil targat:self action:@selector(contactMerchant)];
     [self.view addSubview:self.collectionView];
+}
+
+- (void)contactMerchant{
+    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"亲！phippy下单系统正在测试中，敬请期待哦，么么哒" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"微信联系",@"电话联系", nil];
+    //actionSheet样式
+    sheet.actionSheetStyle = UIActionSheetStyleDefault;
+    //显示
+    [sheet showInView:self.view];
+    sheet.delegate = self;
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 0) {
+       //微信联系
+        
+        
+        //    7-04 更新微信相关：
+        //    weixin://dl/scan 扫一扫
+        //    weixin://dl/feedback 反馈
+        //    weixin://dl/moments 朋友圈
+        //    weixin://dl/settings 设置
+        //    weixin://dl/notifications 消息通知设置
+        //    weixin://dl/chat 聊天设置
+        //    weixin://dl/general 通用设置
+        //    weixin://dl/officialaccounts 公众号
+        //    weixin://dl/games 游戏
+        //    weixin://dl/help 帮助
+        //    weixin://dl/feedback 反馈
+        //    weixin://dl/profile 个人信息
+        //    weixin://dl/features 功能插件
+        
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"weixin://dl/chat"] options:@{} completionHandler:nil];
+        
+    }else if (buttonIndex == 1){
+       //电话联系
+        NSMutableString* str=[[NSMutableString alloc] initWithFormat:@"telprompt://%@",@"18888888888"];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+        
+    }
 }
 
 //  collectionView段数
