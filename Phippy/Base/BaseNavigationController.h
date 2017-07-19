@@ -12,6 +12,7 @@
 @interface BaseNavigationController : UINavigationController
 
 - (void)addBackButton;
+- (void)addRightButtonWithTilte:(NSString *)title image:(UIImage *)image action:(SEL)action;
 
 - (void)originalNavigationBarView;
 - (void)standardNavigationBarView;

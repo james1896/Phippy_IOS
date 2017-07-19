@@ -39,6 +39,40 @@
     
 }
 
+- (void)addRightButtonWithTilte:(NSString *)title image:(UIImage *)image action:(SEL)action{
+    //自定义一个按钮
+    UIButton  *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    rightBtn.frame = CGRectMake(0, 0, 60, 44);
+    rightBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+
+    if (image) [rightBtn setBackgroundImage:image forState:UIControlStateNormal];
+    if(title) [rightBtn setTitle:title forState:UIControlStateNormal];
+    if(action)[rightBtn addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    [rightBtn setTitleColor: COLOR(168, 168, 168, 1) forState:UIControlStateNormal];
+    //将leftItem设置为自定义按钮
+    
+    UIView *backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
+    [backView addSubview:rightBtn];
+    UIBarButtonItem  *rightItem =[[UIBarButtonItem alloc]initWithCustomView: backView];
+    self.topViewController.navigationItem.rightBarButtonItem = rightItem;
+}
+
+- (void)addRightButton{
+    //自定义一个按钮
+    UIButton  *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightBtn addTarget:self action:@selector(backLastView) forControlEvents:UIControlEventTouchUpInside];
+    rightBtn.frame = CGRectMake(0, 5, 30, 22);
+    [rightBtn setBackgroundImage:[UIImage imageNamed:@"call"] forState:UIControlStateNormal];
+    [rightBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    //将leftItem设置为自定义按钮
+    
+    UIView *backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 40, 44)];
+    [backView addSubview:rightBtn];
+    UIBarButtonItem  *rightItem =[[UIBarButtonItem alloc]initWithCustomView: backView];
+    self.topViewController.navigationItem.rightBarButtonItem = rightItem;
+}
+
 - (void)backLastView{
     [self popViewControllerAnimated:YES];
 }

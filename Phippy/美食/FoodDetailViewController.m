@@ -63,6 +63,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.phippyNavigationController addBackButton];
+    [self.phippyNavigationController addRightButtonWithTilte:@"联系商家" image:nil action:nil];
     [self.view addSubview:self.collectionView];
 }
 
