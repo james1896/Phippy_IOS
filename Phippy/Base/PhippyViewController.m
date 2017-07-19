@@ -15,10 +15,14 @@
 
 @implementation PhippyViewController
 
+- (PHIUserManager *)userManager{
+    return [PHIUserManager shareManager];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = COLOR(232, 232, 232, 1);
+    self.view.backgroundColor = COLOR(255, 255, 255, 1);
 }
 
 - (void)didReceiveMemoryWarning {

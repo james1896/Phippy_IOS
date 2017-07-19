@@ -145,13 +145,6 @@
     [self addSubview:logo];
 }
 
-+ (instancetype)originalNavigationBarView{
-    NavigationBarView *barView = [[NavigationBarView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
-    //    barView.backgroundColor = [UIColor purpleColor];
-    
-    return barView;
-}
-
 + (instancetype)standardNavigationBarView{
     NavigationBarView *barView = [[NavigationBarView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
     //    barView.backgroundColor = [UIColor purpleColor];

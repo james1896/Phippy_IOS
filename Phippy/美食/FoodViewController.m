@@ -31,6 +31,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     FoodDetailViewController *detail = [[FoodDetailViewController alloc]init];
     detail.hidesBottomBarWhenPushed = YES;
     [self.phippyNavigationController pushViewController:detail animated:YES];
@@ -58,8 +59,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
-    
     [self.phippyNavigationController standardNavigationBarView];
     PhippyHeaderView *headerView = [PhippyHeaderView  headerViewFood];
     self.tableView.tableHeaderView = headerView;

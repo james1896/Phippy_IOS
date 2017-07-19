@@ -1,22 +1,22 @@
 //
-//  LifeViewController.m
+//  LaneOfYanViewController.m
 //  Phippy
 //
-//  Created by toby on 10/07/2017.
+//  Created by toby on 19/07/2017.
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import "LifeViewController.h"
+#import "LaneOfYanViewController.h"
 
-@interface LifeViewController ()
+@interface LaneOfYanViewController ()
 
 @end
 
-@implementation LifeViewController
+@implementation LaneOfYanViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   [self.phippyNavigationController standardNavigationBarView];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

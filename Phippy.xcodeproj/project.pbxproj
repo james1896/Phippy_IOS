@@ -29,6 +29,16 @@
 		A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0D71F14A2B500C28072 /* PhippyViewController.m */; };
 		A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */; };
 		A625C0DF1F14B3E100C28072 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A625C0DE1F14B3E100C28072 /* logo@2x.png */; };
+		A66AC2A71F1EEA23008FB856 /* TourDetailLabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2A51F1EEA23008FB856 /* TourDetailLabCell.m */; };
+		A66AC2A81F1EEA23008FB856 /* TourDetailLabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AC2A61F1EEA23008FB856 /* TourDetailLabCell.xib */; };
+		A66AC2AC1F1EEA42008FB856 /* TourDetailImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2AA1F1EEA42008FB856 /* TourDetailImgCell.m */; };
+		A66AC2AD1F1EEA42008FB856 /* TourDetailImgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AC2AB1F1EEA42008FB856 /* TourDetailImgCell.xib */; };
+		A66AC2B01F1EEBFD008FB856 /* LaneOfYanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2AF1F1EEBFD008FB856 /* LaneOfYanViewController.m */; };
+		A66AC2B31F1EEC4A008FB856 /* LittleLadyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2B21F1EEC4A008FB856 /* LittleLadyViewController.m */; };
+		A66AC2BC1F1EED8D008FB856 /* LaneOfYanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2BA1F1EED8D008FB856 /* LaneOfYanTableViewCell.m */; };
+		A66AC2BD1F1EED8D008FB856 /* LaneOfYanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AC2BB1F1EED8D008FB856 /* LaneOfYanTableViewCell.xib */; };
+		A66AC2C01F1EEDF1008FB856 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2BF1F1EEDF1008FB856 /* SettingViewController.m */; };
+		A66AC2D01F1EFC4A008FB856 /* PHIUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2CF1F1EFC4A008FB856 /* PHIUserManager.m */; };
 		A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67744481F15C8C900A269DE /* FoodDetailViewController.m */; };
 		A677444C1F15C8DD00A269DE /* TourDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A677444B1F15C8DD00A269DE /* TourDetailViewController.m */; };
 		A68394361F170F6700790D30 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394351F170F6700790D30 /* EmergencyViewController.m */; };
@@ -88,6 +98,23 @@
 		A625C0DB1F14ADC000C28072 /* PhippyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhippyTabBarController.h; sourceTree = "<group>"; };
 		A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyTabBarController.m; sourceTree = "<group>"; };
 		A625C0DE1F14B3E100C28072 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "../Base/logo@2x.png"; sourceTree = "<group>"; };
+		A66AC2A41F1EEA23008FB856 /* TourDetailLabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourDetailLabCell.h; sourceTree = "<group>"; };
+		A66AC2A51F1EEA23008FB856 /* TourDetailLabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourDetailLabCell.m; sourceTree = "<group>"; };
+		A66AC2A61F1EEA23008FB856 /* TourDetailLabCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourDetailLabCell.xib; sourceTree = "<group>"; };
+		A66AC2A91F1EEA42008FB856 /* TourDetailImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourDetailImgCell.h; sourceTree = "<group>"; };
+		A66AC2AA1F1EEA42008FB856 /* TourDetailImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourDetailImgCell.m; sourceTree = "<group>"; };
+		A66AC2AB1F1EEA42008FB856 /* TourDetailImgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourDetailImgCell.xib; sourceTree = "<group>"; };
+		A66AC2AE1F1EEBFD008FB856 /* LaneOfYanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaneOfYanViewController.h; sourceTree = "<group>"; };
+		A66AC2AF1F1EEBFD008FB856 /* LaneOfYanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaneOfYanViewController.m; sourceTree = "<group>"; };
+		A66AC2B11F1EEC4A008FB856 /* LittleLadyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleLadyViewController.h; sourceTree = "<group>"; };
+		A66AC2B21F1EEC4A008FB856 /* LittleLadyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LittleLadyViewController.m; sourceTree = "<group>"; };
+		A66AC2B91F1EED8D008FB856 /* LaneOfYanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaneOfYanTableViewCell.h; sourceTree = "<group>"; };
+		A66AC2BA1F1EED8D008FB856 /* LaneOfYanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaneOfYanTableViewCell.m; sourceTree = "<group>"; };
+		A66AC2BB1F1EED8D008FB856 /* LaneOfYanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaneOfYanTableViewCell.xib; sourceTree = "<group>"; };
+		A66AC2BE1F1EEDF1008FB856 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		A66AC2BF1F1EEDF1008FB856 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		A66AC2CE1F1EFC4A008FB856 /* PHIUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIUserManager.h; sourceTree = "<group>"; };
+		A66AC2CF1F1EFC4A008FB856 /* PHIUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIUserManager.m; sourceTree = "<group>"; };
 		A67744471F15C8C900A269DE /* FoodDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDetailViewController.h; sourceTree = "<group>"; };
 		A67744481F15C8C900A269DE /* FoodDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDetailViewController.m; sourceTree = "<group>"; };
 		A677444A1F15C8DD00A269DE /* TourDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourDetailViewController.h; sourceTree = "<group>"; };
@@ -219,6 +246,8 @@
 				A68394381F170FA400790D30 /* CooperateViewController.m */,
 				A683943A1F170FC400790D30 /* AboutUsViewController.h */,
 				A683943B1F170FC400790D30 /* AboutUsViewController.m */,
+				A66AC2BE1F1EEDF1008FB856 /* SettingViewController.h */,
+				A66AC2BF1F1EEDF1008FB856 /* SettingViewController.m */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -233,6 +262,12 @@
 				A625C0BA1F131B6E00C28072 /* TourTableViewCell.xib */,
 				A677444A1F15C8DD00A269DE /* TourDetailViewController.h */,
 				A677444B1F15C8DD00A269DE /* TourDetailViewController.m */,
+				A66AC2A41F1EEA23008FB856 /* TourDetailLabCell.h */,
+				A66AC2A51F1EEA23008FB856 /* TourDetailLabCell.m */,
+				A66AC2A61F1EEA23008FB856 /* TourDetailLabCell.xib */,
+				A66AC2A91F1EEA42008FB856 /* TourDetailImgCell.h */,
+				A66AC2AA1F1EEA42008FB856 /* TourDetailImgCell.m */,
+				A66AC2AB1F1EEA42008FB856 /* TourDetailImgCell.xib */,
 			);
 			path = "旅游";
 			sourceTree = "<group>";
@@ -242,6 +277,13 @@
 			children = (
 				A625C0AA1F1313D000C28072 /* LifeViewController.h */,
 				A625C0AB1F1313D000C28072 /* LifeViewController.m */,
+				A66AC2AE1F1EEBFD008FB856 /* LaneOfYanViewController.h */,
+				A66AC2AF1F1EEBFD008FB856 /* LaneOfYanViewController.m */,
+				A66AC2B11F1EEC4A008FB856 /* LittleLadyViewController.h */,
+				A66AC2B21F1EEC4A008FB856 /* LittleLadyViewController.m */,
+				A66AC2B91F1EED8D008FB856 /* LaneOfYanTableViewCell.h */,
+				A66AC2BA1F1EED8D008FB856 /* LaneOfYanTableViewCell.m */,
+				A66AC2BB1F1EED8D008FB856 /* LaneOfYanTableViewCell.xib */,
 			);
 			path = "生活";
 			sourceTree = "<group>";
@@ -272,6 +314,8 @@
 		A625C0A01F13137A00C28072 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A66AC2CE1F1EFC4A008FB856 /* PHIUserManager.h */,
+				A66AC2CF1F1EFC4A008FB856 /* PHIUserManager.m */,
 				A6D23F051F1C9F2700F0C62E /* DB */,
 				A625C0B01F13140400C28072 /* BaseNavigationController.h */,
 				A625C0B11F13140400C28072 /* BaseNavigationController.m */,
@@ -414,13 +458,16 @@
 				A625C0921F13115A00C28072 /* Assets.xcassets in Resources */,
 				A625C0DF1F14B3E100C28072 /* logo@2x.png in Resources */,
 				A625C0C11F132A9300C28072 /* FoodTableViewCell.xib in Resources */,
+				A66AC2A81F1EEA23008FB856 /* TourDetailLabCell.xib in Resources */,
 				A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */,
 				A6BBFFCC1F1E1CF800126C32 /* MerchantLogoReusableView.xib in Resources */,
 				A625C0901F13115A00C28072 /* Main.storyboard in Resources */,
 				A625C0BC1F131B6E00C28072 /* TourTableViewCell.xib in Resources */,
 				A625C0D11F13A25100C28072 /* food_rec_header_img.jpg in Resources */,
 				A6D654391F174F24000D3FBB /* logo_girl.jpg in Resources */,
+				A66AC2BD1F1EED8D008FB856 /* LaneOfYanTableViewCell.xib in Resources */,
 				A68394471F171D5900790D30 /* EmergencyTableViewCell.xib in Resources */,
+				A66AC2AD1F1EEA42008FB856 /* TourDetailImgCell.xib in Resources */,
 				A6D23F3D1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.xib in Resources */,
 				A6D23F381F1DEE6100F0C62E /* FoodWechatCell.xib in Resources */,
 			);
@@ -481,18 +528,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66AC2AC1F1EEA42008FB856 /* TourDetailImgCell.m in Sources */,
 				A6BBFFCB1F1E1CF800126C32 /* MerchantLogoReusableView.m in Sources */,
+				A66AC2B01F1EEBFD008FB856 /* LaneOfYanViewController.m in Sources */,
 				A625C0C41F132E9300C28072 /* PhippyHeaderView.m in Sources */,
 				A677444C1F15C8DD00A269DE /* TourDetailViewController.m in Sources */,
+				A66AC2BC1F1EED8D008FB856 /* LaneOfYanTableViewCell.m in Sources */,
 				A68394361F170F6700790D30 /* EmergencyViewController.m in Sources */,
 				A68394461F171D5900790D30 /* EmergencyTableViewCell.m in Sources */,
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
 				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
 				A625C0AC1F1313D000C28072 /* LifeViewController.m in Sources */,
 				A6D23F371F1DEE6100F0C62E /* FoodWechatCell.m in Sources */,
+				A66AC2D01F1EFC4A008FB856 /* PHIUserManager.m in Sources */,
 				A625C0B21F13140400C28072 /* BaseNavigationController.m in Sources */,
 				A68394421F171CEA00790D30 /* FeedbackViewController.m in Sources */,
 				A625C0871F13115900C28072 /* main.m in Sources */,
+				A66AC2C01F1EEDF1008FB856 /* SettingViewController.m in Sources */,
+				A66AC2B31F1EEC4A008FB856 /* LittleLadyViewController.m in Sources */,
 				A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */,
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
@@ -505,6 +558,7 @@
 				A683943F1F170FED00790D30 /* CollectViewController.m in Sources */,
 				A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */,
 				A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */,
+				A66AC2A71F1EEA23008FB856 /* TourDetailLabCell.m in Sources */,
 				A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */,
 				A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */,
 			);

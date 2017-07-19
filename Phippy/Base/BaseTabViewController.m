@@ -45,6 +45,8 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     
+//    self.tableView.backgroundColor = COLOR(132, 232, 32, 1);
+    
     UIImageView *img = [[UIImageView alloc] initWithFrame:self.tableView.bounds];
     
 #warning 需要全局设置tabview背景

@@ -10,6 +10,8 @@
 #import "BaseNavigationController.h"
 @interface PhippyViewController : UIViewController
 
+@property(nonatomic,strong,readonly) PHIUserManager * _Nonnull userManager;
+
 @end
 
 

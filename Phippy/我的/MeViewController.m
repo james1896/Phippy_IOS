@@ -11,6 +11,7 @@
 #import "BaseTableViewCell.h"
 #import "CollectViewController.h"
 #import "EmergencyViewController.h"
+#import "SettingViewController.h"
 #import "FeedbackViewController.h"
 #import "CooperateViewController.h"
 #import "AboutUsViewController.h"
@@ -48,18 +49,24 @@
             break;
         }
         case 2:{
+            controller = [[SettingViewController alloc]init];
+            controller.title = @"常用设置";
+            break;
+        }
+        case 3:{
             controller = [[FeedbackViewController alloc]init];
             controller.title = @"意见反馈";
             break;
         }
-        case 3:{
+        case 4:{
             controller = [[CooperateViewController alloc]init];
             controller.title = @"商家入驻";
             break;
         }
-        case 4:{
+        case 5:{
             controller = [[AboutUsViewController alloc]init];
             controller.title = @"关于我们";
+            break;
             break;
         }
           
@@ -96,7 +103,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"我的收藏",@"应急求助",@"意见反馈",@"商务合作",@"关于我们",@"退出登录"];
+    self.dataArray = @[@"我的收藏",@"应急求助",@"常用设置",@"意见反馈",@"商务合作",@"关于我们",@"退出登录"];
    
     
     
