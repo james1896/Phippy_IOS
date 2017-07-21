@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6DF6A024699DAC0C80EB3874 /* libPods-Phippy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0089FD8250DEF449F6F864 /* libPods-Phippy.a */; };
+		A6039C411F21DFEF006620D8 /* PHIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6039C401F21DFEF006620D8 /* PHIRequest.m */; };
+		A6039C441F21DFFC006620D8 /* TBRuquest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6039C431F21DFFC006620D8 /* TBRuquest.m */; };
 		A625C0871F13115900C28072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0861F13115900C28072 /* main.m */; };
 		A625C08A1F13115900C28072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0891F13115900C28072 /* AppDelegate.m */; };
 		A625C0901F13115A00C28072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A625C08E1F13115A00C28072 /* Main.storyboard */; };
@@ -61,6 +63,10 @@
 
 /* Begin PBXFileReference section */
 		53C4987B9C185EF7D67A4E8C /* Pods-Phippy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phippy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phippy/Pods-Phippy.debug.xcconfig"; sourceTree = "<group>"; };
+		A6039C3F1F21DFEF006620D8 /* PHIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIRequest.h; sourceTree = "<group>"; };
+		A6039C401F21DFEF006620D8 /* PHIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIRequest.m; sourceTree = "<group>"; };
+		A6039C421F21DFFC006620D8 /* TBRuquest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRuquest.h; sourceTree = "<group>"; };
+		A6039C431F21DFFC006620D8 /* TBRuquest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRuquest.m; sourceTree = "<group>"; };
 		A625C0821F13115900C28072 /* Phippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A625C0861F13115900C28072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A625C0881F13115900C28072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -177,6 +183,17 @@
 				CA0089FD8250DEF449F6F864 /* libPods-Phippy.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6039C3E1F21DFBD006620D8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A6039C421F21DFFC006620D8 /* TBRuquest.h */,
+				A6039C431F21DFFC006620D8 /* TBRuquest.m */,
+				A6039C3F1F21DFEF006620D8 /* PHIRequest.h */,
+				A6039C401F21DFEF006620D8 /* PHIRequest.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		A625C0791F13115600C28072 = {
@@ -356,6 +373,7 @@
 		A6D23F0A1F1CB13400F0C62E /* MessageScheduler */ = {
 			isa = PBXGroup;
 			children = (
+				A6039C3E1F21DFBD006620D8 /* Network */,
 				A6D23F0B1F1CB13400F0C62E /* DataAgent */,
 			);
 			path = MessageScheduler;
@@ -546,6 +564,7 @@
 				A625C0871F13115900C28072 /* main.m in Sources */,
 				A66AC2C01F1EEDF1008FB856 /* SettingViewController.m in Sources */,
 				A66AC2B31F1EEC4A008FB856 /* LittleLadyViewController.m in Sources */,
+				A6039C441F21DFFC006620D8 /* TBRuquest.m in Sources */,
 				A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */,
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
@@ -555,6 +574,7 @@
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
 				A6D23F3C1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.m in Sources */,
 				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
+				A6039C411F21DFEF006620D8 /* PHIRequest.m in Sources */,
 				A683943F1F170FED00790D30 /* CollectViewController.m in Sources */,
 				A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */,
 				A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */,

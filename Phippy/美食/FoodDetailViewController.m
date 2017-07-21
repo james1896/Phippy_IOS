@@ -9,6 +9,9 @@
 #import "FoodDetailViewController.h"
 #import "PhippyHeaderView.h"
 #import "FoodDetailCollectionViewCell.h"
+
+
+#import "PHIRequest.h"
 @interface FoodDetailViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIActionSheetDelegate>
 
 @property (nonatomic,strong) UICollectionViewFlowLayout *flowLayout;
@@ -67,8 +70,18 @@
     [self.view addSubview:self.collectionView];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    [PHIRequest goodsWithParameters:@{@"store_id":@"1001"} success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
+}
+
 - (void)contactMerchant{
-    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"亲！phippy下单系统正在测试中，敬请期待哦，么么哒" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"微信联系",@"电话联系", nil];
+    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"亲！phippy下单系统正在测试中，敬请期待哦，么么哒" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"微信: weixin1111111111",@"电话:09162151896", nil];
     //actionSheet样式
     sheet.actionSheetStyle = UIActionSheetStyleDefault;
     //显示

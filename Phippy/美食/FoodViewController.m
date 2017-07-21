@@ -11,6 +11,9 @@
 #import "FoodWechatCell.h"
 #import "PhippyHeaderView.h"
 #import "FoodDetailViewController.h"
+
+#import "PHIRequest.h"
+
 @interface FoodViewController ()
 
 @end
@@ -33,8 +36,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     FoodDetailViewController *detail = [[FoodDetailViewController alloc]init];
+    detail.title = @"餐厅名";
     detail.hidesBottomBarWhenPushed = YES;
     [self.phippyNavigationController pushViewController:detail animated:YES];
+}
+
+
+- (void)viewDidAppear:(BOOL)animated{
+    NSLog(@"viewDidAppear");
+    
+//    store_type = 2 表示餐馆
+    [PHIRequest storeWithParameters:@{@"store_type":@"2"} success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"");
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
 }
 
 - (void)viewDidLoad {
@@ -45,6 +61,7 @@
     self.tableView.tableHeaderView = headerView;
      headerView.backGroundImageView.image = [UIImage imageNamed:@"food_rec_header_img.jpg"];
     headerView.titleOfLeftDonw.text = @"美食";
+
     
 }
 

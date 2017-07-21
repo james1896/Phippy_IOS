@@ -10,6 +10,8 @@
 #import "TourTableViewCell.h"
 #import "PhippyHeaderView.h"
 #import "TourDetailViewController.h"
+
+#import "PHIRequest.h"
 @interface TourViewController ()
 
 @end
@@ -28,6 +30,16 @@
     
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    [PHIRequest tourWithParameters:@{@"a":@"b"} success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -43,6 +55,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     TourDetailViewController *detail = [[TourDetailViewController alloc]init];
+    detail.title = @"旅游";
     detail.hidesBottomBarWhenPushed = YES;
     [self.phippyNavigationController pushViewController:detail animated:YES];
 }

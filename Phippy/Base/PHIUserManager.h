@@ -12,6 +12,11 @@
 
 + (instancetype)shareManager;
 
+
+///--------------------------------------------------
+/// @仅在WIFI环境下载图片
+///--------------------------------------------------
+
 @property (nonatomic) BOOL downloadImageOnlyWifi;
 
 @end
