@@ -14,4 +14,5 @@
 
 #import "MacroDefinition.h"
 #import "PHIUserManager.h"
+#import "MsgScheduler.h"
 #endif /* PrefixHeader_pch */

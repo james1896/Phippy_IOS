@@ -22,7 +22,7 @@
 //           parameters:parameters
 //              success:^(NSURLSessionDataTask *task,
 //                        id responseObject) {
-//                  NSLog(@"\n输入URL:%@\n输入参数:%@\n输出参数(请求成功):%@",url,orgParas,responseObject);
+//                  NSLog(@"\n输入URL:%@\n输入参数:%@\n输出参数(请求成功):%@",url,orgParas,respodnseObject);
 //              }
 //              failure:^(NSURLSessionDataTask *task,
 //                  NSError *error) {
@@ -38,12 +38,16 @@
                            id  _Nullable responseObject) {
                      success(task,responseObject);
                      
+#if showNetworkLog
                       NSLog(@"\n输入URL:%@\n输入参数:%@\n输出参数(请求成功):%@",url,orgParas,responseObject);
+#endif
                  }
                  failure:^(NSURLSessionDataTask * _Nullable task,
                            NSError * _Nonnull error) {
                      failure(task,error);
+#if showNetworkLog
                      NSLog(@"\n输入URL:%@\n输入参数:%@\n输出参数(请求失败):%@",url,parameters,error);
+#endif
                  }
      ];
 }

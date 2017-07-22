@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 
 
+//标志是否要打印，1 打印，0 不打印
+#define showNetworkLog 0
 
 /**
  *  请求数据成功加调

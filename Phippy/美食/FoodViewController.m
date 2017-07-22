@@ -51,6 +51,8 @@
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
+    
+    NSLog(@"getFoodStore%@",[MsgScheduler getFoodStore]);
 }
 
 - (void)viewDidLoad {

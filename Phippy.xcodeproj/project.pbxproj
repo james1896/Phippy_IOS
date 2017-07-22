@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6DF6A024699DAC0C80EB3874 /* libPods-Phippy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0089FD8250DEF449F6F864 /* libPods-Phippy.a */; };
-		A6039C411F21DFEF006620D8 /* PHIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6039C401F21DFEF006620D8 /* PHIRequest.m */; };
-		A6039C441F21DFFC006620D8 /* TBRuquest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6039C431F21DFFC006620D8 /* TBRuquest.m */; };
 		A625C0871F13115900C28072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0861F13115900C28072 /* main.m */; };
 		A625C08A1F13115900C28072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0891F13115900C28072 /* AppDelegate.m */; };
 		A625C0901F13115A00C28072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A625C08E1F13115A00C28072 /* Main.storyboard */; };
@@ -50,9 +48,21 @@
 		A68394421F171CEA00790D30 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394411F171CEA00790D30 /* FeedbackViewController.m */; };
 		A68394461F171D5900790D30 /* EmergencyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394441F171D5900790D30 /* EmergencyTableViewCell.m */; };
 		A68394471F171D5900790D30 /* EmergencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68394451F171D5900790D30 /* EmergencyTableViewCell.xib */; };
+		A68C4D4B1F21F76700DBF094 /* PHIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D471F21F76700DBF094 /* PHIRequest.m */; };
+		A68C4D4C1F21F76700DBF094 /* TBRuquest.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D491F21F76700DBF094 /* TBRuquest.m */; };
+		A68C4D4D1F21F76700DBF094 /* readMe_img.png in Resources */ = {isa = PBXBuildFile; fileRef = A68C4D4A1F21F76700DBF094 /* readMe_img.png */; };
+		A68C4D501F21FCE100DBF094 /* MsgScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D4F1F21FCE100DBF094 /* MsgScheduler.m */; };
+		A68C4D541F2202B300DBF094 /* NSDictionary+MsgScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D531F2202B300DBF094 /* NSDictionary+MsgScheduler.m */; };
+		A68C4D571F22033F00DBF094 /* PHIDataAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D561F22033F00DBF094 /* PHIDataAgent.m */; };
+		A68C4D5B1F22037D00DBF094 /* PHIDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D5A1F22037D00DBF094 /* PHIDBHelper.m */; };
+		A68C4D5E1F2204B300DBF094 /* PHIProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D5D1F2204B300DBF094 /* PHIProcessor.m */; };
+		A68C4D611F22062200DBF094 /* PHIParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D601F22062200DBF094 /* PHIParser.m */; };
+		A68C4D641F2340A200DBF094 /* T_Store.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D631F2340A200DBF094 /* T_Store.m */; };
+		A68C4D671F2340AE00DBF094 /* T_Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D661F2340AE00DBF094 /* T_Goods.m */; };
+		A68C4D6A1F2340BC00DBF094 /* T_Article.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D691F2340BC00DBF094 /* T_Article.m */; };
+		A68C4D6D1F23417500DBF094 /* T_Base.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D6C1F23417500DBF094 /* T_Base.m */; };
 		A6BBFFCB1F1E1CF800126C32 /* MerchantLogoReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBFFC91F1E1CF800126C32 /* MerchantLogoReusableView.m */; };
 		A6BBFFCC1F1E1CF800126C32 /* MerchantLogoReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BBFFCA1F1E1CF800126C32 /* MerchantLogoReusableView.xib */; };
-		A6D23F081F1CA06E00F0C62E /* PHIDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D23F071F1CA06E00F0C62E /* PHIDBHelper.m */; };
 		A6D23F371F1DEE6100F0C62E /* FoodWechatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D23F351F1DEE6100F0C62E /* FoodWechatCell.m */; };
 		A6D23F381F1DEE6100F0C62E /* FoodWechatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D23F361F1DEE6100F0C62E /* FoodWechatCell.xib */; };
 		A6D23F3C1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D23F3A1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.m */; };
@@ -63,10 +73,6 @@
 
 /* Begin PBXFileReference section */
 		53C4987B9C185EF7D67A4E8C /* Pods-Phippy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phippy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phippy/Pods-Phippy.debug.xcconfig"; sourceTree = "<group>"; };
-		A6039C3F1F21DFEF006620D8 /* PHIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIRequest.h; sourceTree = "<group>"; };
-		A6039C401F21DFEF006620D8 /* PHIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIRequest.m; sourceTree = "<group>"; };
-		A6039C421F21DFFC006620D8 /* TBRuquest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRuquest.h; sourceTree = "<group>"; };
-		A6039C431F21DFFC006620D8 /* TBRuquest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRuquest.m; sourceTree = "<group>"; };
 		A625C0821F13115900C28072 /* Phippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A625C0861F13115900C28072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A625C0881F13115900C28072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,11 +144,35 @@
 		A68394431F171D5900790D30 /* EmergencyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyTableViewCell.h; sourceTree = "<group>"; };
 		A68394441F171D5900790D30 /* EmergencyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyTableViewCell.m; sourceTree = "<group>"; };
 		A68394451F171D5900790D30 /* EmergencyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmergencyTableViewCell.xib; sourceTree = "<group>"; };
+		A68C4D461F21F76700DBF094 /* PHIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIRequest.h; sourceTree = "<group>"; };
+		A68C4D471F21F76700DBF094 /* PHIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIRequest.m; sourceTree = "<group>"; };
+		A68C4D481F21F76700DBF094 /* TBRuquest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRuquest.h; sourceTree = "<group>"; };
+		A68C4D491F21F76700DBF094 /* TBRuquest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRuquest.m; sourceTree = "<group>"; };
+		A68C4D4A1F21F76700DBF094 /* readMe_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = readMe_img.png; sourceTree = "<group>"; };
+		A68C4D4E1F21FCE100DBF094 /* MsgScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgScheduler.h; sourceTree = "<group>"; };
+		A68C4D4F1F21FCE100DBF094 /* MsgScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgScheduler.m; sourceTree = "<group>"; };
+		A68C4D511F21FF0900DBF094 /* MsgSchedulerKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgSchedulerKeys.h; sourceTree = "<group>"; };
+		A68C4D521F2202B300DBF094 /* NSDictionary+MsgScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MsgScheduler.h"; sourceTree = "<group>"; };
+		A68C4D531F2202B300DBF094 /* NSDictionary+MsgScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MsgScheduler.m"; sourceTree = "<group>"; };
+		A68C4D551F22033F00DBF094 /* PHIDataAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIDataAgent.h; sourceTree = "<group>"; };
+		A68C4D561F22033F00DBF094 /* PHIDataAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIDataAgent.m; sourceTree = "<group>"; };
+		A68C4D591F22037D00DBF094 /* PHIDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIDBHelper.h; sourceTree = "<group>"; };
+		A68C4D5A1F22037D00DBF094 /* PHIDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIDBHelper.m; sourceTree = "<group>"; };
+		A68C4D5C1F2204B300DBF094 /* PHIProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIProcessor.h; sourceTree = "<group>"; };
+		A68C4D5D1F2204B300DBF094 /* PHIProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIProcessor.m; sourceTree = "<group>"; };
+		A68C4D5F1F22062200DBF094 /* PHIParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIParser.h; sourceTree = "<group>"; };
+		A68C4D601F22062200DBF094 /* PHIParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIParser.m; sourceTree = "<group>"; };
+		A68C4D621F2340A200DBF094 /* T_Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T_Store.h; sourceTree = "<group>"; };
+		A68C4D631F2340A200DBF094 /* T_Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Store.m; sourceTree = "<group>"; };
+		A68C4D651F2340AE00DBF094 /* T_Goods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T_Goods.h; sourceTree = "<group>"; };
+		A68C4D661F2340AE00DBF094 /* T_Goods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Goods.m; sourceTree = "<group>"; };
+		A68C4D681F2340BC00DBF094 /* T_Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T_Article.h; sourceTree = "<group>"; };
+		A68C4D691F2340BC00DBF094 /* T_Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Article.m; sourceTree = "<group>"; };
+		A68C4D6B1F23417500DBF094 /* T_Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T_Base.h; sourceTree = "<group>"; };
+		A68C4D6C1F23417500DBF094 /* T_Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Base.m; sourceTree = "<group>"; };
 		A6BBFFC81F1E1CF800126C32 /* MerchantLogoReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantLogoReusableView.h; sourceTree = "<group>"; };
 		A6BBFFC91F1E1CF800126C32 /* MerchantLogoReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantLogoReusableView.m; sourceTree = "<group>"; };
 		A6BBFFCA1F1E1CF800126C32 /* MerchantLogoReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MerchantLogoReusableView.xib; sourceTree = "<group>"; };
-		A6D23F061F1CA06E00F0C62E /* PHIDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIDBHelper.h; sourceTree = "<group>"; };
-		A6D23F071F1CA06E00F0C62E /* PHIDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIDBHelper.m; sourceTree = "<group>"; };
 		A6D23F341F1DEE6100F0C62E /* FoodWechatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodWechatCell.h; sourceTree = "<group>"; };
 		A6D23F351F1DEE6100F0C62E /* FoodWechatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodWechatCell.m; sourceTree = "<group>"; };
 		A6D23F361F1DEE6100F0C62E /* FoodWechatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodWechatCell.xib; sourceTree = "<group>"; };
@@ -185,17 +215,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A6039C3E1F21DFBD006620D8 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				A6039C421F21DFFC006620D8 /* TBRuquest.h */,
-				A6039C431F21DFFC006620D8 /* TBRuquest.m */,
-				A6039C3F1F21DFEF006620D8 /* PHIRequest.h */,
-				A6039C401F21DFEF006620D8 /* PHIRequest.m */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		A625C0791F13115600C28072 = {
 			isa = PBXGroup;
 			children = (
@@ -217,8 +236,8 @@
 		A625C0841F13115900C28072 /* Phippy */ = {
 			isa = PBXGroup;
 			children = (
+				A68C4D401F21F76700DBF094 /* MsgScheduler */,
 				A625C0C81F13571A00C28072 /* MacroDefinition.h */,
-				A6D23F0A1F1CB13400F0C62E /* MessageScheduler */,
 				A625C0A01F13137A00C28072 /* Base */,
 				A625C09F1F13136B00C28072 /* 美食 */,
 				A625C09D1F13136B00C28072 /* 旅游 */,
@@ -333,7 +352,6 @@
 			children = (
 				A66AC2CE1F1EFC4A008FB856 /* PHIUserManager.h */,
 				A66AC2CF1F1EFC4A008FB856 /* PHIUserManager.m */,
-				A6D23F051F1C9F2700F0C62E /* DB */,
 				A625C0B01F13140400C28072 /* BaseNavigationController.h */,
 				A625C0B11F13140400C28072 /* BaseNavigationController.m */,
 				A625C0B31F1314A800C28072 /* BaseTabViewController.h */,
@@ -361,53 +379,85 @@
 			path = res;
 			sourceTree = "<group>";
 		};
-		A6D23F051F1C9F2700F0C62E /* DB */ = {
+		A68C4D401F21F76700DBF094 /* MsgScheduler */ = {
 			isa = PBXGroup;
 			children = (
-				A6D23F061F1CA06E00F0C62E /* PHIDBHelper.h */,
-				A6D23F071F1CA06E00F0C62E /* PHIDBHelper.m */,
+				A68C4D4E1F21FCE100DBF094 /* MsgScheduler.h */,
+				A68C4D4F1F21FCE100DBF094 /* MsgScheduler.m */,
+				A68C4D511F21FF0900DBF094 /* MsgSchedulerKeys.h */,
+				A68C4D521F2202B300DBF094 /* NSDictionary+MsgScheduler.h */,
+				A68C4D531F2202B300DBF094 /* NSDictionary+MsgScheduler.m */,
+				A68C4D411F21F76700DBF094 /* DataAgent */,
+				A68C4D581F22037D00DBF094 /* DB */,
+				A68C4D451F21F76700DBF094 /* Network */,
+				A68C4D4A1F21F76700DBF094 /* readMe_img.png */,
 			);
-			path = DB;
+			path = MsgScheduler;
 			sourceTree = "<group>";
 		};
-		A6D23F0A1F1CB13400F0C62E /* MessageScheduler */ = {
+		A68C4D411F21F76700DBF094 /* DataAgent */ = {
 			isa = PBXGroup;
 			children = (
-				A6039C3E1F21DFBD006620D8 /* Network */,
-				A6D23F0B1F1CB13400F0C62E /* DataAgent */,
-			);
-			path = MessageScheduler;
-			sourceTree = "<group>";
-		};
-		A6D23F0B1F1CB13400F0C62E /* DataAgent */ = {
-			isa = PBXGroup;
-			children = (
-				A6D23F0C1F1CB13400F0C62E /* parser */,
-				A6D23F0D1F1CB13400F0C62E /* processor */,
-				A6D23F0E1F1CB13400F0C62E /* verification */,
+				A68C4D551F22033F00DBF094 /* PHIDataAgent.h */,
+				A68C4D561F22033F00DBF094 /* PHIDataAgent.m */,
+				A68C4D421F21F76700DBF094 /* parser */,
+				A68C4D431F21F76700DBF094 /* processor */,
+				A68C4D441F21F76700DBF094 /* verification */,
 			);
 			path = DataAgent;
 			sourceTree = "<group>";
 		};
-		A6D23F0C1F1CB13400F0C62E /* parser */ = {
+		A68C4D421F21F76700DBF094 /* parser */ = {
 			isa = PBXGroup;
 			children = (
+				A68C4D5F1F22062200DBF094 /* PHIParser.h */,
+				A68C4D601F22062200DBF094 /* PHIParser.m */,
 			);
 			path = parser;
 			sourceTree = "<group>";
 		};
-		A6D23F0D1F1CB13400F0C62E /* processor */ = {
+		A68C4D431F21F76700DBF094 /* processor */ = {
 			isa = PBXGroup;
 			children = (
+				A68C4D5C1F2204B300DBF094 /* PHIProcessor.h */,
+				A68C4D5D1F2204B300DBF094 /* PHIProcessor.m */,
 			);
 			path = processor;
 			sourceTree = "<group>";
 		};
-		A6D23F0E1F1CB13400F0C62E /* verification */ = {
+		A68C4D441F21F76700DBF094 /* verification */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = verification;
+			sourceTree = "<group>";
+		};
+		A68C4D451F21F76700DBF094 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A68C4D461F21F76700DBF094 /* PHIRequest.h */,
+				A68C4D471F21F76700DBF094 /* PHIRequest.m */,
+				A68C4D481F21F76700DBF094 /* TBRuquest.h */,
+				A68C4D491F21F76700DBF094 /* TBRuquest.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A68C4D581F22037D00DBF094 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A68C4D591F22037D00DBF094 /* PHIDBHelper.h */,
+				A68C4D5A1F22037D00DBF094 /* PHIDBHelper.m */,
+				A68C4D621F2340A200DBF094 /* T_Store.h */,
+				A68C4D631F2340A200DBF094 /* T_Store.m */,
+				A68C4D651F2340AE00DBF094 /* T_Goods.h */,
+				A68C4D661F2340AE00DBF094 /* T_Goods.m */,
+				A68C4D681F2340BC00DBF094 /* T_Article.h */,
+				A68C4D691F2340BC00DBF094 /* T_Article.m */,
+				A68C4D6B1F23417500DBF094 /* T_Base.h */,
+				A68C4D6C1F23417500DBF094 /* T_Base.m */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +534,7 @@
 				A625C0D11F13A25100C28072 /* food_rec_header_img.jpg in Resources */,
 				A6D654391F174F24000D3FBB /* logo_girl.jpg in Resources */,
 				A66AC2BD1F1EED8D008FB856 /* LaneOfYanTableViewCell.xib in Resources */,
+				A68C4D4D1F21F76700DBF094 /* readMe_img.png in Resources */,
 				A68394471F171D5900790D30 /* EmergencyTableViewCell.xib in Resources */,
 				A66AC2AD1F1EEA42008FB856 /* TourDetailImgCell.xib in Resources */,
 				A6D23F3D1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.xib in Resources */,
@@ -547,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A66AC2AC1F1EEA42008FB856 /* TourDetailImgCell.m in Sources */,
+				A68C4D6D1F23417500DBF094 /* T_Base.m in Sources */,
 				A6BBFFCB1F1E1CF800126C32 /* MerchantLogoReusableView.m in Sources */,
 				A66AC2B01F1EEBFD008FB856 /* LaneOfYanViewController.m in Sources */,
 				A625C0C41F132E9300C28072 /* PhippyHeaderView.m in Sources */,
@@ -554,6 +606,9 @@
 				A66AC2BC1F1EED8D008FB856 /* LaneOfYanTableViewCell.m in Sources */,
 				A68394361F170F6700790D30 /* EmergencyViewController.m in Sources */,
 				A68394461F171D5900790D30 /* EmergencyTableViewCell.m in Sources */,
+				A68C4D541F2202B300DBF094 /* NSDictionary+MsgScheduler.m in Sources */,
+				A68C4D671F2340AE00DBF094 /* T_Goods.m in Sources */,
+				A68C4D571F22033F00DBF094 /* PHIDataAgent.m in Sources */,
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
 				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
 				A625C0AC1F1313D000C28072 /* LifeViewController.m in Sources */,
@@ -564,23 +619,28 @@
 				A625C0871F13115900C28072 /* main.m in Sources */,
 				A66AC2C01F1EEDF1008FB856 /* SettingViewController.m in Sources */,
 				A66AC2B31F1EEC4A008FB856 /* LittleLadyViewController.m in Sources */,
-				A6039C441F21DFFC006620D8 /* TBRuquest.m in Sources */,
+				A68C4D611F22062200DBF094 /* PHIParser.m in Sources */,
+				A68C4D4C1F21F76700DBF094 /* TBRuquest.m in Sources */,
 				A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */,
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
-				A6D23F081F1CA06E00F0C62E /* PHIDBHelper.m in Sources */,
 				A68394391F170FA400790D30 /* CooperateViewController.m in Sources */,
 				A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */,
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
 				A6D23F3C1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.m in Sources */,
 				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
-				A6039C411F21DFEF006620D8 /* PHIRequest.m in Sources */,
+				A68C4D4B1F21F76700DBF094 /* PHIRequest.m in Sources */,
 				A683943F1F170FED00790D30 /* CollectViewController.m in Sources */,
+				A68C4D5B1F22037D00DBF094 /* PHIDBHelper.m in Sources */,
+				A68C4D641F2340A200DBF094 /* T_Store.m in Sources */,
 				A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */,
 				A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */,
 				A66AC2A71F1EEA23008FB856 /* TourDetailLabCell.m in Sources */,
 				A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */,
 				A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */,
+				A68C4D6A1F2340BC00DBF094 /* T_Article.m in Sources */,
+				A68C4D501F21FCE100DBF094 /* MsgScheduler.m in Sources */,
+				A68C4D5E1F2204B300DBF094 /* PHIProcessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
