@@ -10,8 +10,10 @@
 
 @interface T_Base : NSObject
 
-- (NSString *)getClassName;
+- (NSString *)getTableName;
 
 - (NSArray *)getAllProperties;
+
+- (NSArray *)getAllValuesAtproperties;
 
 @end

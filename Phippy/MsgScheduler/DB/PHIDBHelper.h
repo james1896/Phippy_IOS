@@ -22,6 +22,8 @@
 //+ (PHIDBHelper *)shareInstance;
 
 + (void)insert;
++ (void)insertWithTableModel:(T_Base *)table;
++ (void)insertWithTableModels:(NSArray<T_Base *> *)tables;
 
 + (void)query;
 + (void)delData;
