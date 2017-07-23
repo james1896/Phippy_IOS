@@ -4,6 +4,7 @@ target 'Phippy' do
     pod 'AFNetworking', '~> 3.1.0'
     pod 'IQKeyboardManager'
     pod 'FMDB'
+    pod 'SDWebImage'
     
     
 
@@ -11,8 +12,8 @@ target 'Phippy' do
     ##  facebook 开源的 kvo项目
     ##  如何优雅的使用vko   https://github.com/james1896/Analyze
     ##--------------------------------------------------
-    pod 'KVOController'
-    
+#    pod 'KVOController'
+
     
     #pod 'KSYMediaPlayer_iOS', :git => 'https://github.com/ksvc/KSYMediaPlayer_iOS.git'
     

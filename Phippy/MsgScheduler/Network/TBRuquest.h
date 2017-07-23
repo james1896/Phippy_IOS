@@ -11,7 +11,7 @@
 
 
 //标志是否要打印，1 打印，0 不打印
-#define showNetworkLog 0
+#define showNetworkLog 1
 
 /**
  *  请求数据成功加调

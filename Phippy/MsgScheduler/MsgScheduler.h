@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIImageView+PHIWebCache.h"
 
 @interface MsgScheduler : NSObject
 

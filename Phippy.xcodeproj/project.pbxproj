@@ -41,6 +41,7 @@
 		A66AC2D01F1EFC4A008FB856 /* PHIUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2CF1F1EFC4A008FB856 /* PHIUserManager.m */; };
 		A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67744481F15C8C900A269DE /* FoodDetailViewController.m */; };
 		A677444C1F15C8DD00A269DE /* TourDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A677444B1F15C8DD00A269DE /* TourDetailViewController.m */; };
+		A67DE3471F248D5300970036 /* UIImageView+PHIWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A67DE3461F248D5300970036 /* UIImageView+PHIWebCache.m */; };
 		A68394361F170F6700790D30 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394351F170F6700790D30 /* EmergencyViewController.m */; };
 		A68394391F170FA400790D30 /* CooperateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394381F170FA400790D30 /* CooperateViewController.m */; };
 		A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A683943B1F170FC400790D30 /* AboutUsViewController.m */; };
@@ -131,6 +132,8 @@
 		A67744481F15C8C900A269DE /* FoodDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDetailViewController.m; sourceTree = "<group>"; };
 		A677444A1F15C8DD00A269DE /* TourDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourDetailViewController.h; sourceTree = "<group>"; };
 		A677444B1F15C8DD00A269DE /* TourDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourDetailViewController.m; sourceTree = "<group>"; };
+		A67DE3451F248D5300970036 /* UIImageView+PHIWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PHIWebCache.h"; sourceTree = "<group>"; };
+		A67DE3461F248D5300970036 /* UIImageView+PHIWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PHIWebCache.m"; sourceTree = "<group>"; };
 		A68394341F170F6700790D30 /* EmergencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyViewController.h; sourceTree = "<group>"; };
 		A68394351F170F6700790D30 /* EmergencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyViewController.m; sourceTree = "<group>"; };
 		A68394371F170FA400790D30 /* CooperateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CooperateViewController.h; sourceTree = "<group>"; };
@@ -439,6 +442,8 @@
 				A68C4D471F21F76700DBF094 /* PHIRequest.m */,
 				A68C4D481F21F76700DBF094 /* TBRuquest.h */,
 				A68C4D491F21F76700DBF094 /* TBRuquest.m */,
+				A67DE3451F248D5300970036 /* UIImageView+PHIWebCache.h */,
+				A67DE3461F248D5300970036 /* UIImageView+PHIWebCache.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -619,6 +624,7 @@
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
 				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
 				A68C4D781F2352D900DBF094 /* T_Base.m in Sources */,
+				A67DE3471F248D5300970036 /* UIImageView+PHIWebCache.m in Sources */,
 				A625C0AC1F1313D000C28072 /* LifeViewController.m in Sources */,
 				A6D23F371F1DEE6100F0C62E /* FoodWechatCell.m in Sources */,
 				A66AC2D01F1EFC4A008FB856 /* PHIUserManager.m in Sources */,

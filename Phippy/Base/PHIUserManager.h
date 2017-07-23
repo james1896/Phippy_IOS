@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger,PHINetworkStatus){
+    PHINetworkStatusUnknown,        // 未知网络
+    PHINetworkStatusNotReachable,   // 没有网络(断网)
+    PHINetworkStatusViaWWAN,        // 手机自带网络
+    PHINetworkStatusViaWiFi         // WIFI
+};
 @interface PHIUserManager : NSObject
 
 + (instancetype)shareManager;
@@ -19,4 +25,5 @@
 
 @property (nonatomic) BOOL downloadImageOnlyWifi;
 
+@property (nonatomic)PHINetworkStatus networkStatus;
 @end
