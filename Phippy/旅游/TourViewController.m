@@ -34,7 +34,8 @@
     [super viewDidAppear:animated];
     
     [PHIRequest tourWithParameters:@{@"a":@"b"} success:^(NSURLSessionDataTask *task, id responseObject) {
-        
+        self.dataArray = responseObject[@"data"];
+        [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
@@ -50,7 +51,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return self.dataArray.count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -63,11 +64,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     TourTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"TourTableViewCell" owner:nil options:nil]lastObject];
    
-    cell.tilte.text = @"title";
-    cell.content.text = @"fdsafdsa";
-    cell.author.text = @"dafda";
-    cell.time.text = @"d";
-    cell.hot.text = @"ddddd";
+    NSDictionary *dict = self.dataArray[indexPath.row];
+    
+    cell.tilte.text = dict[MSKEY_TOUR_Title];
+    cell.content.text = dict[MSKEY_TOUR_Content];
+    
+#warning 以后要修改成 store name
+    cell.author.text = dict[MSKEY_TOUR_Store_id];
+    cell.time.text = dict[MSKEY_TOUR_Time];
+//    cell.hot.text = dict[];
     
     return cell;
 }

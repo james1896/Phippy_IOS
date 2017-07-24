@@ -21,7 +21,7 @@
 @implementation FoodViewController
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.dataArray.count+5;
+    return self.dataArray.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -31,13 +31,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     FoodWechatCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"FoodWechatCell" owner:nil options:nil]lastObject];
     
-//    NSDictionary *dict = self.dataArray[indexPath.row];
-//    cell.title.text =dict[MSKEY_FOODSTORE_Name];
-//   
-//    cell.deliveryTime.text = dict[MSKEY_FOODSTORE_Delivertime];
-//    cell.qisongCondition.text = dict[MSKEY_FOODSTORE_Qisongcondition];
-//    cell.adress.text = dict[MSKEY_FOODSTORE_Adress];
-//    cell.contact.text = dict[MSKEY_FOODSTORE_Phone_number];
+    NSDictionary *dict = self.dataArray[indexPath.row];
+    cell.title.text =dict[MSKEY_FOODSTORE_Name];
+   
+    cell.deliveryTime.text = dict[MSKEY_FOODSTORE_Delivertime];
+    cell.qisongCondition.text = dict[MSKEY_FOODSTORE_Qisongcondition];
+    cell.adress.text = dict[MSKEY_FOODSTORE_Adress];
+    cell.contact.text = dict[MSKEY_FOODSTORE_Phone_number];
     
     [cell.imgView phi_setImageWithURL:nil];
     return cell;
@@ -45,8 +45,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    NSDictionary *dict = self.dataArray[indexPath.row];
     FoodDetailViewController *detail = [[FoodDetailViewController alloc]init];
-    detail.title = @"餐厅名";
+    detail.title = dict[MSKEY_FOODSTORE_Name];
+    detail.store_id = dict[MSKEY_FOODSTORE_Store_id];
+    detail.phoneNumber = dict[MSKEY_FOODSTORE_Phone_number];
+    detail.wechat = dict[MSKEY_FOODSTORE_Wechat];
+    
     detail.hidesBottomBarWhenPushed = YES;
     [self.phippyNavigationController pushViewController:detail animated:YES];
 }

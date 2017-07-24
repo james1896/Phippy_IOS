@@ -25,27 +25,27 @@ static NSString * MSKEY_FOODSTORE_Qisongcondition =@"qisong_condition";
 // 美食详情
 //------------------------------------------------------------
 
-static NSString * MSKEY_FOODDETAILS_Rank          =@"MSKEY_FOODDETAILS_Rank";
-static NSString * MSKEY_FOODDETAILS_Name          =@"MSKEY_FOODDETAILS_Name";
-static NSString * MSKEY_FOODDETAILS_Price         =@"MSKEY_FOODDETAILS_Price";
-static NSString * MSKEY_FOODDETAILS_Remark        =@"MSKEY_FOODDETAILS_Remark";
-static NSString * MSKEY_FOODDETAILS_Img_url       =@"MSKEY_FOODDETAILS_Img_url";
-static NSString * MSKEY_FOODDETAILS_Store_id      =@"MSKEY_FOODDETAILS_Store_id";
-static NSString * MSKEY_FOODDETAILS_Describe      =@"MSKEY_FOODDETAILS_Describe";
-static NSString * MSKEY_FOODDETAILS_Goods_id      =@"MSKEY_FOODDETAILS_Goods_id";
-static NSString * MSKEY_FOODDETAILS_Publisher     =@"MSKEY_FOODDETAILS_Publisher";
-static NSString * MSKEY_FOODDETAILS_Publish_time  =@"MSKEY_FOODDETAILS_Publish_time";
+static NSString * MSKEY_FOODDETAILS_Rank          =@"rank";
+static NSString * MSKEY_FOODDETAILS_Name          =@"name";
+static NSString * MSKEY_FOODDETAILS_Price         =@"price";
+static NSString * MSKEY_FOODDETAILS_Remark        =@"remark";
+static NSString * MSKEY_FOODDETAILS_Img_url       =@"img_url";
+static NSString * MSKEY_FOODDETAILS_Store_id      =@"store_id";
+static NSString * MSKEY_FOODDETAILS_Describe      =@"describe";
+static NSString * MSKEY_FOODDETAILS_Goods_id      =@"goods_id";
+static NSString * MSKEY_FOODDETAILS_Publisher     =@"publisher";
+static NSString * MSKEY_FOODDETAILS_Publish_time  =@"publish_time";
 
 //------------------------------------------------------------
 // 旅行
 //------------------------------------------------------------
 
-static NSString * MSKEY_TOUR_Time          =@"MSKEY_FOODDETAILS_Time";
-static NSString * MSKEY_TOUR_Rank          =@"MSKEY_FOODDETAILS_Rank";
-static NSString * MSKEY_TOUR_Title         =@"MSKEY_FOODDETAILS_Title";
-static NSString * MSKEY_TOUR_Img_url       =@"MSKEY_FOODDETAILS_Img_url";
-static NSString * MSKEY_TOUR_Content       =@"MSKEY_FOODDETAILS_Content";
-static NSString * MSKEY_TOUR_Store_id      =@"MSKEY_FOODDETAILS_Store_id";
+static NSString * MSKEY_TOUR_Time          =@"time";
+static NSString * MSKEY_TOUR_Rank          =@"rank";
+static NSString * MSKEY_TOUR_Title         =@"title";
+static NSString * MSKEY_TOUR_Img_url       =@"img_url";
+static NSString * MSKEY_TOUR_Content       =@"content";
+static NSString * MSKEY_TOUR_Store_id      =@"store_id";
 
 
 

@@ -16,6 +16,7 @@
 
 @property (nonatomic,strong) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic,strong) UICollectionView *collectionView;
+@property (nonatomic,strong) NSArray *dataArray;
 @end
 
 @implementation FoodDetailViewController
@@ -39,7 +40,7 @@
         _flowLayout.minimumInteritemSpacing = 1;
         
         //  collectionView的sectionHeaderView大小
-//        _flowLayout.headerReferenceSize = CGSizeMake(SCREEN_WIDTH, 41);
+        //        _flowLayout.headerReferenceSize = CGSizeMake(SCREEN_WIDTH, 41);
     }
     return _flowLayout;
 }
@@ -55,10 +56,10 @@
         [_collectionView registerNib:[UINib nibWithNibName:@"FoodDetailCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"FoodDetailCollectionViewCell"];
         //  注册sectionHeaderView
         //    [collectionView registerClass:[XSectionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headerview"];
-
+        
         //注册商家headerview
         [_collectionView registerNib:[UINib nibWithNibName:@"MerchantLogoReusableView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MerchantLogoReusableView"];
-
+        
     }
     return _collectionView;
 }
@@ -73,15 +74,20 @@
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    [PHIRequest goodsWithParameters:@{@"store_id":@"1001"} success:^(NSURLSessionDataTask *task, id responseObject) {
-        
+    [PHIRequest goodsWithParameters:@{@"store_id":self.store_id} success:^(NSURLSessionDataTask *task, id responseObject) {
+        self.dataArray = responseObject[@"data"];
+        [self.collectionView reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
 }
 
 - (void)contactMerchant{
-    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"亲！phippy下单系统正在测试中，敬请期待哦，么么哒" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"微信: weixin1111111111",@"电话:09162151896", nil];
+    
+    NSString *wechat = [NSString stringWithFormat:@"微信:%@",self.wechat];
+    NSString *phoneNumber = [NSString stringWithFormat:@"电话:%@",self.phoneNumber];
+    
+    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"亲！phippy下单系统正在测试中，敬请期待哦，么么哒" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:wechat,phoneNumber, nil];
     //actionSheet样式
     sheet.actionSheetStyle = UIActionSheetStyleDefault;
     //显示
@@ -91,7 +97,7 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 0) {
-       //微信联系
+        //微信联系
         
         
         //    7-04 更新微信相关：
@@ -112,8 +118,8 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"weixin://dl/chat"] options:@{} completionHandler:nil];
         
     }else if (buttonIndex == 1){
-       //电话联系
-        NSMutableString* str=[[NSMutableString alloc] initWithFormat:@"telprompt://%@",@"18888888888"];
+        //电话联系
+        NSMutableString* str=[[NSMutableString alloc] initWithFormat:@"telprompt://%@",self.phoneNumber];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
         
     }
@@ -121,21 +127,24 @@
 
 //  collectionView段数
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-
+    
     return 1;
 }
 //  collectionView每段的item个数
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
     
-    return 15;
+    return self.dataArray.count;
 }
 //  collectionView的item
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSDictionary *dict = self.dataArray[indexPath.row];
     //  获取自定义的cell
     FoodDetailCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FoodDetailCollectionViewCell" forIndexPath:indexPath];
+    cell.title.text = dict[MSKEY_FOODDETAILS_Name];
+    cell.price.text = dict[MSKEY_FOODDETAILS_Price];
     
- 
     return cell;
 }
 
@@ -156,7 +165,7 @@
     
     return headerView;
 }
-    
+
 - (void)backLastView{
     [self.navigationController popViewControllerAnimated:YES];
 }
