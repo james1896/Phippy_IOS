@@ -12,6 +12,8 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imgView;
 @property (strong, nonatomic) IBOutlet UILabel *title;
 @property (strong, nonatomic) IBOutlet UILabel *deliveryTime;
+
+@property (strong, nonatomic) IBOutlet UILabel *qisongCondition;
 @property (strong, nonatomic) IBOutlet UILabel *adress;
 @property (strong, nonatomic) IBOutlet UILabel *contact;
 

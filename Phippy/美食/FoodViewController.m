@@ -21,15 +21,24 @@
 @implementation FoodViewController
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return self.dataArray.count+5;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 130;
+    return 140;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     FoodWechatCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"FoodWechatCell" owner:nil options:nil]lastObject];
+    
+//    NSDictionary *dict = self.dataArray[indexPath.row];
+//    cell.title.text =dict[MSKEY_FOODSTORE_Name];
+//   
+//    cell.deliveryTime.text = dict[MSKEY_FOODSTORE_Delivertime];
+//    cell.qisongCondition.text = dict[MSKEY_FOODSTORE_Qisongcondition];
+//    cell.adress.text = dict[MSKEY_FOODSTORE_Adress];
+//    cell.contact.text = dict[MSKEY_FOODSTORE_Phone_number];
+    
     [cell.imgView phi_setImageWithURL:nil];
     return cell;
 }
@@ -49,6 +58,9 @@
 //    store_type = 2 表示餐馆
     [PHIRequest storeWithParameters:@{@"store_type":@"2"} success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"");
+        self.dataArray = [responseObject objectForKey:@"data"];
+        [self.tableView reloadData];
+        
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
@@ -62,6 +74,7 @@
     [self.phippyNavigationController standardNavigationBarView];
     PhippyHeaderView *headerView = [PhippyHeaderView  headerViewFood];
     self.tableView.tableHeaderView = headerView;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
      headerView.backGroundImageView.image = [UIImage imageNamed:@"food_rec_header_img.jpg"];
     headerView.titleOfLeftDonw.text = @"美食";
 

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UIImageView+PHIWebCache.h"
+#import "MsgSchedulerKeys.h"
 
 @interface MsgScheduler : NSObject
 
