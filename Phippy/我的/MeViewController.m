@@ -16,6 +16,8 @@
 #import "CooperateViewController.h"
 #import "AboutUsViewController.h"
 
+#import "LoginViewController.h"
+
 @interface MeViewController ()
 
 @end
@@ -103,7 +105,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"我的收藏",@"应急求助",@"常用设置",@"意见反馈",@"商务合作",@"关于我们",@"退出登录"];
+    self.dataArray = @[@"应急求助",@"常用设置",@"意见反馈",@"商务合作",@"关于我们",@"退出登录"];
    
     
     
@@ -127,6 +129,20 @@
     
     //因为设置了 automaticallyAdjustsScrollViewInsets = no
     self.tableViewHeight = SCREEN_HEIGHT-TABBAR_HEIGHT;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(login:)];
+    [headerView addGestureRecognizer:tap];
+    
+    
+}
+
+- (void)login:(UITapGestureRecognizer *)tap {
+    
+   
+    LoginViewController *login = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
+     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:login];
+   
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

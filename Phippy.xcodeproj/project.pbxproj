@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6DF6A024699DAC0C80EB3874 /* libPods-Phippy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0089FD8250DEF449F6F864 /* libPods-Phippy.a */; };
+		A609859A1F2EC4A6002344E3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A60985981F2EC4A6002344E3 /* LoginViewController.m */; };
+		A609859B1F2EC4A6002344E3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60985991F2EC4A6002344E3 /* LoginViewController.xib */; };
+		A609859F1F2EC4BD002344E3 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A609859D1F2EC4BD002344E3 /* RegisterViewController.m */; };
+		A60985A01F2EC4BD002344E3 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A609859E1F2EC4BD002344E3 /* RegisterViewController.xib */; };
 		A625C0871F13115900C28072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0861F13115900C28072 /* main.m */; };
 		A625C08A1F13115900C28072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0891F13115900C28072 /* AppDelegate.m */; };
 		A625C0901F13115A00C28072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A625C08E1F13115A00C28072 /* Main.storyboard */; };
@@ -28,7 +32,6 @@
 		A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */; };
 		A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0D71F14A2B500C28072 /* PhippyViewController.m */; };
 		A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */; };
-		A625C0DF1F14B3E100C28072 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A625C0DE1F14B3E100C28072 /* logo@2x.png */; };
 		A66AC2A71F1EEA23008FB856 /* TourDetailLabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2A51F1EEA23008FB856 /* TourDetailLabCell.m */; };
 		A66AC2A81F1EEA23008FB856 /* TourDetailLabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AC2A61F1EEA23008FB856 /* TourDetailLabCell.xib */; };
 		A66AC2AC1F1EEA42008FB856 /* TourDetailImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2AA1F1EEA42008FB856 /* TourDetailImgCell.m */; };
@@ -74,6 +77,12 @@
 
 /* Begin PBXFileReference section */
 		53C4987B9C185EF7D67A4E8C /* Pods-Phippy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phippy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phippy/Pods-Phippy.debug.xcconfig"; sourceTree = "<group>"; };
+		A60985971F2EC4A6002344E3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A60985981F2EC4A6002344E3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A60985991F2EC4A6002344E3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A609859C1F2EC4BD002344E3 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		A609859D1F2EC4BD002344E3 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		A609859E1F2EC4BD002344E3 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		A625C0821F13115900C28072 /* Phippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A625C0861F13115900C28072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A625C0881F13115900C28072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,7 +119,6 @@
 		A625C0D71F14A2B500C28072 /* PhippyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyViewController.m; sourceTree = "<group>"; };
 		A625C0DB1F14ADC000C28072 /* PhippyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhippyTabBarController.h; sourceTree = "<group>"; };
 		A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyTabBarController.m; sourceTree = "<group>"; };
-		A625C0DE1F14B3E100C28072 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "../Base/logo@2x.png"; sourceTree = "<group>"; };
 		A66AC2A41F1EEA23008FB856 /* TourDetailLabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourDetailLabCell.h; sourceTree = "<group>"; };
 		A66AC2A51F1EEA23008FB856 /* TourDetailLabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourDetailLabCell.m; sourceTree = "<group>"; };
 		A66AC2A61F1EEA23008FB856 /* TourDetailLabCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourDetailLabCell.xib; sourceTree = "<group>"; };
@@ -367,6 +375,12 @@
 				A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */,
 				A6D6543A1F17507B000D3FBB /* BaseTableViewCell.h */,
 				A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */,
+				A60985971F2EC4A6002344E3 /* LoginViewController.h */,
+				A60985981F2EC4A6002344E3 /* LoginViewController.m */,
+				A60985991F2EC4A6002344E3 /* LoginViewController.xib */,
+				A609859C1F2EC4BD002344E3 /* RegisterViewController.h */,
+				A609859D1F2EC4BD002344E3 /* RegisterViewController.m */,
+				A609859E1F2EC4BD002344E3 /* RegisterViewController.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -375,7 +389,6 @@
 			isa = PBXGroup;
 			children = (
 				A6D654381F174F24000D3FBB /* logo_girl.jpg */,
-				A625C0DE1F14B3E100C28072 /* logo@2x.png */,
 				A625C0CF1F13A25100C28072 /* food_rec_header_img.jpg */,
 				A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */,
 			);
@@ -537,13 +550,14 @@
 			files = (
 				A625C0951F13115A00C28072 /* LaunchScreen.storyboard in Resources */,
 				A625C0921F13115A00C28072 /* Assets.xcassets in Resources */,
-				A625C0DF1F14B3E100C28072 /* logo@2x.png in Resources */,
 				A625C0C11F132A9300C28072 /* FoodTableViewCell.xib in Resources */,
 				A66AC2A81F1EEA23008FB856 /* TourDetailLabCell.xib in Resources */,
 				A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */,
+				A60985A01F2EC4BD002344E3 /* RegisterViewController.xib in Resources */,
 				A6BBFFCC1F1E1CF800126C32 /* MerchantLogoReusableView.xib in Resources */,
 				A625C0901F13115A00C28072 /* Main.storyboard in Resources */,
 				A625C0BC1F131B6E00C28072 /* TourTableViewCell.xib in Resources */,
+				A609859B1F2EC4A6002344E3 /* LoginViewController.xib in Resources */,
 				A625C0D11F13A25100C28072 /* food_rec_header_img.jpg in Resources */,
 				A6D654391F174F24000D3FBB /* logo_girl.jpg in Resources */,
 				A66AC2BD1F1EED8D008FB856 /* LaneOfYanTableViewCell.xib in Resources */,
@@ -634,6 +648,7 @@
 				A66AC2C01F1EEDF1008FB856 /* SettingViewController.m in Sources */,
 				A66AC2B31F1EEC4A008FB856 /* LittleLadyViewController.m in Sources */,
 				A68C4D611F22062200DBF094 /* PHIParser.m in Sources */,
+				A609859A1F2EC4A6002344E3 /* LoginViewController.m in Sources */,
 				A68C4D4C1F21F76700DBF094 /* TBRuquest.m in Sources */,
 				A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */,
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
@@ -645,6 +660,7 @@
 				A68C4D791F2352D900DBF094 /* T_Goods.m in Sources */,
 				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
 				A68C4D4B1F21F76700DBF094 /* PHIRequest.m in Sources */,
+				A609859F1F2EC4BD002344E3 /* RegisterViewController.m in Sources */,
 				A68C4D7A1F2352D900DBF094 /* T_Store.m in Sources */,
 				A683943F1F170FED00790D30 /* CollectViewController.m in Sources */,
 				A68C4D5B1F22037D00DBF094 /* PHIDBHelper.m in Sources */,
