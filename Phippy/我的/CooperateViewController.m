@@ -10,13 +10,25 @@
 
 @interface CooperateViewController ()
 
+@property (nonatomic,strong) UITextView *textView;
+
 @end
 
 @implementation CooperateViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.phippyNavigationController addBackButton];
+    self.automaticallyAdjustsScrollViewInsets = YES;
+    
+    [self.view addSubview:self.textView];
+}
+
+- (UITextView *)textView{
+    if(!_textView){
+        _textView = [[UITextView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
+    }
+    return _textView;
 }
 
 - (void)didReceiveMemoryWarning {

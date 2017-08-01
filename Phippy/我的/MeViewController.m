@@ -40,36 +40,36 @@
     PhippyViewController *controller = nil;
     
     switch (indexPath.row) {
+//        case 0:{
+//            controller = [[CollectViewController alloc]init];
+//            controller.title = @"我的收藏";
+//            break;
+//        }
         case 0:{
-            controller = [[CollectViewController alloc]init];
-            controller.title = @"我的收藏";
-            break;
-        }
-        case 1:{
             controller = [[EmergencyViewController alloc]init];
             controller.title = @"应急求助";
             break;
         }
-        case 2:{
+        case 1:{
             controller = [[SettingViewController alloc]init];
             controller.title = @"常用设置";
             break;
         }
-        case 3:{
+        case 2:{
             controller = [[FeedbackViewController alloc]init];
             controller.title = @"意见反馈";
             break;
         }
-        case 4:{
+        case 3:{
             controller = [[CooperateViewController alloc]init];
             controller.title = @"商家入驻";
             break;
         }
-        case 5:{
+        case 4:{
             controller = [[AboutUsViewController alloc]init];
             controller.title = @"关于我们";
             break;
-            break;
+            
         }
           
     }

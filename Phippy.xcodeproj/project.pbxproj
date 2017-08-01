@@ -12,6 +12,8 @@
 		A609859B1F2EC4A6002344E3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60985991F2EC4A6002344E3 /* LoginViewController.xib */; };
 		A609859F1F2EC4BD002344E3 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A609859D1F2EC4BD002344E3 /* RegisterViewController.m */; };
 		A60985A01F2EC4BD002344E3 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A609859E1F2EC4BD002344E3 /* RegisterViewController.xib */; };
+		A60985CD1F3066F6002344E3 /* UIView+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A60985CC1F3066F6002344E3 /* UIView+Attribute.m */; };
+		A60985D01F3068C0002344E3 /* UIColor+PHI.m in Sources */ = {isa = PBXBuildFile; fileRef = A60985CF1F3068C0002344E3 /* UIColor+PHI.m */; };
 		A625C0871F13115900C28072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0861F13115900C28072 /* main.m */; };
 		A625C08A1F13115900C28072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0891F13115900C28072 /* AppDelegate.m */; };
 		A625C0901F13115A00C28072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A625C08E1F13115A00C28072 /* Main.storyboard */; };
@@ -83,6 +85,10 @@
 		A609859C1F2EC4BD002344E3 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		A609859D1F2EC4BD002344E3 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		A609859E1F2EC4BD002344E3 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		A60985CB1F3066F6002344E3 /* UIView+Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Attribute.h"; sourceTree = "<group>"; };
+		A60985CC1F3066F6002344E3 /* UIView+Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Attribute.m"; sourceTree = "<group>"; };
+		A60985CE1F3068C0002344E3 /* UIColor+PHI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PHI.h"; sourceTree = "<group>"; };
+		A60985CF1F3068C0002344E3 /* UIColor+PHI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PHI.m"; sourceTree = "<group>"; };
 		A625C0821F13115900C28072 /* Phippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A625C0861F13115900C28072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A625C0881F13115900C28072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -361,6 +367,8 @@
 		A625C0A01F13137A00C28072 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A60985CB1F3066F6002344E3 /* UIView+Attribute.h */,
+				A60985CC1F3066F6002344E3 /* UIView+Attribute.m */,
 				A66AC2CE1F1EFC4A008FB856 /* PHIUserManager.h */,
 				A66AC2CF1F1EFC4A008FB856 /* PHIUserManager.m */,
 				A625C0B01F13140400C28072 /* BaseNavigationController.h */,
@@ -381,6 +389,8 @@
 				A609859C1F2EC4BD002344E3 /* RegisterViewController.h */,
 				A609859D1F2EC4BD002344E3 /* RegisterViewController.m */,
 				A609859E1F2EC4BD002344E3 /* RegisterViewController.xib */,
+				A60985CE1F3068C0002344E3 /* UIColor+PHI.h */,
+				A60985CF1F3068C0002344E3 /* UIColor+PHI.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -645,6 +655,7 @@
 				A625C0B21F13140400C28072 /* BaseNavigationController.m in Sources */,
 				A68394421F171CEA00790D30 /* FeedbackViewController.m in Sources */,
 				A625C0871F13115900C28072 /* main.m in Sources */,
+				A60985CD1F3066F6002344E3 /* UIView+Attribute.m in Sources */,
 				A66AC2C01F1EEDF1008FB856 /* SettingViewController.m in Sources */,
 				A66AC2B31F1EEC4A008FB856 /* LittleLadyViewController.m in Sources */,
 				A68C4D611F22062200DBF094 /* PHIParser.m in Sources */,
@@ -660,6 +671,7 @@
 				A68C4D791F2352D900DBF094 /* T_Goods.m in Sources */,
 				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
 				A68C4D4B1F21F76700DBF094 /* PHIRequest.m in Sources */,
+				A60985D01F3068C0002344E3 /* UIColor+PHI.m in Sources */,
 				A609859F1F2EC4BD002344E3 /* RegisterViewController.m in Sources */,
 				A68C4D7A1F2352D900DBF094 /* T_Store.m in Sources */,
 				A683943F1F170FED00790D30 /* CollectViewController.m in Sources */,

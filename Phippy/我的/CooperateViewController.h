@@ -10,4 +10,5 @@
 
 @interface CooperateViewController : BaseTabViewController
 
+@property (nonatomic,strong) NSString *content;
 @end

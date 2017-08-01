@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,17 +20,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mp2-xi-f0G">
-                        <rect key="frame" x="80" y="10" width="160.5" height="160.5"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="mp2-xi-f0G" secondAttribute="height" multiplier="1:1" id="oWI-OY-hlr"/>
-                        </constraints>
+                        <rect key="frame" x="18" y="13" width="284" height="154.5"/>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="mp2-xi-f0G" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3x7-nG-Up6"/>
-                    <constraint firstAttribute="bottom" secondItem="mp2-xi-f0G" secondAttribute="bottom" constant="10" id="7KF-Qx-Bgy"/>
-                    <constraint firstItem="mp2-xi-f0G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="CrE-oT-elX"/>
-                    <constraint firstItem="mp2-xi-f0G" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="HZY-dA-GTL"/>
+                    <constraint firstItem="mp2-xi-f0G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Fch-Of-2aM"/>
+                    <constraint firstItem="mp2-xi-f0G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="lAY-4o-OnA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mp2-xi-f0G" secondAttribute="bottom" constant="5" id="ufV-au-k6B"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mp2-xi-f0G" secondAttribute="trailing" constant="10" id="vNz-s6-cPX"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
