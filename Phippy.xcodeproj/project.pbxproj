@@ -67,6 +67,7 @@
 		A68C4D781F2352D900DBF094 /* T_Base.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D721F2352D900DBF094 /* T_Base.m */; };
 		A68C4D791F2352D900DBF094 /* T_Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D741F2352D900DBF094 /* T_Goods.m */; };
 		A68C4D7A1F2352D900DBF094 /* T_Store.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D761F2352D900DBF094 /* T_Store.m */; };
+		A6BBAA0F1F3483F100419C9E /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA0D1F3483F100419C9E /* OrderViewController.m */; };
 		A6BBFFCB1F1E1CF800126C32 /* MerchantLogoReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBFFC91F1E1CF800126C32 /* MerchantLogoReusableView.m */; };
 		A6BBFFCC1F1E1CF800126C32 /* MerchantLogoReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BBFFCA1F1E1CF800126C32 /* MerchantLogoReusableView.xib */; };
 		A6D23F371F1DEE6100F0C62E /* FoodWechatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D23F351F1DEE6100F0C62E /* FoodWechatCell.m */; };
@@ -187,6 +188,8 @@
 		A68C4D741F2352D900DBF094 /* T_Goods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Goods.m; sourceTree = "<group>"; };
 		A68C4D751F2352D900DBF094 /* T_Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T_Store.h; sourceTree = "<group>"; };
 		A68C4D761F2352D900DBF094 /* T_Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Store.m; sourceTree = "<group>"; };
+		A6BBAA0C1F3483F100419C9E /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		A6BBAA0D1F3483F100419C9E /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
 		A6BBFFC81F1E1CF800126C32 /* MerchantLogoReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantLogoReusableView.h; sourceTree = "<group>"; };
 		A6BBFFC91F1E1CF800126C32 /* MerchantLogoReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantLogoReusableView.m; sourceTree = "<group>"; };
 		A6BBFFCA1F1E1CF800126C32 /* MerchantLogoReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MerchantLogoReusableView.xib; sourceTree = "<group>"; };
@@ -259,6 +262,7 @@
 				A625C09F1F13136B00C28072 /* 美食 */,
 				A625C09D1F13136B00C28072 /* 旅游 */,
 				A625C09E1F13136B00C28072 /* 生活 */,
+				A6BBAA081F34400C00419C9E /* 订单 */,
 				A625C09C1F13136B00C28072 /* 我的 */,
 				A625C0CE1F13A25100C28072 /* res */,
 				A625C0881F13115900C28072 /* AppDelegate.h */,
@@ -496,6 +500,15 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		A6BBAA081F34400C00419C9E /* 订单 */ = {
+			isa = PBXGroup;
+			children = (
+				A6BBAA0C1F3483F100419C9E /* OrderViewController.h */,
+				A6BBAA0D1F3483F100419C9E /* OrderViewController.m */,
+			);
+			path = "订单";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -645,6 +658,7 @@
 				A68394461F171D5900790D30 /* EmergencyTableViewCell.m in Sources */,
 				A68C4D541F2202B300DBF094 /* NSDictionary+MsgScheduler.m in Sources */,
 				A68C4D571F22033F00DBF094 /* PHIDataAgent.m in Sources */,
+				A6BBAA0F1F3483F100419C9E /* OrderViewController.m in Sources */,
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
 				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
 				A68C4D781F2352D900DBF094 /* T_Base.m in Sources */,
