@@ -27,7 +27,7 @@
     //自定义一个按钮
     UIButton  *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftBtn addTarget:self action:@selector(backLastView) forControlEvents:UIControlEventTouchUpInside];
-    leftBtn.frame = CGRectMake(-6, 5, 30, 22);
+    leftBtn.frame = CGRectMake(-6, 5, 34, 25);
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
     [leftBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     //将leftItem设置为自定义按钮

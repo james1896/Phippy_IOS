@@ -21,3 +21,9 @@
 @property(nullable, nonatomic,readonly,strong) BaseNavigationController *phippyNavigationController;
 
 @end
+
+
+@interface UITabBar (badge)
+- (void)showBadgeOnItmIndex:(int)index;
+- (void)hideBadgeOnItemIndex:(int)index;
+@end

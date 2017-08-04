@@ -40,11 +40,7 @@
     PhippyViewController *controller = nil;
     
     switch (indexPath.row) {
-//        case 0:{
-//            controller = [[CollectViewController alloc]init];
-//            controller.title = @"我的收藏";
-//            break;
-//        }
+
         case 0:{
             controller = [[EmergencyViewController alloc]init];
             controller.title = @"应急求助";
@@ -62,6 +58,7 @@
         }
         case 3:{
             controller = [[CooperateViewController alloc]init];
+            
             controller.title = @"商家入驻";
             break;
         }
@@ -84,6 +81,8 @@
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
+//    [self.tabBarController.tabBar hideBadgeOnItemIndex:0];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -106,8 +105,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataArray = @[@"应急求助",@"常用设置",@"意见反馈",@"商务合作",@"关于我们",@"退出登录"];
-   
-    
     
     /***************************************/
     //当前controller 在nav中 需要这样设置
@@ -133,12 +130,10 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(login:)];
     [headerView addGestureRecognizer:tap];
     
-    
 }
 
 - (void)login:(UITapGestureRecognizer *)tap {
     
-   
     LoginViewController *login = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
      UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:login];
    
