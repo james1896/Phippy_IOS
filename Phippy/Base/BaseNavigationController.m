@@ -109,13 +109,13 @@
     
 //    //1.去掉nav下方的 黑线
 //    //     2.
-//    [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.8]] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.8]] forBarMetrics:UIBarMetricsDefault];
 //    self.navigationBar.barStyle = UIBarStyleDefault;
-//    
+//
 //    //navbar自带的 透明
-//    //    self.navigationBar.translucent = NO;
-//    [self.navigationBar setShadowImage:[UIImage new]];
-//    self.extendedLayoutIncludesOpaqueBars = YES;
+//        self.navigationBar.translucent = NO;
+    [self.navigationBar setShadowImage:[UIImage new]];
+    self.extendedLayoutIncludesOpaqueBars = YES;
     
     //设置默认title的字体颜色
     [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1]}];

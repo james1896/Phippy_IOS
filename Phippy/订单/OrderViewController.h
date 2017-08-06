@@ -6,8 +6,8 @@
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseTabViewController.h"
 
-@interface OrderViewController : UIViewController
+@interface OrderViewController : BaseTabViewController
 
 @end

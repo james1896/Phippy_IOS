@@ -14,6 +14,9 @@
 @property (nonatomic,strong) NSArray     *dataArray;
 
 @property (nonatomic) CGFloat tableViewHeight;
+@property (nonatomic) UITableViewStyle style;
+
+- (instancetype)initWithTableViewStyle:(UITableViewStyle) style;
 
 @end
 

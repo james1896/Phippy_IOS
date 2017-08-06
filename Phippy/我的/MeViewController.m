@@ -24,15 +24,89 @@
 
 @implementation MeViewController
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
+    //    [self.tabBarController.tabBar hideBadgeOnItemIndex:0];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self.phippyNavigationController translucentAndCenterTitleNavigationBarView];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    
+    //    [self.phippyNavigationController originalNavigationBarView];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.dataArray = @[@[@"我的订单"],
+                       @[@"应急求助",@"常用设置",@"意见反馈",@"商务合作",@"关于我们"],
+                       @[@"退出登录"]];
+    
+    /***************************************/
+    //当前controller 在nav中 需要这样设置
+    //    -(UIStatusBarStyle)preferredStatusBarStyle {
+    //
+    //        return UIStatusBarStyleLightContent; //白色
+    //
+    //        return UIStatusBarStyleDefault; //黑色
+    //
+    //    } 在导航控制器中，以上代码不起作用。
+    
+    
+    //    self.navigationController.navigationBar.barStyle = UIBarStyleDefault; //状态栏改为黑色
+    /***************************************/
+    
+    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewMe];
+    headerView.backgroundColor = [UIColor redColor];
+    self.tableView.tableHeaderView = headerView;
+    
+    //因为设置了 automaticallyAdjustsScrollViewInsets = no
+    self.tableViewHeight = SCREEN_HEIGHT-TABBAR_HEIGHT;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(login:)];
+    [headerView addGestureRecognizer:tap];
+    
+}
+
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 70;
+    return 60;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    NSArray *count = self.dataArray[section];
+    
+    return count.count;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    
+    return self.dataArray.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 12.f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     BaseTableViewCell *cell = [[BaseTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"meCell"];
     
-    cell.textLabel.text = self.dataArray[indexPath.row];
+    NSArray *section = self.dataArray[indexPath.section];
+    cell.textLabel.text = section[indexPath.row];
     return cell;
 }
 
@@ -78,59 +152,7 @@
     
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-    
-//    [self.tabBarController.tabBar hideBadgeOnItemIndex:0];
-}
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-
-     [self.phippyNavigationController translucentAndCenterTitleNavigationBarView];
-}
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
-}
-
-- (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
- 
-//    [self.phippyNavigationController originalNavigationBarView];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.dataArray = @[@"应急求助",@"常用设置",@"意见反馈",@"商务合作",@"关于我们",@"退出登录"];
-    
-    /***************************************/
-    //当前controller 在nav中 需要这样设置
-//    -(UIStatusBarStyle)preferredStatusBarStyle {
-//        
-//        return UIStatusBarStyleLightContent; //白色
-//        
-//        return UIStatusBarStyleDefault; //黑色
-//        
-//    } 在导航控制器中，以上代码不起作用。
-    
-    
-//    self.navigationController.navigationBar.barStyle = UIBarStyleDefault; //状态栏改为黑色
-    /***************************************/
-    
-    PhippyHeaderView *headerView = [PhippyHeaderView  headerViewMe];
-    headerView.backgroundColor = [UIColor redColor];
-    self.tableView.tableHeaderView = headerView;
-    
-    //因为设置了 automaticallyAdjustsScrollViewInsets = no
-    self.tableViewHeight = SCREEN_HEIGHT-TABBAR_HEIGHT;
-    
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(login:)];
-    [headerView addGestureRecognizer:tap];
-    
-}
 
 - (void)login:(UITapGestureRecognizer *)tap {
     

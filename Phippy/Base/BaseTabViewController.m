@@ -35,23 +35,54 @@
     self.tableView.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, tableViewHeight);
 }
 
+//- (instancetype)init
+//{
+//    self = [super init];
+//    if (self) {
+//        self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+//        self.tableView.delegate = self;
+//        self.tableView.dataSource = self;
+//        self.tableView.estimatedRowHeight = 100;  //  随便设个不那么离谱的值
+//        self.tableView.showsVerticalScrollIndicator = NO;
+//        self.tableView.rowHeight = UITableViewAutomaticDimension;
+//        
+//        //    self.tableView.backgroundColor = COLOR(132, 232, 32, 1);
+//        
+//        UIImageView *img = [[UIImageView alloc] initWithFrame:self.tableView.bounds];
+//        
+//#warning 需要全局设置tabview背景
+//        //    img.image = [UIImage imageNamed:@"logo_girl.jpg"];
+//        self.tableView.backgroundView = img;
+//    }
+//    return self;
+//}
+//
+//- (instancetype)initWithTableViewStyle:(UITableViewStyle)style{
+//    self = [super init];
+//    if (self) {
+//      
+//    }
+//    return self;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+   
+    
+    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:_style];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.estimatedRowHeight = 100;  //  随便设个不那么离谱的值
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    
-    
-//    self.tableView.backgroundColor = COLOR(132, 232, 32, 1);
+    //    self.tableView.backgroundColor = COLOR(132, 232, 32, 1);
     
     UIImageView *img = [[UIImageView alloc] initWithFrame:self.tableView.bounds];
     
 #warning 需要全局设置tabview背景
-//    img.image = [UIImage imageNamed:@"logo_girl.jpg"];
+    //    img.image = [UIImage imageNamed:@"logo_girl.jpg"];
     self.tableView.backgroundView = img;
+
     
     [self.view addSubview:self.tableView];
     

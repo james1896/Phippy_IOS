@@ -7,34 +7,71 @@
 //
 
 #import "OrderViewController.h"
-
+#import "OrderTableViewCell.h"
+#import "OrderFooterView.h"
 @interface OrderViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (strong, nonatomic) IBOutlet UITableView *tabView;
-@property (strong, nonatomic) IBOutlet UIView *yiyudingView;
-@property (strong, nonatomic) IBOutlet UIView *peisongzhongView;
-@property (strong, nonatomic) IBOutlet UIView *yiwanchengView;
 
 
 @end
 
 @implementation OrderViewController
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 3;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 110;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 50.f;
+}
+
+-(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 10.f;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+
+    OrderFooterView *footerView = [[OrderFooterView alloc]init];
+    return footerView;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    OrderTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"OrderTableViewCell" owner:nil options:nil] lastObject];
     return cell;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.style = UITableViewStyleGrouped;
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        self.style = UITableViewStyleGrouped;
+    }
+    return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.yiyudingView addTapGestureRecognizerWithTarget:self action:@selector(yiyudingView)];
-    [self.peisongzhongView addTapGestureRecognizerWithTarget:self action:@selector(peisongzhongView)];
-    [self.view addTapGestureRecognizerWithTarget:self action:@selector(yiwanchengView)];
+    [self.phippyNavigationController standardNavigationBarView];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
 }
 
@@ -56,13 +93,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

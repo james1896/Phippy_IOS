@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,7 +53,7 @@
         <scene sceneID="eWl-OK-t3T">
             <objects>
                 <navigationController id="eT7-RR-c2M" customClass="BaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="订单" id="d9l-jx-56N"/>
+                    <tabBarItem key="tabBarItem" title="订单" image="order_normal" selectedImage="order_press" id="d9l-jx-56N"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dyd-br-gHH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -71,6 +69,7 @@
         <!--Order View Controller-->
         <scene sceneID="hvb-EC-DTp">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1W-Dn-Zg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Um3-DX-l7e" customClass="OrderViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4U4-sy-Cji"/>
@@ -79,99 +78,10 @@
                     <view key="view" contentMode="scaleToFill" id="VW3-OH-9Yd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLO-O0-IQ3" userLabel="View1">
-                                <rect key="frame" x="0.0" y="64" width="125" height="80"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUy-gv-NiP">
-                                        <rect key="frame" x="38" y="16.5" width="48" height="48"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="FUy-gv-NiP" secondAttribute="height" multiplier="1:1" id="H0t-Nu-NQ0"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.72718641490000002" blue="1" alpha="0.94833583050000003" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="FUy-gv-NiP" firstAttribute="centerY" secondItem="xLO-O0-IQ3" secondAttribute="centerY" id="FVg-KN-GMi"/>
-                                    <constraint firstAttribute="height" constant="80" id="Z9S-jf-hAI"/>
-                                    <constraint firstItem="FUy-gv-NiP" firstAttribute="centerX" secondItem="xLO-O0-IQ3" secondAttribute="centerX" id="mYW-5z-5nh"/>
-                                    <constraint firstItem="FUy-gv-NiP" firstAttribute="height" secondItem="xLO-O0-IQ3" secondAttribute="height" multiplier="0.6" id="ySF-Yh-UE4"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIn-0y-IIg" userLabel="View2">
-                                <rect key="frame" x="125" y="64" width="125" height="80"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZm-JH-Hhc">
-                                        <rect key="frame" x="38.5" y="16.5" width="48" height="48"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="xZm-JH-Hhc" secondAttribute="height" multiplier="1:1" id="nVy-il-OhQ"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.94191795590000005" green="0.70120258830000004" blue="0.48589256409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="xZm-JH-Hhc" firstAttribute="height" secondItem="dIn-0y-IIg" secondAttribute="height" multiplier="0.6" id="Av1-nb-l6O"/>
-                                    <constraint firstItem="xZm-JH-Hhc" firstAttribute="centerY" secondItem="dIn-0y-IIg" secondAttribute="centerY" id="gDx-7N-PhD"/>
-                                    <constraint firstItem="xZm-JH-Hhc" firstAttribute="centerX" secondItem="dIn-0y-IIg" secondAttribute="centerX" id="kIe-XO-6Yf"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8NC-4l-RJV" userLabel="View3">
-                                <rect key="frame" x="250" y="64" width="125" height="80"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddt-t4-ATG">
-                                        <rect key="frame" x="38.5" y="16" width="48" height="48"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Ddt-t4-ATG" secondAttribute="height" multiplier="1:1" id="BfF-YL-icH"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.92833585689999998" blue="0.50833798760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Ddt-t4-ATG" firstAttribute="centerX" secondItem="8NC-4l-RJV" secondAttribute="centerX" id="YY8-3o-7Ja"/>
-                                    <constraint firstItem="Ddt-t4-ATG" firstAttribute="height" secondItem="8NC-4l-RJV" secondAttribute="height" multiplier="0.6" id="pjc-Cj-wbc"/>
-                                    <constraint firstItem="Ddt-t4-ATG" firstAttribute="centerY" secondItem="8NC-4l-RJV" secondAttribute="centerY" id="tJT-iA-Wp2"/>
-                                </constraints>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cpR-Wc-f27">
-                                <rect key="frame" x="0.0" y="144" width="375" height="474"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Um3-DX-l7e" id="I52-DW-Cc0"/>
-                                    <outlet property="delegate" destination="Um3-DX-l7e" id="TgA-10-YJ6"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="xLO-O0-IQ3" firstAttribute="width" secondItem="dIn-0y-IIg" secondAttribute="width" id="2aD-tu-Icv"/>
-                            <constraint firstAttribute="trailing" secondItem="cpR-Wc-f27" secondAttribute="trailing" id="3Na-xQ-6if"/>
-                            <constraint firstItem="xLO-O0-IQ3" firstAttribute="height" secondItem="dIn-0y-IIg" secondAttribute="height" id="57p-Z9-HHK"/>
-                            <constraint firstItem="cpR-Wc-f27" firstAttribute="top" secondItem="xLO-O0-IQ3" secondAttribute="bottom" id="5Qw-i2-XzW"/>
-                            <constraint firstItem="8NC-4l-RJV" firstAttribute="leading" secondItem="dIn-0y-IIg" secondAttribute="trailing" id="9Ho-3D-XNq"/>
-                            <constraint firstItem="xLO-O0-IQ3" firstAttribute="width" secondItem="8NC-4l-RJV" secondAttribute="width" id="AAS-JM-QKW"/>
-                            <constraint firstItem="xLO-O0-IQ3" firstAttribute="height" secondItem="8NC-4l-RJV" secondAttribute="height" id="Gl2-ui-d9f"/>
-                            <constraint firstItem="dIn-0y-IIg" firstAttribute="leading" secondItem="xLO-O0-IQ3" secondAttribute="trailing" id="LFS-q4-tur"/>
-                            <constraint firstItem="dIn-0y-IIg" firstAttribute="top" secondItem="4U4-sy-Cji" secondAttribute="bottom" id="Owk-uv-6he"/>
-                            <constraint firstItem="DiY-N2-fr3" firstAttribute="top" secondItem="cpR-Wc-f27" secondAttribute="bottom" id="YRV-bT-aRs"/>
-                            <constraint firstItem="8NC-4l-RJV" firstAttribute="top" secondItem="4U4-sy-Cji" secondAttribute="bottom" id="Ytd-0g-xlW"/>
-                            <constraint firstItem="cpR-Wc-f27" firstAttribute="leading" secondItem="VW3-OH-9Yd" secondAttribute="leading" id="ZHH-ks-7A5"/>
-                            <constraint firstItem="xLO-O0-IQ3" firstAttribute="leading" secondItem="VW3-OH-9Yd" secondAttribute="leading" id="hbq-ab-ExP"/>
-                            <constraint firstItem="xLO-O0-IQ3" firstAttribute="top" secondItem="4U4-sy-Cji" secondAttribute="bottom" id="iga-M5-WnV"/>
-                            <constraint firstAttribute="trailing" secondItem="8NC-4l-RJV" secondAttribute="trailing" id="rNj-6G-g3C"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v7c-45-sFI"/>
-                    <connections>
-                        <outlet property="peisongzhongView" destination="xZm-JH-Hhc" id="BVN-EY-M6u"/>
-                        <outlet property="tabView" destination="cpR-Wc-f27" id="zjD-Jh-ycu"/>
-                        <outlet property="yiwanchengView" destination="Ddt-t4-ATG" id="G8z-JN-Ewh"/>
-                        <outlet property="yiyudingView" destination="FUy-gv-NiP" id="WWr-0r-1Jc"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C1W-Dn-Zg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1252" y="1467.616191904048"/>
         </scene>
@@ -308,6 +218,8 @@
         <image name="life_press" width="24" height="24"/>
         <image name="me_normal" width="24" height="24"/>
         <image name="me_press" width="24" height="24"/>
+        <image name="order_normal" width="24" height="24"/>
+        <image name="order_press" width="24" height="24"/>
         <image name="tour_normal" width="24" height="24"/>
         <image name="tour_press" width="24" height="24"/>
     </resources>
