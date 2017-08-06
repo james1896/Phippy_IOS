@@ -18,6 +18,8 @@
 
 #import "LoginViewController.h"
 
+#import "OrderViewController.h"
+
 @interface MeViewController ()
 
 @end
@@ -113,6 +115,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     PhippyViewController *controller = nil;
     
+    //订单
+    if([indexPath isEqual:[NSIndexPath indexPathForRow:0 inSection:0]]){
+        OrderViewController *orderController = [[OrderViewController alloc]init];
+        [self.phippyNavigationController pushViewController:orderController animated:YES];
+        return;
+    }
     switch (indexPath.row) {
 
         case 0:{

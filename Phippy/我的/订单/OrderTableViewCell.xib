@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="397" height="130"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="397" height="130"/>
+                <rect key="frame" x="0.0" y="0.0" width="397" height="129.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9s-Yn-Vfq">
@@ -38,8 +38,8 @@
                         <color key="textColor" red="0.92549019610000005" green="0.36470588240000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-T8-Nyb">
-                        <rect key="frame" x="335.5" y="99.5" width="61.5" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-5-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-T8-Nyb">
+                        <rect key="frame" x="318" y="99.5" width="63" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -70,7 +70,7 @@
                     <constraint firstItem="HLx-Qp-0Fv" firstAttribute="leading" secondItem="o9s-Yn-Vfq" secondAttribute="leading" id="gOM-gS-Cti"/>
                     <constraint firstItem="XHE-WD-kuF" firstAttribute="top" secondItem="HLx-Qp-0Fv" secondAttribute="top" constant="3" id="jrv-m8-K8X"/>
                     <constraint firstItem="rrs-yR-PDu" firstAttribute="bottom" secondItem="HLx-Qp-0Fv" secondAttribute="bottom" constant="-3" id="keW-Yq-qnc"/>
-                    <constraint firstItem="b5t-T8-Nyb" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="pfU-ON-99x"/>
+                    <constraint firstItem="b5t-T8-Nyb" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-8" id="pfU-ON-99x"/>
                     <constraint firstItem="o9s-Yn-Vfq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="tRR-CT-dfU"/>
                 </constraints>
             </tableViewCellContentView>

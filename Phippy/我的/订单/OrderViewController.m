@@ -70,7 +70,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.phippyNavigationController standardNavigationBarView];
+    [self.phippyNavigationController addBackButton];
+    self.title = @"我的订单";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
 }

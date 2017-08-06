@@ -7,7 +7,7 @@
 //
 
 #import "PhippyHeaderView.h"
-
+#import "DisplayBoardView.h"
 @interface PhippyHeaderView()
 
 
@@ -51,14 +51,18 @@
 }
 
 + (instancetype)headerViewMe{
-    
-   return [self initHeaderView];
+    PhippyHeaderView *header = [self initHeaderView];
+    DisplayBoardView *boardView = [[DisplayBoardView alloc]initWithFrame:CGRectMake(0, 0, header.width, 30)];
+    boardView.content = @"hgjdslahgjhdasjghjdkslhagjdlhajgdhlaghjdshgjdlhsahdjlshafjdhlas";
+    [header addSubview:boardView];
+   return header;
 }
 
 #pragma mark - init
 //(1)初始化headerView
 + (instancetype)initHeaderView{
     PhippyHeaderView *header = [[PhippyHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3.7)];
+    
     return header;
 }
 

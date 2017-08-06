@@ -67,10 +67,11 @@
 		A68C4D781F2352D900DBF094 /* T_Base.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D721F2352D900DBF094 /* T_Base.m */; };
 		A68C4D791F2352D900DBF094 /* T_Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D741F2352D900DBF094 /* T_Goods.m */; };
 		A68C4D7A1F2352D900DBF094 /* T_Store.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D761F2352D900DBF094 /* T_Store.m */; };
-		A6BBAA0F1F3483F100419C9E /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA0D1F3483F100419C9E /* OrderViewController.m */; };
-		A6BBAA141F36A98300419C9E /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA121F36A98300419C9E /* OrderTableViewCell.m */; };
-		A6BBAA151F36A98300419C9E /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BBAA131F36A98300419C9E /* OrderTableViewCell.xib */; };
-		A6BBAA181F36AED200419C9E /* OrderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA171F36AED200419C9E /* OrderFooterView.m */; };
+		A6BBAA1B1F36BBF100419C9E /* DisplayBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA1A1F36BBF100419C9E /* DisplayBoardView.m */; };
+		A6BBAA241F36BF0000419C9E /* OrderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA1E1F36BF0000419C9E /* OrderFooterView.m */; };
+		A6BBAA251F36BF0000419C9E /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA201F36BF0000419C9E /* OrderTableViewCell.m */; };
+		A6BBAA261F36BF0000419C9E /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BBAA211F36BF0000419C9E /* OrderTableViewCell.xib */; };
+		A6BBAA271F36BF0000419C9E /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA231F36BF0000419C9E /* OrderViewController.m */; };
 		A6BBFFCB1F1E1CF800126C32 /* MerchantLogoReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBFFC91F1E1CF800126C32 /* MerchantLogoReusableView.m */; };
 		A6BBFFCC1F1E1CF800126C32 /* MerchantLogoReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BBFFCA1F1E1CF800126C32 /* MerchantLogoReusableView.xib */; };
 		A6D23F371F1DEE6100F0C62E /* FoodWechatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D23F351F1DEE6100F0C62E /* FoodWechatCell.m */; };
@@ -191,13 +192,15 @@
 		A68C4D741F2352D900DBF094 /* T_Goods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Goods.m; sourceTree = "<group>"; };
 		A68C4D751F2352D900DBF094 /* T_Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T_Store.h; sourceTree = "<group>"; };
 		A68C4D761F2352D900DBF094 /* T_Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Store.m; sourceTree = "<group>"; };
-		A6BBAA0C1F3483F100419C9E /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
-		A6BBAA0D1F3483F100419C9E /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
-		A6BBAA111F36A98300419C9E /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewCell.h; sourceTree = "<group>"; };
-		A6BBAA121F36A98300419C9E /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
-		A6BBAA131F36A98300419C9E /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
-		A6BBAA161F36AED200419C9E /* OrderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFooterView.h; sourceTree = "<group>"; };
-		A6BBAA171F36AED200419C9E /* OrderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFooterView.m; sourceTree = "<group>"; };
+		A6BBAA191F36BBF100419C9E /* DisplayBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayBoardView.h; sourceTree = "<group>"; };
+		A6BBAA1A1F36BBF100419C9E /* DisplayBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayBoardView.m; sourceTree = "<group>"; };
+		A6BBAA1D1F36BF0000419C9E /* OrderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFooterView.h; sourceTree = "<group>"; };
+		A6BBAA1E1F36BF0000419C9E /* OrderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFooterView.m; sourceTree = "<group>"; };
+		A6BBAA1F1F36BF0000419C9E /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewCell.h; sourceTree = "<group>"; };
+		A6BBAA201F36BF0000419C9E /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
+		A6BBAA211F36BF0000419C9E /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		A6BBAA221F36BF0000419C9E /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		A6BBAA231F36BF0000419C9E /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
 		A6BBFFC81F1E1CF800126C32 /* MerchantLogoReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantLogoReusableView.h; sourceTree = "<group>"; };
 		A6BBFFC91F1E1CF800126C32 /* MerchantLogoReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantLogoReusableView.m; sourceTree = "<group>"; };
 		A6BBFFCA1F1E1CF800126C32 /* MerchantLogoReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MerchantLogoReusableView.xib; sourceTree = "<group>"; };
@@ -270,7 +273,6 @@
 				A625C09F1F13136B00C28072 /* 美食 */,
 				A625C09D1F13136B00C28072 /* 旅游 */,
 				A625C09E1F13136B00C28072 /* 生活 */,
-				A6BBAA081F34400C00419C9E /* 订单 */,
 				A625C09C1F13136B00C28072 /* 我的 */,
 				A625C0CE1F13A25100C28072 /* res */,
 				A625C0881F13115900C28072 /* AppDelegate.h */,
@@ -296,6 +298,7 @@
 		A625C09C1F13136B00C28072 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				A6BBAA1C1F36BF0000419C9E /* 订单 */,
 				A625C0A11F13138F00C28072 /* MeViewController.h */,
 				A625C0A21F13138F00C28072 /* MeViewController.m */,
 				A683943D1F170FED00790D30 /* CollectViewController.h */,
@@ -379,6 +382,8 @@
 		A625C0A01F13137A00C28072 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A6BBAA191F36BBF100419C9E /* DisplayBoardView.h */,
+				A6BBAA1A1F36BBF100419C9E /* DisplayBoardView.m */,
 				A60985CB1F3066F6002344E3 /* UIView+Attribute.h */,
 				A60985CC1F3066F6002344E3 /* UIView+Attribute.m */,
 				A66AC2CE1F1EFC4A008FB856 /* PHIUserManager.h */,
@@ -508,16 +513,16 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
-		A6BBAA081F34400C00419C9E /* 订单 */ = {
+		A6BBAA1C1F36BF0000419C9E /* 订单 */ = {
 			isa = PBXGroup;
 			children = (
-				A6BBAA0C1F3483F100419C9E /* OrderViewController.h */,
-				A6BBAA0D1F3483F100419C9E /* OrderViewController.m */,
-				A6BBAA111F36A98300419C9E /* OrderTableViewCell.h */,
-				A6BBAA121F36A98300419C9E /* OrderTableViewCell.m */,
-				A6BBAA131F36A98300419C9E /* OrderTableViewCell.xib */,
-				A6BBAA161F36AED200419C9E /* OrderFooterView.h */,
-				A6BBAA171F36AED200419C9E /* OrderFooterView.m */,
+				A6BBAA1D1F36BF0000419C9E /* OrderFooterView.h */,
+				A6BBAA1E1F36BF0000419C9E /* OrderFooterView.m */,
+				A6BBAA1F1F36BF0000419C9E /* OrderTableViewCell.h */,
+				A6BBAA201F36BF0000419C9E /* OrderTableViewCell.m */,
+				A6BBAA211F36BF0000419C9E /* OrderTableViewCell.xib */,
+				A6BBAA221F36BF0000419C9E /* OrderViewController.h */,
+				A6BBAA231F36BF0000419C9E /* OrderViewController.m */,
 			);
 			path = "订单";
 			sourceTree = "<group>";
@@ -595,7 +600,7 @@
 				A625C0BC1F131B6E00C28072 /* TourTableViewCell.xib in Resources */,
 				A609859B1F2EC4A6002344E3 /* LoginViewController.xib in Resources */,
 				A625C0D11F13A25100C28072 /* food_rec_header_img.jpg in Resources */,
-				A6BBAA151F36A98300419C9E /* OrderTableViewCell.xib in Resources */,
+				A6BBAA261F36BF0000419C9E /* OrderTableViewCell.xib in Resources */,
 				A6D654391F174F24000D3FBB /* logo_girl.jpg in Resources */,
 				A66AC2BD1F1EED8D008FB856 /* LaneOfYanTableViewCell.xib in Resources */,
 				A68C4D4D1F21F76700DBF094 /* readMe_img.png in Resources */,
@@ -663,6 +668,9 @@
 			files = (
 				A66AC2AC1F1EEA42008FB856 /* TourDetailImgCell.m in Sources */,
 				A6BBFFCB1F1E1CF800126C32 /* MerchantLogoReusableView.m in Sources */,
+				A6BBAA271F36BF0000419C9E /* OrderViewController.m in Sources */,
+				A6BBAA251F36BF0000419C9E /* OrderTableViewCell.m in Sources */,
+				A6BBAA1B1F36BBF100419C9E /* DisplayBoardView.m in Sources */,
 				A66AC2B01F1EEBFD008FB856 /* LaneOfYanViewController.m in Sources */,
 				A625C0C41F132E9300C28072 /* PhippyHeaderView.m in Sources */,
 				A677444C1F15C8DD00A269DE /* TourDetailViewController.m in Sources */,
@@ -672,7 +680,6 @@
 				A68394461F171D5900790D30 /* EmergencyTableViewCell.m in Sources */,
 				A68C4D541F2202B300DBF094 /* NSDictionary+MsgScheduler.m in Sources */,
 				A68C4D571F22033F00DBF094 /* PHIDataAgent.m in Sources */,
-				A6BBAA0F1F3483F100419C9E /* OrderViewController.m in Sources */,
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
 				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
 				A68C4D781F2352D900DBF094 /* T_Base.m in Sources */,
@@ -692,7 +699,6 @@
 				A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */,
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,
-				A6BBAA141F36A98300419C9E /* OrderTableViewCell.m in Sources */,
 				A68394391F170FA400790D30 /* CooperateViewController.m in Sources */,
 				A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */,
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
@@ -709,9 +715,9 @@
 				A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */,
 				A66AC2A71F1EEA23008FB856 /* TourDetailLabCell.m in Sources */,
 				A625C0C01F132A9300C28072 /* FoodTableViewCell.m in Sources */,
+				A6BBAA241F36BF0000419C9E /* OrderFooterView.m in Sources */,
 				A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */,
 				A68C4D501F21FCE100DBF094 /* MsgScheduler.m in Sources */,
-				A6BBAA181F36AED200419C9E /* OrderFooterView.m in Sources */,
 				A68C4D5E1F2204B300DBF094 /* PHIProcessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
