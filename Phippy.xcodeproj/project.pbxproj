@@ -82,6 +82,8 @@
 		A6D23F3D1F1DF8B600F0C62E /* FoodDetailCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D23F3B1F1DF8B600F0C62E /* FoodDetailCollectionCell.xib */; };
 		A6D654391F174F24000D3FBB /* logo_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6D654381F174F24000D3FBB /* logo_girl.jpg */; };
 		A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */; };
+		A6D6BEF31F399E9F00314887 /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6BEF11F399E9F00314887 /* OrderTableViewCell.m */; };
+		A6D6BEF41F399E9F00314887 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D6BEF21F399E9F00314887 /* OrderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -219,6 +221,9 @@
 		A6D654381F174F24000D3FBB /* logo_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_girl.jpg; sourceTree = "<group>"; };
 		A6D6543A1F17507B000D3FBB /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		A6D6BEF01F399E9F00314887 /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewCell.h; sourceTree = "<group>"; };
+		A6D6BEF11F399E9F00314887 /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
+		A6D6BEF21F399E9F00314887 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
 		ADC4174BD22103F7F3F371AC /* Pods-Phippy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phippy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phippy/Pods-Phippy.release.xcconfig"; sourceTree = "<group>"; };
 		CA0089FD8250DEF449F6F864 /* libPods-Phippy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Phippy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -539,6 +544,9 @@
 		A6BBAA451F39542600419C9E /* order */ = {
 			isa = PBXGroup;
 			children = (
+				A6D6BEF01F399E9F00314887 /* OrderTableViewCell.h */,
+				A6D6BEF11F399E9F00314887 /* OrderTableViewCell.m */,
+				A6D6BEF21F399E9F00314887 /* OrderTableViewCell.xib */,
 				A6BBAA541F3954AC00419C9E /* OrderViewController.h */,
 				A6BBAA551F3954AC00419C9E /* OrderViewController.m */,
 			);
@@ -609,6 +617,7 @@
 			files = (
 				A625C0951F13115A00C28072 /* LaunchScreen.storyboard in Resources */,
 				A625C0921F13115A00C28072 /* Assets.xcassets in Resources */,
+				A6D6BEF41F399E9F00314887 /* OrderTableViewCell.xib in Resources */,
 				A625C0C11F132A9300C28072 /* FoodTableViewCell.xib in Resources */,
 				A66AC2A81F1EEA23008FB856 /* TourDetailLabCell.xib in Resources */,
 				A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */,
@@ -714,6 +723,7 @@
 				A66AC2B31F1EEC4A008FB856 /* LittleLadyViewController.m in Sources */,
 				A68C4D611F22062200DBF094 /* PHIParser.m in Sources */,
 				A609859A1F2EC4A6002344E3 /* LoginViewController.m in Sources */,
+				A6D6BEF31F399E9F00314887 /* OrderTableViewCell.m in Sources */,
 				A68C4D4C1F21F76700DBF094 /* TBRuquest.m in Sources */,
 				A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */,
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,

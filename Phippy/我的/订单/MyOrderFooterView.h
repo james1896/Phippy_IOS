@@ -11,6 +11,6 @@
 @interface MyOrderFooterView : UIView
 
 @property (nonatomic,strong) NSString *deliveryFee;
-@property (nonatomic,strong) NSString *sumCount;
-@property (nonatomic,strong) NSString *price;
+
+- (void)sumCount:(NSString *)sum Price:(NSString *)price;
 @end

@@ -13,18 +13,12 @@
     UILabel *orderSum;
 }
 
-- (void)setPrice:(NSString *)price{
-    
-    orderDelivery.text = [NSString stringWithFormat:@"配送费：%@ P",price];
-    
-}
-
-- (void)setSumCount:(NSString *)sumCount{
-    orderSum.text = [NSString stringWithFormat:@"共%@件商品 共计： %@P",sumCount,_deliveryFee];
-}
-
 - (void)setDeliveryFee:(NSString *)deliveryFee{
-    orderSum.text = [NSString stringWithFormat:@"共%@件商品 共计： %@P",_sumCount,deliveryFee];
+    orderDelivery.text = [NSString stringWithFormat:@"配送费：%@ P",deliveryFee];
+}
+
+- (void)sumCount:(NSString *)sum Price:(NSString *)price{
+    orderSum.text = [NSString stringWithFormat:@"共%@件商品 共计： %@P",sum,price];
 }
 
 - (instancetype)init
@@ -40,14 +34,14 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
-        orderDelivery = [[UILabel alloc]initWithFrame:CGRectMake(8, 0, 200, self.height)];
-//        orderDelivery.text = @"配送费：100P";
+        self.backgroundColor = [UIColor whiteColor];
+        orderDelivery = [[UILabel alloc]initWithFrame:CGRectMake(8, 10, 200, self.height)];
+        orderDelivery.text = @"配送费：0.00 P";
         orderDelivery.font = [UIFont systemFontOfSize:15];
         
         
         
-        orderSum = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-250, 0, 240, self.height)];
+        orderSum = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-250, 10, 240, self.height)];
 //        orderSum.text = @"共11件商品 共计： 1100P";
         orderSum.textAlignment  = NSTextAlignmentRight;
         

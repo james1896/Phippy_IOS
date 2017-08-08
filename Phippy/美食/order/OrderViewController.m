@@ -8,16 +8,18 @@
 
 #import "OrderViewController.h"
 
-#import "MyOrderTableViewCell.h"
+#import "OrderTableViewCell.h"
 #import "MyOrderFooterView.h"
 #import "MyOrderHeaderView.h"
 @interface OrderViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-
+@property(nonatomic,strong) UIView *payView;
 
 @end
 
-@implementation OrderViewController
+@implementation OrderViewController{
+    int payView_height;
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.dataArray.count;
@@ -34,7 +36,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 40.f;
+    return 50.f;
 }
 
 -(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
@@ -47,10 +49,14 @@
     MyOrderFooterView *footerView = [[MyOrderFooterView alloc]initWithFrame:CGRectMake(0, 0, tableView.width, 40)];
     NSArray *array = self.dataArray[section];
     
+    CGFloat money = 0.f;
     for(NSDictionary *dict in array){
+        NSString *price = dict[@"price"];
         
+        money += [price floatValue];
     }
     
+    [footerView sumCount:[NSString stringWithFormat:@"%ld",array.count] Price:[NSString stringWithFormat:@"%.2f",money]];
     return footerView;
 }
 
@@ -59,7 +65,7 @@
     return headerView;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    MyOrderTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"MyOrderTableViewCell" owner:nil options:nil] lastObject];
+    OrderTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"OrderTableViewCell" owner:nil options:nil] lastObject];
     
     NSArray *array = self.dataArray[indexPath.section];
     NSDictionary *dict = array[indexPath.row];
@@ -71,11 +77,31 @@
     return cell;
 }
 
+- (UIView *)payView{
+    if(!_payView){
+        _payView = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.height-payView_height, self.view.width, payView_height)];
+        _payView.backgroundColor = COLOR(239, 239, 244, 1);
+        
+        int btnWidth = 100;
+        UIButton *payButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [payButton setTitle:@"货到付款" forState:UIControlStateNormal];
+        payButton.titleLabel.font = [UIFont systemFontOfSize:16];
+        payButton.layer.cornerRadius = 6;
+        [payButton setBackgroundColor:[UIColor whiteColor]];
+        [payButton setTitleColor:COLOR(70, 70, 70, 1) forState:UIControlStateNormal];
+        payButton.frame = CGRectMake(_payView.width-20-btnWidth, 5, btnWidth, _payView.height-10);
+        
+        [_payView addSubview:payButton];
+    }
+    return _payView;
+}
+
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         self.style = UITableViewStyleGrouped;
+        payView_height = 50;
     }
     return self;
 }
@@ -94,23 +120,13 @@
     [self.phippyNavigationController addBackButton];
     self.title = @"订单详情";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.frame = CGRectMake(0, 0, self.view.width, self.view.height-payView_height);
+    self.tableView.backgroundColor = [UIColor whiteColor];
+//    self.view.backgroundColor = [UIColor whiteColor];
     
-    NSLog(@"order data:%@",self.dataArray);
-    
+    [self.view addSubview:self.payView];
     //需要请求 订单号 接口
     
-}
-
-- (void)yiyudingpress{
-    NSLog(@"%@",NSStringFromSelector(_cmd));
-}
-
-- (void)peisongzhongPress{
-    NSLog(@"%@",NSStringFromSelector(_cmd));
-}
-
-- (void)yiwanchengPress{
-    NSLog(@"%@",NSStringFromSelector(_cmd));
 }
 
 - (void)didReceiveMemoryWarning {
