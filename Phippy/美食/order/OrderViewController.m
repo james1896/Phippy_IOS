@@ -20,11 +20,12 @@
 @implementation OrderViewController
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return self.dataArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    NSArray *arr = self.dataArray[section];
+    return arr.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -79,6 +80,10 @@
     [self.phippyNavigationController addBackButton];
     self.title = @"订单详情";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    NSLog(@"order data:%@",self.dataArray);
+    
+    //需要请求 订单号 接口
     
 }
 

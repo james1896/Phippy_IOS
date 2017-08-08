@@ -6,9 +6,9 @@
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import "FoodDetailCollectionViewCell.h"
+#import "FoodDetailCollectionCell.h"
 
-@implementation FoodDetailCollectionViewCell
+@implementation FoodDetailCollectionCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

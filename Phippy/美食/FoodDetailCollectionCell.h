@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FoodDetailCollectionViewCell : UICollectionViewCell
+@interface FoodDetailCollectionCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *imgView;
 @property (strong, nonatomic) IBOutlet UILabel *title;
 @property (strong, nonatomic) IBOutlet UILabel *price;
+@property (strong, nonatomic) IBOutlet UIImageView *checkImg;
 
 @end

@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodDetailCollectionViewCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodDetailCollectionCell">
             <rect key="frame" x="0.0" y="0.0" width="286" height="199"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -20,6 +20,7 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M8m-9n-e1Z">
                         <rect key="frame" x="0.0" y="0.0" width="286" height="169"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92241753469999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="180P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JB2-Ap-FBI" userLabel="price">
                         <rect key="frame" x="247" y="148" width="39" height="21"/>
@@ -47,13 +48,22 @@
                             <constraint firstAttribute="height" constant="30" id="yf5-LS-uqJ"/>
                         </constraints>
                     </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="K6l-Cw-gga" userLabel="check">
+                        <rect key="frame" x="259" y="3" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="0sa-Iy-scd"/>
+                            <constraint firstAttribute="width" constant="24" id="Ury-4g-AQh"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="CIL-mk-hFs" firstAttribute="top" secondItem="JB2-Ap-FBI" secondAttribute="bottom" id="0mU-JV-Gne"/>
                 <constraint firstItem="CIL-mk-hFs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AEm-09-zqa"/>
                 <constraint firstAttribute="trailing" secondItem="JB2-Ap-FBI" secondAttribute="trailing" id="Cbq-La-jOw"/>
+                <constraint firstAttribute="trailing" secondItem="K6l-Cw-gga" secondAttribute="trailing" constant="3" id="Lyq-7S-WuN"/>
                 <constraint firstAttribute="bottom" secondItem="CIL-mk-hFs" secondAttribute="bottom" id="SEd-tW-ZSb"/>
+                <constraint firstItem="K6l-Cw-gga" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="VV6-Iv-2B7"/>
                 <constraint firstAttribute="trailing" secondItem="CIL-mk-hFs" secondAttribute="trailing" id="aDx-oe-PA6"/>
                 <constraint firstItem="M8m-9n-e1Z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iVU-7v-dts"/>
                 <constraint firstItem="CIL-mk-hFs" firstAttribute="top" secondItem="M8m-9n-e1Z" secondAttribute="bottom" id="jAb-nQ-EXi"/>
@@ -62,6 +72,7 @@
             </constraints>
             <size key="customSize" width="286" height="199"/>
             <connections>
+                <outlet property="checkImg" destination="K6l-Cw-gga" id="BS0-oL-fKf"/>
                 <outlet property="imgView" destination="M8m-9n-e1Z" id="gFx-LK-2fk"/>
                 <outlet property="price" destination="JB2-Ap-FBI" id="FGa-CA-xmC"/>
                 <outlet property="title" destination="JlH-zk-Mwu" id="lF3-SH-d75"/>
@@ -69,4 +80,7 @@
             <point key="canvasLocation" x="-24" y="128.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="check" width="24" height="24"/>
+    </resources>
 </document>

@@ -8,67 +8,36 @@
 
 #import "FoodDetailViewController.h"
 #import "PhippyHeaderView.h"
-#import "FoodDetailCollectionViewCell.h"
+#import "FoodDetailCollectionCell.h"
+#import "OrderViewController.h"
 
 
 #import "PHIRequest.h"
-@interface FoodDetailViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIActionSheetDelegate>
+@interface FoodDetailViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIActionSheetDelegate>{
+    
+}
 
 @property (nonatomic,strong) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic,strong) UICollectionView *collectionView;
 @property (nonatomic,strong) NSArray *dataArray;
+@property (nonatomic,strong) NSMutableArray *checkedArray;
+
 @end
 
 @implementation FoodDetailViewController
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    //    FoodTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"FoodTableViewCell" owner:nil options:nil]lastObject];
-//    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
-//    return cell;
-//}
 
-- (UICollectionViewFlowLayout *)flowLayout{
-    if(!_flowLayout){
-        _flowLayout = [UICollectionViewFlowLayout new];
-        //  collectionView的item大小
-        _flowLayout.itemSize = CGSizeMake((SCREEN_WIDTH-1)/2, 150);
-        
-        //  collectionView的item行间距
-        _flowLayout.minimumLineSpacing = 1;
-        
-        //  collectionView的item列间距
-        _flowLayout.minimumInteritemSpacing = 1;
-        
-        //  collectionView的sectionHeaderView大小
-        //        _flowLayout.headerReferenceSize = CGSizeMake(SCREEN_WIDTH, 41);
-    }
-    return _flowLayout;
-}
-
-- (UICollectionView *)collectionView{
-    if(!_collectionView){
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH,SCREEN_HEIGHT) collectionViewLayout:self.flowLayout];
-        _collectionView.backgroundColor = [UIColor clearColor];
-        _collectionView.delegate = self;
-        _collectionView.dataSource = self;
-        
-        //  注册item
-        [_collectionView registerNib:[UINib nibWithNibName:@"FoodDetailCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"FoodDetailCollectionViewCell"];
-        //  注册sectionHeaderView
-        //    [collectionView registerClass:[XSectionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headerview"];
-        
-        //注册商家headerview
-        [_collectionView registerNib:[UINib nibWithNibName:@"MerchantLogoReusableView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MerchantLogoReusableView"];
-        
-    }
-    return _collectionView;
-}
-
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.phippyNavigationController addBackButton];
     [self.phippyNavigationController addRightButtonWithTilte:@"联系商家" image:nil targat:self action:@selector(contactMerchant)];
     [self.view addSubview:self.collectionView];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -84,15 +53,38 @@
 
 - (void)contactMerchant{
     
-    NSString *wechat = [NSString stringWithFormat:@"微信:%@",self.wechat];
-    NSString *phoneNumber = [NSString stringWithFormat:@"电话:%@",self.phoneNumber];
     
-    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"亲！phippy下单系统正在测试中，敬请期待哦，么么哒" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:wechat,phoneNumber, nil];
-    //actionSheet样式
-    sheet.actionSheetStyle = UIActionSheetStyleDefault;
-    //显示
-    [sheet showInView:self.view];
-    sheet.delegate = self;
+    if(self.dataArray.count == self.checkedArray.count){
+        NSMutableArray *marr = [[NSMutableArray alloc]initWithCapacity:0];
+        for(int i=0;i<self.dataArray.count;i++){
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+            NSMutableDictionary *checkDict = self.checkedArray[i];
+            NSNumber *number = checkDict[indexPath];
+            
+            if([number boolValue]){
+                NSDictionary *dict = self.dataArray[i];
+                [marr addObject:dict];
+            }
+        }
+    
+        OrderViewController *orderController = [[OrderViewController alloc]init];
+        orderController.dataArray = @[marr];
+        [self.phippyNavigationController pushViewController:orderController animated:YES];
+    }else{
+        NSLog(@"内部数据错误");
+    }
+   
+    
+   
+//    NSString *wechat = [NSString stringWithFormat:@"微信:%@",self.wechat];
+//    NSString *phoneNumber = [NSString stringWithFormat:@"电话:%@",self.phoneNumber];
+//    
+//    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"亲！phippy下单系统正在测试中，敬请期待哦，么么哒" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:wechat,phoneNumber, nil];
+//    //actionSheet样式
+//    sheet.actionSheetStyle = UIActionSheetStyleDefault;
+//    //显示
+//    [sheet showInView:self.view];
+//    sheet.delegate = self;
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
@@ -125,6 +117,7 @@
     }
 }
 
+#pragma mark - collectionViewDelegate
 //  collectionView段数
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     
@@ -141,7 +134,7 @@
     
     NSDictionary *dict = self.dataArray[indexPath.row];
     //  获取自定义的cell
-    FoodDetailCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FoodDetailCollectionViewCell" forIndexPath:indexPath];
+    FoodDetailCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FoodDetailCollectionCell" forIndexPath:indexPath];
     cell.title.text = dict[MSKEY_FOODDETAILS_Name];
     cell.price.text = dict[MSKEY_FOODDETAILS_Price];
     
@@ -166,14 +159,67 @@
     return headerView;
 }
 
-- (void)backLastView{
-    [self.navigationController popViewControllerAnimated:YES];
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+
+    FoodDetailCollectionCell *cell = (FoodDetailCollectionCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.checkImg.hidden = !cell.checkImg.isHidden;
+    
+    NSMutableDictionary *mdict = self.checkedArray[indexPath.row];
+    [mdict setObject:[NSNumber numberWithBool:!cell.checkImg.isHidden] forKey:indexPath];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - set get
+- (NSMutableArray *)checkedArray{
+    if(!_checkedArray){
+        _checkedArray = [[NSMutableArray alloc]initWithCapacity:self.dataArray.count];
+        for(int i=0;i<self.dataArray.count;i++){
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+            
+            NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:0];
+            [dict setObject:[NSNumber numberWithBool:0] forKey:indexPath];
+            [_checkedArray addObject:dict];
+        }
+    }
+    return _checkedArray;
 }
+
+- (UICollectionViewFlowLayout *)flowLayout{
+    if(!_flowLayout){
+        _flowLayout = [UICollectionViewFlowLayout new];
+        //  collectionView的item大小
+        _flowLayout.itemSize = CGSizeMake((SCREEN_WIDTH-1)/2, 150);
+        
+        //  collectionView的item行间距
+        _flowLayout.minimumLineSpacing = 1;
+        
+        //  collectionView的item列间距
+        _flowLayout.minimumInteritemSpacing = 1;
+        
+        //  collectionView的sectionHeaderView大小
+        //        _flowLayout.headerReferenceSize = CGSizeMake(SCREEN_WIDTH, 41);
+    }
+    return _flowLayout;
+}
+
+- (UICollectionView *)collectionView{
+    if(!_collectionView){
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH,SCREEN_HEIGHT) collectionViewLayout:self.flowLayout];
+        _collectionView.backgroundColor = [UIColor clearColor];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        
+        //  注册item
+        [_collectionView registerNib:[UINib nibWithNibName:@"FoodDetailCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"FoodDetailCollectionCell"];
+        //  注册sectionHeaderView
+        //    [collectionView registerClass:[XSectionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headerview"];
+        
+        //注册商家headerview
+        [_collectionView registerNib:[UINib nibWithNibName:@"MerchantLogoReusableView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MerchantLogoReusableView"];
+        
+    }
+    return _collectionView;
+}
+
 
 /*
  #pragma mark - Navigation

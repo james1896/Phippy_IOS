@@ -8,29 +8,32 @@
 
 #import "MyOrderHeaderView.h"
 
-@implementation MyOrderHeaderView
+@implementation MyOrderHeaderView{
+    UILabel *orderNumber;
+    UILabel *riqiLab;
+}
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        self.backgroundColor = COLOR(29, 239, 244, 1);
-        UIView *groundView = [[UIView alloc]initWithFrame:CGRectMake(0, 10, self.width, 45)];
-        groundView.backgroundColor = [UIColor whiteColor];
-        
-        
-        UILabel *orderNumber = [[UILabel alloc]initWithFrame:CGRectMake(8, 0, 200, 15)];
-        orderNumber.text = @"订单号:3635536272764";
-        orderNumber.backgroundColor = [UIColor clearColor];
-        orderNumber.font = [UIFont systemFontOfSize:15];
-        
-        UILabel *riqiLab = [[UILabel alloc]initWithFrame:CGRectMake(8, orderNumber.bottom, 200, 35)];
-        riqiLab.text = @"2017-8-8";
-        riqiLab.backgroundColor = [UIColor clearColor];
-        
-        [groundView addSubview:orderNumber];
-        [groundView addSubview:riqiLab];
-        [self addSubview:groundView];
+//        self.backgroundColor = COLOR(29, 239, 244, 1);
+//        UIView *groundView = [[UIView alloc]initWithFrame:CGRectMake(0, 10, self.width, 45)];
+//        groundView.backgroundColor = [UIColor whiteColor];
+//        
+//        
+//        orderNumber = [[UILabel alloc]initWithFrame:CGRectMake(8, 0, 200, 15)];
+//        orderNumber.text = @"订单号:3635536272764";
+//        orderNumber.backgroundColor = [UIColor clearColor];
+//        orderNumber.font = [UIFont systemFontOfSize:15];
+//        
+//        riqiLab = [[UILabel alloc]initWithFrame:CGRectMake(8, orderNumber.bottom, 200, 35)];
+//        riqiLab.text = @"2017-8-8";
+//        riqiLab.backgroundColor = [UIColor clearColor];
+//        
+//        [groundView addSubview:orderNumber];
+//        [groundView addSubview:riqiLab];
+//        [self addSubview:groundView];
     }
     return self;
 }
@@ -44,12 +47,12 @@
         groundView.backgroundColor = [UIColor whiteColor];
         
         
-        UILabel *orderNumber = [[UILabel alloc]initWithFrame:CGRectMake(8, 3, 280, 15)];
+        orderNumber = [[UILabel alloc]initWithFrame:CGRectMake(8, 3, 280, 15)];
         orderNumber.text = @"订单号:3635536272764";
         orderNumber.backgroundColor = [UIColor clearColor];
         orderNumber.font = [UIFont systemFontOfSize:18];
         
-        UILabel *riqiLab = [[UILabel alloc]initWithFrame:CGRectMake(8, orderNumber.bottom, 200, 35)];
+        riqiLab = [[UILabel alloc]initWithFrame:CGRectMake(8, orderNumber.bottom, 200, 35)];
         riqiLab.text = @"2017-8-8";
         riqiLab.font = [UIFont systemFontOfSize:15];
         riqiLab.backgroundColor = [UIColor clearColor];

@@ -78,8 +78,8 @@
 		A6BBFFCC1F1E1CF800126C32 /* MerchantLogoReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BBFFCA1F1E1CF800126C32 /* MerchantLogoReusableView.xib */; };
 		A6D23F371F1DEE6100F0C62E /* FoodWechatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D23F351F1DEE6100F0C62E /* FoodWechatCell.m */; };
 		A6D23F381F1DEE6100F0C62E /* FoodWechatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D23F361F1DEE6100F0C62E /* FoodWechatCell.xib */; };
-		A6D23F3C1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D23F3A1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.m */; };
-		A6D23F3D1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D23F3B1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.xib */; };
+		A6D23F3C1F1DF8B600F0C62E /* FoodDetailCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D23F3A1F1DF8B600F0C62E /* FoodDetailCollectionCell.m */; };
+		A6D23F3D1F1DF8B600F0C62E /* FoodDetailCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D23F3B1F1DF8B600F0C62E /* FoodDetailCollectionCell.xib */; };
 		A6D654391F174F24000D3FBB /* logo_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6D654381F174F24000D3FBB /* logo_girl.jpg */; };
 		A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -213,9 +213,9 @@
 		A6D23F341F1DEE6100F0C62E /* FoodWechatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodWechatCell.h; sourceTree = "<group>"; };
 		A6D23F351F1DEE6100F0C62E /* FoodWechatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodWechatCell.m; sourceTree = "<group>"; };
 		A6D23F361F1DEE6100F0C62E /* FoodWechatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodWechatCell.xib; sourceTree = "<group>"; };
-		A6D23F391F1DF8B600F0C62E /* FoodDetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDetailCollectionViewCell.h; sourceTree = "<group>"; };
-		A6D23F3A1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDetailCollectionViewCell.m; sourceTree = "<group>"; };
-		A6D23F3B1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodDetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		A6D23F391F1DF8B600F0C62E /* FoodDetailCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDetailCollectionCell.h; sourceTree = "<group>"; };
+		A6D23F3A1F1DF8B600F0C62E /* FoodDetailCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDetailCollectionCell.m; sourceTree = "<group>"; };
+		A6D23F3B1F1DF8B600F0C62E /* FoodDetailCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodDetailCollectionCell.xib; sourceTree = "<group>"; };
 		A6D654381F174F24000D3FBB /* logo_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_girl.jpg; sourceTree = "<group>"; };
 		A6D6543A1F17507B000D3FBB /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
@@ -376,9 +376,9 @@
 				A6D23F341F1DEE6100F0C62E /* FoodWechatCell.h */,
 				A6D23F351F1DEE6100F0C62E /* FoodWechatCell.m */,
 				A6D23F361F1DEE6100F0C62E /* FoodWechatCell.xib */,
-				A6D23F391F1DF8B600F0C62E /* FoodDetailCollectionViewCell.h */,
-				A6D23F3A1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.m */,
-				A6D23F3B1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.xib */,
+				A6D23F391F1DF8B600F0C62E /* FoodDetailCollectionCell.h */,
+				A6D23F3A1F1DF8B600F0C62E /* FoodDetailCollectionCell.m */,
+				A6D23F3B1F1DF8B600F0C62E /* FoodDetailCollectionCell.xib */,
 				A6BBFFC81F1E1CF800126C32 /* MerchantLogoReusableView.h */,
 				A6BBFFC91F1E1CF800126C32 /* MerchantLogoReusableView.m */,
 				A6BBFFCA1F1E1CF800126C32 /* MerchantLogoReusableView.xib */,
@@ -624,7 +624,7 @@
 				A68C4D4D1F21F76700DBF094 /* readMe_img.png in Resources */,
 				A68394471F171D5900790D30 /* EmergencyTableViewCell.xib in Resources */,
 				A66AC2AD1F1EEA42008FB856 /* TourDetailImgCell.xib in Resources */,
-				A6D23F3D1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.xib in Resources */,
+				A6D23F3D1F1DF8B600F0C62E /* FoodDetailCollectionCell.xib in Resources */,
 				A6D23F381F1DEE6100F0C62E /* FoodWechatCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,7 +722,7 @@
 				A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */,
 				A6BBAA561F3954AC00419C9E /* OrderViewController.m in Sources */,
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
-				A6D23F3C1F1DF8B600F0C62E /* FoodDetailCollectionViewCell.m in Sources */,
+				A6D23F3C1F1DF8B600F0C62E /* FoodDetailCollectionCell.m in Sources */,
 				A68C4D791F2352D900DBF094 /* T_Goods.m in Sources */,
 				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
 				A68C4D4B1F21F76700DBF094 /* PHIRequest.m in Sources */,

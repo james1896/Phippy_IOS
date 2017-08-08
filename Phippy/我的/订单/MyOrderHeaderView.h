@@ -10,4 +10,6 @@
 
 @interface MyOrderHeaderView : UIView
 
+@property (nonatomic,strong) NSString *orderNumber;
+@property (nonatomic,strong) NSString *orderDate;
 @end
