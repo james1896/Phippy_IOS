@@ -6,9 +6,9 @@
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import "OrderTableViewCell.h"
+#import "MyOrderTableViewCell.h"
 
-@implementation OrderTableViewCell
+@implementation MyOrderTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

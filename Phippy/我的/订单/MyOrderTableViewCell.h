@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OrderTableViewCell : UITableViewCell
+@interface MyOrderTableViewCell : UITableViewCell
 
 @end

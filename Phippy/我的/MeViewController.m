@@ -18,7 +18,7 @@
 
 #import "LoginViewController.h"
 
-#import "OrderViewController.h"
+#import "MyOrderViewController.h"
 
 @interface MeViewController ()
 
@@ -55,6 +55,10 @@
     self.dataArray = @[@[@"我的订单"],
                        @[@"应急求助",@"常用设置",@"意见反馈",@"商务合作",@"关于我们"],
                        @[@"退出登录"]];
+    
+//    self.dataArray = @[@[@"aaa"],
+//                       @[@"bbb",@"ccc",@"ddd",@"eee",@"fff"],
+//                       @[@"ggg"]];
     
     /***************************************/
     //当前controller 在nav中 需要这样设置
@@ -117,7 +121,7 @@
     
     //订单
     if([indexPath isEqual:[NSIndexPath indexPathForRow:0 inSection:0]]){
-        OrderViewController *orderController = [[OrderViewController alloc]init];
+        MyOrderViewController *orderController = [[MyOrderViewController alloc]init];
         [self.phippyNavigationController pushViewController:orderController animated:YES];
         return;
     }

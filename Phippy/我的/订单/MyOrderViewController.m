@@ -6,16 +6,17 @@
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import "OrderViewController.h"
-#import "OrderTableViewCell.h"
-#import "OrderFooterView.h"
-@interface OrderViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "MyOrderViewController.h"
+#import "MyOrderTableViewCell.h"
+#import "MyOrderFooterView.h"
+#import "MyOrderHeaderView.h"
+@interface MyOrderViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 
 
 @end
 
-@implementation OrderViewController
+@implementation MyOrderViewController
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 2;
@@ -31,22 +32,26 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 50.f;
+    return 40.f;
 }
 
 -(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 10.f;
+    return 65.f;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
 
-    OrderFooterView *footerView = [[OrderFooterView alloc]init];
+    MyOrderFooterView *footerView = [[MyOrderFooterView alloc]initWithFrame:CGRectMake(0, 0, tableView.width, 40)];
     return footerView;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    MyOrderHeaderView *headerView = [[MyOrderHeaderView alloc]initWithFrame:CGRectMake(0, 0, tableView.width, 65)];
+    return headerView;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    OrderTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"OrderTableViewCell" owner:nil options:nil] lastObject];
+    MyOrderTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"MyOrderTableViewCell" owner:nil options:nil] lastObject];
     return cell;
 }
 

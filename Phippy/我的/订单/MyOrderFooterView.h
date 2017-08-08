@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OrderFooterView : UIView
+@interface MyOrderFooterView : UIView
 
 @end
