@@ -83,18 +83,6 @@
     
 }
 
-- (void)yiyudingpress{
-    NSLog(@"%@",NSStringFromSelector(_cmd));
-}
-
-- (void)peisongzhongPress{
-    NSLog(@"%@",NSStringFromSelector(_cmd));
-}
-
-- (void)yiwanchengPress{
-    NSLog(@"%@",NSStringFromSelector(_cmd));
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

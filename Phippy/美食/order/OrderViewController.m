@@ -45,6 +45,12 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     
     MyOrderFooterView *footerView = [[MyOrderFooterView alloc]initWithFrame:CGRectMake(0, 0, tableView.width, 40)];
+    NSArray *array = self.dataArray[section];
+    
+    for(NSDictionary *dict in array){
+        
+    }
+    
     return footerView;
 }
 
