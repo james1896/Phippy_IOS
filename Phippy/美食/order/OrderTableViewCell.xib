@@ -20,10 +20,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="397" height="130"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bC-MH-TIv" userLabel="groundView">
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bC-MH-TIv" userLabel="groundView">
                         <rect key="frame" x="8" y="8" width="381" height="121.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jxt-7r-2v7">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jxt-7r-2v7">
                                 <rect key="frame" x="8" y="8" width="105.5" height="105.5"/>
                                 <color key="backgroundColor" red="0.54117647058823526" green="0.5490196078431373" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -78,21 +78,39 @@
                             <constraint firstItem="04s-AU-rcL" firstAttribute="trailing" secondItem="WhC-dt-2w1" secondAttribute="trailing" id="pHu-pk-aow"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZV8-Qe-TCe" userLabel="rightPressView">
+                        <rect key="frame" x="198" y="0.0" width="198.5" height="129.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUl-j5-Urn" userLabel="leftPressView">
+                        <rect key="frame" x="0.0" y="0.0" width="198.5" height="129.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="3bC-MH-TIv" secondAttribute="trailing" id="05w-it-1ah"/>
+                    <constraint firstAttribute="bottom" secondItem="rUl-j5-Urn" secondAttribute="bottom" id="0d0-xk-Hwq"/>
+                    <constraint firstItem="rUl-j5-Urn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2Yr-WJ-VK3"/>
+                    <constraint firstItem="rUl-j5-Urn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CZR-92-0kD"/>
+                    <constraint firstAttribute="trailing" secondItem="ZV8-Qe-TCe" secondAttribute="trailing" id="Edz-yr-PjN"/>
+                    <constraint firstItem="rUl-j5-Urn" firstAttribute="trailing" secondItem="ZV8-Qe-TCe" secondAttribute="leading" id="MKD-BP-sg3"/>
+                    <constraint firstItem="rUl-j5-Urn" firstAttribute="width" secondItem="ZV8-Qe-TCe" secondAttribute="width" id="T3V-74-SOo"/>
                     <constraint firstItem="3bC-MH-TIv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="VcH-gH-gED"/>
+                    <constraint firstAttribute="bottom" secondItem="ZV8-Qe-TCe" secondAttribute="bottom" id="WtU-RF-mrF"/>
                     <constraint firstItem="3bC-MH-TIv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="aOY-Bl-cTh"/>
+                    <constraint firstItem="ZV8-Qe-TCe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dfT-mf-z2p"/>
                     <constraint firstAttribute="bottomMargin" secondItem="3bC-MH-TIv" secondAttribute="bottom" constant="-8" id="yyi-c0-7CM"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="count" destination="04s-AU-rcL" id="6LP-uU-g34"/>
                 <outlet property="imgView" destination="jxt-7r-2v7" id="DTZ-cq-Os6"/>
+                <outlet property="leftPressView" destination="rUl-j5-Urn" id="gst-Dd-Shy"/>
                 <outlet property="name" destination="apF-rz-ewS" id="8gk-Ni-8FU"/>
                 <outlet property="price" destination="WhC-dt-2w1" id="JVl-zY-FdP"/>
+                <outlet property="rightPressView" destination="ZV8-Qe-TCe" id="NZL-uu-pT2"/>
             </connections>
-            <point key="canvasLocation" x="72.5" y="97"/>
+            <point key="canvasLocation" x="230" y="22"/>
         </tableViewCell>
     </objects>
 </document>

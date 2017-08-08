@@ -62,7 +62,8 @@
             NSNumber *number = checkDict[indexPath];
             
             if([number boolValue]){
-                NSDictionary *dict = self.dataArray[i];
+                NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:self.dataArray[i]];
+                [dict setObject:@"1" forKey:@"count"];
                 [marr addObject:dict];
             }
         }
