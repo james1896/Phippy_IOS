@@ -54,6 +54,14 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     MyOrderTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"MyOrderTableViewCell" owner:nil options:nil] lastObject];
+    
+    NSArray *array = self.dataArray[indexPath.section];
+    NSDictionary *dict = array[indexPath.row];
+    
+    cell.name.text = dict[@"name"];
+    cell.price.text = dict[@"price"];
+    cell.count.text = @"1";
+//    cell.imageView sd_
     return cell;
 }
 

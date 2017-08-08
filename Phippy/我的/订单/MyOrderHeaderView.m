@@ -9,7 +9,7 @@
 #import "MyOrderHeaderView.h"
 
 @implementation MyOrderHeaderView{
-    UILabel *orderNumber;
+    UILabel *orderNumberLab;
     UILabel *riqiLab;
 }
 
@@ -38,6 +38,14 @@
     return self;
 }
 
+//- (void)setOrderDate:(NSString *)orderDate{
+//    riqiLab.text = orderDate;
+//}
+
+- (void)setOrderNumber:(NSString *)orderNumber{
+    orderNumberLab.text = orderNumber;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -47,17 +55,21 @@
         groundView.backgroundColor = [UIColor whiteColor];
         
         
-        orderNumber = [[UILabel alloc]initWithFrame:CGRectMake(8, 3, 280, 15)];
-        orderNumber.text = @"订单号:3635536272764";
-        orderNumber.backgroundColor = [UIColor clearColor];
-        orderNumber.font = [UIFont systemFontOfSize:18];
+        orderNumberLab = [[UILabel alloc]initWithFrame:CGRectMake(8, 5, 280, 15)];
+        orderNumberLab.text = @"订单号:3635536272764";
+        orderNumberLab.backgroundColor = [UIColor clearColor];
+        orderNumberLab.font = [UIFont systemFontOfSize:18];
         
-        riqiLab = [[UILabel alloc]initWithFrame:CGRectMake(8, orderNumber.bottom, 200, 35)];
+        riqiLab = [[UILabel alloc]initWithFrame:CGRectMake(8, orderNumberLab.bottom, 200, 35)];
         riqiLab.text = @"2017-8-8";
-        riqiLab.font = [UIFont systemFontOfSize:15];
+        riqiLab.font = [UIFont systemFontOfSize:13];
         riqiLab.backgroundColor = [UIColor clearColor];
         
-        [groundView addSubview:orderNumber];
+        NSDateFormatter *format = [[NSDateFormatter alloc]init];
+        [format setDateFormat:@"yyyy.MM.dd HH:mm:ss"];
+        riqiLab.text =[format stringFromDate:[NSDate date]];
+        
+        [groundView addSubview:orderNumberLab];
         [groundView addSubview:riqiLab];
         [self addSubview:groundView];
         
