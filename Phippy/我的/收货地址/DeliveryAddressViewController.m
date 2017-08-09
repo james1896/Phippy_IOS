@@ -26,10 +26,24 @@
     [self.phippyNavigationController addBackButton];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = COLOR(238, 238, 238, 1);
+    
+    self.dataArray = @[@{@"name":@"james",@"phone":@"09162151896",@"address":@"dela costa evune antel spa hotel dela costa evune antel spa hotel makati, manila"},
+                       @{@"name":@"james",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
+                       @{@"name":@"evan",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
+                       @{@"name":@"toby",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
+                       @{@"name":@"rea",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
+                       @{@"name":@"lucy",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
+                       @{@"name":@"james",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
+                       @{@"name":@"james",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
+                       @{@"name":@"james",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
+    return self.dataArray.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 125;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -51,9 +65,22 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"DeliveryAddressTabViewCell" owner:nil options:nil]lastObject];
+    DeliveryAddressTabViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"DeliveryAddressTabViewCell" owner:nil options:nil]lastObject];
+    
+    if(indexPath.section == 0){
+        [cell setColorForDefaultAddress];
+    }
+    
+    NSDictionary *dict = self.dataArray[indexPath.section];
+    cell.name.text = dict[@"name"];
+    cell.phoneNumber.text = dict[@"phone"];
+    cell.address.text = dict[@"address"];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
 }
 
 @end

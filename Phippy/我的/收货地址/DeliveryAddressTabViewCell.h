@@ -10,4 +10,12 @@
 
 @interface DeliveryAddressTabViewCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel *name;
+@property (strong, nonatomic) IBOutlet UILabel *phoneNumber;
+@property (strong, nonatomic) IBOutlet UILabel *address;
+
+- (void)setColorForDefaultAddress;
+- (void)SetColorForOtherAddress;
+
+
 @end
