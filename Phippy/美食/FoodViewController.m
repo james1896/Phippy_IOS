@@ -46,14 +46,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     NSDictionary *dict = self.dataArray[indexPath.row];
-    FoodDetailViewController *detail = [[FoodDetailViewController alloc]init];
-    detail.title = dict[MSKEY_FOODSTORE_Name];
-    detail.store_id = dict[MSKEY_FOODSTORE_Store_id];
-    detail.phoneNumber = dict[MSKEY_FOODSTORE_Phone_number];
-    detail.wechat = dict[MSKEY_FOODSTORE_Wechat];
     
-    detail.hidesBottomBarWhenPushed = YES;
-    [self.phippyNavigationController pushViewController:detail animated:YES];
+
+        FoodDetailViewController *detail = [[FoodDetailViewController alloc]init];
+        detail.title = dict[MSKEY_FOODSTORE_Name];
+        detail.store_id = dict[MSKEY_FOODSTORE_Store_id];
+        detail.phoneNumber = dict[MSKEY_FOODSTORE_Phone_number];
+        detail.wechat = dict[MSKEY_FOODSTORE_Wechat];
+        
+        detail.hidesBottomBarWhenPushed = YES;
+        [self.phippyNavigationController pushViewController:detail animated:YES];
+    
+    
 }
 
 

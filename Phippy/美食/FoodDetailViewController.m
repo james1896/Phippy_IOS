@@ -21,6 +21,7 @@
 @property (nonatomic,strong) UICollectionView *collectionView;
 @property (nonatomic,strong) NSArray *dataArray;
 @property (nonatomic,strong) NSMutableArray *checkedArray;
+@property (nonatomic,strong) UIButton *navRightBtn;
 
 @end
 
@@ -31,8 +32,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.phippyNavigationController addBackButton];
-    [self.phippyNavigationController addRightButtonWithTilte:@"联系商家" image:nil targat:self action:@selector(contactMerchant)];
+    [self.phippyNavigationController addRightButtonWithButton:self.navRightBtn];
+    
     [self.view addSubview:self.collectionView];
+    
+    [PHIRequest goodsWithParameters:@{@"store_id":self.store_id} success:^(NSURLSessionDataTask *task, id responseObject) {
+        self.dataArray = responseObject[@"data"];
+        
+        if(self.dataArray.count != 0){
+        
+            [self.collectionView reloadData];
+        }else{
+            NSLog(@"暂无菜单");
+        }
+       
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,17 +59,36 @@
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    [PHIRequest goodsWithParameters:@{@"store_id":self.store_id} success:^(NSURLSessionDataTask *task, id responseObject) {
-        self.dataArray = responseObject[@"data"];
-        [self.collectionView reloadData];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
-    }];
+   
 }
 
+#pragma mark - 内部方法
+
+
+/**
+ 检查是否已经有选择的餐品
+控制 右上角 提交订单按钮 是否可以点击
+ @return bool
+ */
+- (BOOL)isHaveCheckFood{
+    BOOL flog = NO;
+    for(int i=0;i<self.checkedArray.count;i++){
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+        NSMutableDictionary *checkDict = self.checkedArray[i];
+        NSNumber *number = checkDict[indexPath];
+        if([number boolValue]){
+            return YES;
+        }
+    }
+    
+    return flog;
+}
+
+#pragma mark - button action
+
+//提交菜单按钮
 - (void)contactMerchant{
-    
-    
+
     if(self.dataArray.count == self.checkedArray.count){
         NSMutableArray *marr = [[NSMutableArray alloc]initWithCapacity:0];
         for(int i=0;i<self.dataArray.count;i++){
@@ -87,6 +122,8 @@
 //    [sheet showInView:self.view];
 //    sheet.delegate = self;
 }
+
+
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 0) {
@@ -167,9 +204,35 @@
     
     NSMutableDictionary *mdict = self.checkedArray[indexPath.row];
     [mdict setObject:[NSNumber numberWithBool:!cell.checkImg.isHidden] forKey:indexPath];
+    
+    
+    if([self isHaveCheckFood]) {
+        self.navRightBtn.enabled = YES;
+        [self.navRightBtn setTitleColor:COLOR(70, 70, 70, 1) forState:UIControlStateNormal];
+    }else{
+        self.navRightBtn.enabled = NO;
+        [self.navRightBtn setTitleColor:COLOR(238, 238, 238, 1) forState:UIControlStateNormal];
+    }
 }
 
 #pragma mark - set get
+
+- (UIButton *)navRightBtn{
+    if(!_navRightBtn){
+        _navRightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        _navRightBtn.frame = CGRectMake(0, 3, 65, 44);
+        _navRightBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+        
+        [_navRightBtn setTitle:@"提交订单" forState:UIControlStateNormal];
+        [_navRightBtn addTarget:self action:@selector(contactMerchant) forControlEvents:UIControlEventTouchUpInside];
+        
+        self.navRightBtn.enabled = NO;
+        [self.navRightBtn setTitleColor:COLOR(238, 238, 238, 1) forState:UIControlStateNormal];
+    }
+    return _navRightBtn;
+}
+
 - (NSMutableArray *)checkedArray{
     if(!_checkedArray){
         _checkedArray = [[NSMutableArray alloc]initWithCapacity:self.dataArray.count];

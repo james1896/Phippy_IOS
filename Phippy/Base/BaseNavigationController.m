@@ -39,11 +39,22 @@
     
 }
 
+- (void)addRightButtonWithButton:(UIButton *)rightButton{
+    
+    NSAssert((rightButton != nil), @"addRightButtonWithButton: 传入的参数为空");
+    NSAssert([rightButton isKindOfClass:[UIButton class]], @"addRightButtonWithButton: 传入的参数不是 button");
+    
+    UIView *backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 44)];
+    [backView addSubview:rightButton];
+    UIBarButtonItem  *rightItem =[[UIBarButtonItem alloc]initWithCustomView: backView];
+    self.topViewController.navigationItem.rightBarButtonItem = rightItem;
+}
+
 - (void)addRightButtonWithTilte:(NSString *)title image:(UIImage *)image targat:(UIViewController *)targat action:(SEL)action{
     //自定义一个按钮
     UIButton  *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    rightBtn.frame = CGRectMake(0, 3, 50, 44);
+    rightBtn.frame = CGRectMake(0, 3, 55, 44);
     rightBtn.titleLabel.font = [UIFont systemFontOfSize:14];
 
     if (image) [rightBtn setBackgroundImage:image forState:UIControlStateNormal];
