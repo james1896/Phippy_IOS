@@ -62,6 +62,7 @@
     self = [super init];
     if (self) {
         self.style = UITableViewStyleGrouped;
+        self.hidesBottomBarWhenPushed = YES;
     }
     return self;
 }

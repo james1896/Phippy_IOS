@@ -67,6 +67,9 @@
 		A68C4D781F2352D900DBF094 /* T_Base.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D721F2352D900DBF094 /* T_Base.m */; };
 		A68C4D791F2352D900DBF094 /* T_Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D741F2352D900DBF094 /* T_Goods.m */; };
 		A68C4D7A1F2352D900DBF094 /* T_Store.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D761F2352D900DBF094 /* T_Store.m */; };
+		A6B1E1421F3AA16A004340E0 /* DeliveryAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B1E1411F3AA16A004340E0 /* DeliveryAddressViewController.m */; };
+		A6B1E1461F3AA32D004340E0 /* DeliveryAddressTabViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B1E1441F3AA32D004340E0 /* DeliveryAddressTabViewCell.m */; };
+		A6B1E1471F3AA32D004340E0 /* DeliveryAddressTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B1E1451F3AA32D004340E0 /* DeliveryAddressTabViewCell.xib */; };
 		A6BBAA1B1F36BBF100419C9E /* DisplayBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA1A1F36BBF100419C9E /* DisplayBoardView.m */; };
 		A6BBAA241F36BF0000419C9E /* MyOrderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA1E1F36BF0000419C9E /* MyOrderFooterView.m */; };
 		A6BBAA251F36BF0000419C9E /* MyOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBAA201F36BF0000419C9E /* MyOrderTableViewCell.m */; };
@@ -196,6 +199,11 @@
 		A68C4D741F2352D900DBF094 /* T_Goods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Goods.m; sourceTree = "<group>"; };
 		A68C4D751F2352D900DBF094 /* T_Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T_Store.h; sourceTree = "<group>"; };
 		A68C4D761F2352D900DBF094 /* T_Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T_Store.m; sourceTree = "<group>"; };
+		A6B1E1401F3AA16A004340E0 /* DeliveryAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryAddressViewController.h; sourceTree = "<group>"; };
+		A6B1E1411F3AA16A004340E0 /* DeliveryAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryAddressViewController.m; sourceTree = "<group>"; };
+		A6B1E1431F3AA32D004340E0 /* DeliveryAddressTabViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryAddressTabViewCell.h; sourceTree = "<group>"; };
+		A6B1E1441F3AA32D004340E0 /* DeliveryAddressTabViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryAddressTabViewCell.m; sourceTree = "<group>"; };
+		A6B1E1451F3AA32D004340E0 /* DeliveryAddressTabViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryAddressTabViewCell.xib; sourceTree = "<group>"; };
 		A6BBAA191F36BBF100419C9E /* DisplayBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayBoardView.h; sourceTree = "<group>"; };
 		A6BBAA1A1F36BBF100419C9E /* DisplayBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayBoardView.m; sourceTree = "<group>"; };
 		A6BBAA1D1F36BF0000419C9E /* MyOrderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderFooterView.h; sourceTree = "<group>"; };
@@ -310,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				A6BBAA1C1F36BF0000419C9E /* 订单 */,
+				A6B1E13F1F3AA16A004340E0 /* 收货地址 */,
 				A625C0A11F13138F00C28072 /* MeViewController.h */,
 				A625C0A21F13138F00C28072 /* MeViewController.m */,
 				A683943D1F170FED00790D30 /* CollectViewController.h */,
@@ -525,16 +534,28 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		A6B1E13F1F3AA16A004340E0 /* 收货地址 */ = {
+			isa = PBXGroup;
+			children = (
+				A6B1E1401F3AA16A004340E0 /* DeliveryAddressViewController.h */,
+				A6B1E1411F3AA16A004340E0 /* DeliveryAddressViewController.m */,
+				A6B1E1431F3AA32D004340E0 /* DeliveryAddressTabViewCell.h */,
+				A6B1E1441F3AA32D004340E0 /* DeliveryAddressTabViewCell.m */,
+				A6B1E1451F3AA32D004340E0 /* DeliveryAddressTabViewCell.xib */,
+			);
+			path = "收货地址";
+			sourceTree = "<group>";
+		};
 		A6BBAA1C1F36BF0000419C9E /* 订单 */ = {
 			isa = PBXGroup;
 			children = (
+				A6BBAA221F36BF0000419C9E /* MyOrderViewController.h */,
+				A6BBAA231F36BF0000419C9E /* MyOrderViewController.m */,
 				A6BBAA1D1F36BF0000419C9E /* MyOrderFooterView.h */,
 				A6BBAA1E1F36BF0000419C9E /* MyOrderFooterView.m */,
 				A6BBAA1F1F36BF0000419C9E /* MyOrderTableViewCell.h */,
 				A6BBAA201F36BF0000419C9E /* MyOrderTableViewCell.m */,
 				A6BBAA211F36BF0000419C9E /* MyOrderTableViewCell.xib */,
-				A6BBAA221F36BF0000419C9E /* MyOrderViewController.h */,
-				A6BBAA231F36BF0000419C9E /* MyOrderViewController.m */,
 				A6BBAA421F3946FE00419C9E /* MyOrderHeaderView.h */,
 				A6BBAA431F3946FE00419C9E /* MyOrderHeaderView.m */,
 			);
@@ -621,6 +642,7 @@
 				A625C0C11F132A9300C28072 /* FoodTableViewCell.xib in Resources */,
 				A66AC2A81F1EEA23008FB856 /* TourDetailLabCell.xib in Resources */,
 				A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */,
+				A6B1E1471F3AA32D004340E0 /* DeliveryAddressTabViewCell.xib in Resources */,
 				A60985A01F2EC4BD002344E3 /* RegisterViewController.xib in Resources */,
 				A6BBFFCC1F1E1CF800126C32 /* MerchantLogoReusableView.xib in Resources */,
 				A625C0901F13115A00C28072 /* Main.storyboard in Resources */,
@@ -712,6 +734,7 @@
 				A6BBAA441F3946FE00419C9E /* MyOrderHeaderView.m in Sources */,
 				A68C4D781F2352D900DBF094 /* T_Base.m in Sources */,
 				A67DE3471F248D5300970036 /* UIImageView+PHIWebCache.m in Sources */,
+				A6B1E1461F3AA32D004340E0 /* DeliveryAddressTabViewCell.m in Sources */,
 				A625C0AC1F1313D000C28072 /* LifeViewController.m in Sources */,
 				A6D23F371F1DEE6100F0C62E /* FoodWechatCell.m in Sources */,
 				A66AC2D01F1EFC4A008FB856 /* PHIUserManager.m in Sources */,
@@ -741,6 +764,7 @@
 				A68C4D7A1F2352D900DBF094 /* T_Store.m in Sources */,
 				A683943F1F170FED00790D30 /* CollectViewController.m in Sources */,
 				A68C4D5B1F22037D00DBF094 /* PHIDBHelper.m in Sources */,
+				A6B1E1421F3AA16A004340E0 /* DeliveryAddressViewController.m in Sources */,
 				A67744491F15C8C900A269DE /* FoodDetailViewController.m in Sources */,
 				A625C0BB1F131B6E00C28072 /* TourTableViewCell.m in Sources */,
 				A66AC2A71F1EEA23008FB856 /* TourDetailLabCell.m in Sources */,

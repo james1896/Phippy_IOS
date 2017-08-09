@@ -19,6 +19,7 @@
 #import "LoginViewController.h"
 
 #import "MyOrderViewController.h"
+#import "DeliveryAddressViewController.h"
 
 @interface MeViewController ()
 
@@ -52,8 +53,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@[@"我的订单"],
-                       @[@"应急求助",@"常用设置",@"意见反馈",@"商务合作",@"关于我们"],
+    self.dataArray = @[@[@"我的订单",@"我的地址"],
+                       @[@"应急求助",@"常用设置",@"意见反馈",@"关于我们"],
+                       @[@"商务合作"],
                        @[@"退出登录"]];
     
 //    self.dataArray = @[@[@"aaa"],
@@ -122,8 +124,15 @@
     //订单
     if([indexPath isEqual:[NSIndexPath indexPathForRow:0 inSection:0]]){
         MyOrderViewController *orderController = [[MyOrderViewController alloc]init];
+        
         [self.phippyNavigationController pushViewController:orderController animated:YES];
         return;
+    }else if ([indexPath isEqual:[NSIndexPath indexPathForRow:1 inSection:0]]){
+//    收货地址
+        DeliveryAddressViewController *deliveryAdd = [[DeliveryAddressViewController alloc]init];
+        [self.phippyNavigationController pushViewController:deliveryAdd animated:YES];
+        return;
+        
     }
     switch (indexPath.row) {
 
