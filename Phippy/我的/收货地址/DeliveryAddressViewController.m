@@ -8,6 +8,11 @@
 
 #import "DeliveryAddressViewController.h"
 #import "DeliveryAddressTabViewCell.h"
+
+@interface DeliveryAddressViewController()
+
+@property (nonatomic,strong) NSMutableArray *dataarray;
+@end
 @implementation DeliveryAddressViewController
 
 - (instancetype)init
