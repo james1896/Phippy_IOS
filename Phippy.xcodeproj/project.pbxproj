@@ -13,7 +13,6 @@
 		A609859F1F2EC4BD002344E3 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A609859D1F2EC4BD002344E3 /* RegisterViewController.m */; };
 		A60985A01F2EC4BD002344E3 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A609859E1F2EC4BD002344E3 /* RegisterViewController.xib */; };
 		A60985CD1F3066F6002344E3 /* UIView+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A60985CC1F3066F6002344E3 /* UIView+Attribute.m */; };
-		A60985D01F3068C0002344E3 /* UIColor+PHI.m in Sources */ = {isa = PBXBuildFile; fileRef = A60985CF1F3068C0002344E3 /* UIColor+PHI.m */; };
 		A625C0871F13115900C28072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0861F13115900C28072 /* main.m */; };
 		A625C08A1F13115900C28072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0891F13115900C28072 /* AppDelegate.m */; };
 		A625C0901F13115A00C28072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A625C08E1F13115A00C28072 /* Main.storyboard */; };
@@ -34,6 +33,8 @@
 		A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */; };
 		A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0D71F14A2B500C28072 /* PhippyViewController.m */; };
 		A625C0DD1F14ADC000C28072 /* PhippyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */; };
+		A645A9661F3ED4410047F3BD /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A645A9651F3ED4410047F3BD /* UIView+Toast.m */; };
+		A645A9691F3ED4640047F3BD /* UIColor+PHI.m in Sources */ = {isa = PBXBuildFile; fileRef = A645A9681F3ED4640047F3BD /* UIColor+PHI.m */; };
 		A66AC2A71F1EEA23008FB856 /* TourDetailLabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2A51F1EEA23008FB856 /* TourDetailLabCell.m */; };
 		A66AC2A81F1EEA23008FB856 /* TourDetailLabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AC2A61F1EEA23008FB856 /* TourDetailLabCell.xib */; };
 		A66AC2AC1F1EEA42008FB856 /* TourDetailImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AC2AA1F1EEA42008FB856 /* TourDetailImgCell.m */; };
@@ -99,8 +100,6 @@
 		A609859E1F2EC4BD002344E3 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		A60985CB1F3066F6002344E3 /* UIView+Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Attribute.h"; sourceTree = "<group>"; };
 		A60985CC1F3066F6002344E3 /* UIView+Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Attribute.m"; sourceTree = "<group>"; };
-		A60985CE1F3068C0002344E3 /* UIColor+PHI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PHI.h"; sourceTree = "<group>"; };
-		A60985CF1F3068C0002344E3 /* UIColor+PHI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PHI.m"; sourceTree = "<group>"; };
 		A625C0821F13115900C28072 /* Phippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A625C0861F13115900C28072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A625C0881F13115900C28072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +136,10 @@
 		A625C0D71F14A2B500C28072 /* PhippyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyViewController.m; sourceTree = "<group>"; };
 		A625C0DB1F14ADC000C28072 /* PhippyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhippyTabBarController.h; sourceTree = "<group>"; };
 		A625C0DC1F14ADC000C28072 /* PhippyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhippyTabBarController.m; sourceTree = "<group>"; };
+		A645A9641F3ED4410047F3BD /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		A645A9651F3ED4410047F3BD /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		A645A9671F3ED4640047F3BD /* UIColor+PHI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PHI.h"; sourceTree = "<group>"; };
+		A645A9681F3ED4640047F3BD /* UIColor+PHI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PHI.m"; sourceTree = "<group>"; };
 		A66AC2A41F1EEA23008FB856 /* TourDetailLabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourDetailLabCell.h; sourceTree = "<group>"; };
 		A66AC2A51F1EEA23008FB856 /* TourDetailLabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TourDetailLabCell.m; sourceTree = "<group>"; };
 		A66AC2A61F1EEA23008FB856 /* TourDetailLabCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourDetailLabCell.xib; sourceTree = "<group>"; };
@@ -288,6 +291,7 @@
 			children = (
 				A68C4D401F21F76700DBF094 /* MsgScheduler */,
 				A625C0C81F13571A00C28072 /* MacroDefinition.h */,
+				A645A9631F3ED4380047F3BD /* Category */,
 				A625C0A01F13137A00C28072 /* Base */,
 				A625C09F1F13136B00C28072 /* 美食 */,
 				A625C09D1F13136B00C28072 /* 旅游 */,
@@ -427,8 +431,6 @@
 				A609859C1F2EC4BD002344E3 /* RegisterViewController.h */,
 				A609859D1F2EC4BD002344E3 /* RegisterViewController.m */,
 				A609859E1F2EC4BD002344E3 /* RegisterViewController.xib */,
-				A60985CE1F3068C0002344E3 /* UIColor+PHI.h */,
-				A60985CF1F3068C0002344E3 /* UIColor+PHI.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -441,6 +443,17 @@
 				A625C0D01F13A25100C28072 /* tour_rec_header_img.jpg */,
 			);
 			path = res;
+			sourceTree = "<group>";
+		};
+		A645A9631F3ED4380047F3BD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A645A9671F3ED4640047F3BD /* UIColor+PHI.h */,
+				A645A9681F3ED4640047F3BD /* UIColor+PHI.m */,
+				A645A9641F3ED4410047F3BD /* UIView+Toast.h */,
+				A645A9651F3ED4410047F3BD /* UIView+Toast.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		A68C4D401F21F76700DBF094 /* MsgScheduler */ = {
@@ -722,6 +735,7 @@
 				A6BBAA1B1F36BBF100419C9E /* DisplayBoardView.m in Sources */,
 				A66AC2B01F1EEBFD008FB856 /* LaneOfYanViewController.m in Sources */,
 				A625C0C41F132E9300C28072 /* PhippyHeaderView.m in Sources */,
+				A645A9691F3ED4640047F3BD /* UIColor+PHI.m in Sources */,
 				A677444C1F15C8DD00A269DE /* TourDetailViewController.m in Sources */,
 				A66AC2BC1F1EED8D008FB856 /* LaneOfYanTableViewCell.m in Sources */,
 				A68394361F170F6700790D30 /* EmergencyViewController.m in Sources */,
@@ -754,12 +768,12 @@
 				A68394391F170FA400790D30 /* CooperateViewController.m in Sources */,
 				A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */,
 				A6BBAA561F3954AC00419C9E /* OrderViewController.m in Sources */,
+				A645A9661F3ED4410047F3BD /* UIView+Toast.m in Sources */,
 				A625C0A61F13139C00C28072 /* TourViewController.m in Sources */,
 				A6D23F3C1F1DF8B600F0C62E /* FoodDetailCollectionCell.m in Sources */,
 				A68C4D791F2352D900DBF094 /* T_Goods.m in Sources */,
 				A625C0D81F14A2B500C28072 /* PhippyViewController.m in Sources */,
 				A68C4D4B1F21F76700DBF094 /* PHIRequest.m in Sources */,
-				A60985D01F3068C0002344E3 /* UIColor+PHI.m in Sources */,
 				A609859F1F2EC4BD002344E3 /* RegisterViewController.m in Sources */,
 				A68C4D7A1F2352D900DBF094 /* T_Store.m in Sources */,
 				A683943F1F170FED00790D30 /* CollectViewController.m in Sources */,

@@ -5,6 +5,7 @@ target 'Phippy' do
     pod 'IQKeyboardManager'
     pod 'FMDB'
     pod 'SDWebImage'
+    pod 'MBProgressHUD', '~> 1.0.0'
     
     
 

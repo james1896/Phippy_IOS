@@ -74,6 +74,14 @@
         
     }];
     
+//    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+//    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+//        // Do something...
+//        sleep(5);
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [MBProgressHUD hideHUDForView:self.view animated:YES];
+//        });
+//    });
     NSLog(@"getFoodStore%@",[MsgScheduler getFoodStore]);
     
 //     [self.tabBarController.tabBar showBadgeOnItmIndex:0];
