@@ -8,12 +8,17 @@
 
 #import "DeliveryAddressViewController.h"
 #import "DeliveryAddressTabViewCell.h"
+#import "EditAddressViewController.h"
 
 @interface DeliveryAddressViewController()
 
-@property (nonatomic,strong) NSMutableArray *dataarray;
+
+@property(nonatomic) NSInteger selectedIndex;
+@property(nonatomic,strong) NSMutableArray *dataArray;
+
 @end
 @implementation DeliveryAddressViewController
+@dynamic dataArray;
 
 - (instancetype)init
 {
@@ -29,18 +34,28 @@
     
     self.title = @"收货地址";
     [self.phippyNavigationController addBackButton];
+  
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = COLOR(238, 238, 238, 1);
     
-    self.dataArray = @[@{@"name":@"james",@"phone":@"09162151896",@"address":@"dela costa evune antel spa hotel dela costa evune antel spa hotel makati, manila"},
-                       @{@"name":@"james",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
-                       @{@"name":@"evan",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
-                       @{@"name":@"toby",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
-                       @{@"name":@"rea",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
-                       @{@"name":@"lucy",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
-                       @{@"name":@"james",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
-                       @{@"name":@"james",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},
-                       @{@"name":@"james",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"},];
+    self.dataArray = [[NSMutableArray alloc]initWithCapacity:0];
+    
+    [self.dataArray addObject:@{@"name":@"james",@"phone":@"09162151896",@"address":@"dela costa evune antel spa hotel dela costa evune antel spa hotel makati, manila"}];
+    
+    [self.dataArray addObject:@{@"name":@"evan",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"}];
+    
+    [self.dataArray addObject:@{@"name":@"toby",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"}];
+    
+    [self.dataArray addObject:@{@"name":@"lucy",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"}];
+
+    
+    
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    
+//    self.dataArray writeToFile:<#(nonnull NSString *)#> atomically:<#(BOOL)#>
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -48,7 +63,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 125;
+    return 145;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -85,7 +100,14 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+//    NSDictionary *dict = [self.dataArray objectAtIndex:indexPath.row];
+//    EditAddressViewController *controller = [[EditAddressViewController alloc]initWithNibName:@"EditAddressViewController" bundle:nil];
+//    controller.data = dict;
+//    [self.navigationController pushViewController:controller animated:YES];
+    
+    [self.dataArray exchangeObjectAtIndex:0 withObjectAtIndex:indexPath.section];
+    NSLog(@"%@",self.dataArray);
+    [tableView reloadData];
 }
 
 @end

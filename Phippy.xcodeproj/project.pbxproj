@@ -88,6 +88,8 @@
 		A6D6543C1F17507B000D3FBB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6543B1F17507B000D3FBB /* BaseTableViewCell.m */; };
 		A6D6BEF31F399E9F00314887 /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6BEF11F399E9F00314887 /* OrderTableViewCell.m */; };
 		A6D6BEF41F399E9F00314887 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D6BEF21F399E9F00314887 /* OrderTableViewCell.xib */; };
+		A6F651171F4A6BB000D04243 /* EditAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F651151F4A6BB000D04243 /* EditAddressViewController.m */; };
+		A6F651181F4A6BB000D04243 /* EditAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F651161F4A6BB000D04243 /* EditAddressViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -235,6 +237,9 @@
 		A6D6BEF01F399E9F00314887 /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewCell.h; sourceTree = "<group>"; };
 		A6D6BEF11F399E9F00314887 /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
 		A6D6BEF21F399E9F00314887 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		A6F651141F4A6BB000D04243 /* EditAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAddressViewController.h; sourceTree = "<group>"; };
+		A6F651151F4A6BB000D04243 /* EditAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAddressViewController.m; sourceTree = "<group>"; };
+		A6F651161F4A6BB000D04243 /* EditAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditAddressViewController.xib; sourceTree = "<group>"; };
 		ADC4174BD22103F7F3F371AC /* Pods-Phippy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phippy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phippy/Pods-Phippy.release.xcconfig"; sourceTree = "<group>"; };
 		CA0089FD8250DEF449F6F864 /* libPods-Phippy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Phippy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -555,6 +560,9 @@
 				A6B1E1431F3AA32D004340E0 /* DeliveryAddressTabViewCell.h */,
 				A6B1E1441F3AA32D004340E0 /* DeliveryAddressTabViewCell.m */,
 				A6B1E1451F3AA32D004340E0 /* DeliveryAddressTabViewCell.xib */,
+				A6F651141F4A6BB000D04243 /* EditAddressViewController.h */,
+				A6F651151F4A6BB000D04243 /* EditAddressViewController.m */,
+				A6F651161F4A6BB000D04243 /* EditAddressViewController.xib */,
 			);
 			path = "收货地址";
 			sourceTree = "<group>";
@@ -652,6 +660,7 @@
 				A625C0951F13115A00C28072 /* LaunchScreen.storyboard in Resources */,
 				A625C0921F13115A00C28072 /* Assets.xcassets in Resources */,
 				A6D6BEF41F399E9F00314887 /* OrderTableViewCell.xib in Resources */,
+				A6F651181F4A6BB000D04243 /* EditAddressViewController.xib in Resources */,
 				A625C0C11F132A9300C28072 /* FoodTableViewCell.xib in Resources */,
 				A66AC2A81F1EEA23008FB856 /* TourDetailLabCell.xib in Resources */,
 				A625C0D21F13A25100C28072 /* tour_rec_header_img.jpg in Resources */,
@@ -745,6 +754,7 @@
 				A68C4D571F22033F00DBF094 /* PHIDataAgent.m in Sources */,
 				A625C08A1F13115900C28072 /* AppDelegate.m in Sources */,
 				A625C0A31F13138F00C28072 /* MeViewController.m in Sources */,
+				A6F651171F4A6BB000D04243 /* EditAddressViewController.m in Sources */,
 				A6BBAA441F3946FE00419C9E /* MyOrderHeaderView.m in Sources */,
 				A68C4D781F2352D900DBF094 /* T_Base.m in Sources */,
 				A67DE3471F248D5300970036 /* UIImageView+PHIWebCache.m in Sources */,

@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *name;
 @property (strong, nonatomic) IBOutlet UILabel *phoneNumber;
 @property (strong, nonatomic) IBOutlet UILabel *address;
+@property (strong, nonatomic) IBOutlet UILabel *landmark;
 
 - (void)setColorForDefaultAddress;
 - (void)SetColorForOtherAddress;

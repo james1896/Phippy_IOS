@@ -33,9 +33,11 @@
     int g = 78;
     int b = 78;
     int a = 1;
-    self.name.textColor = COLOR(r, g, b, a);
-    self.phoneNumber.textColor = COLOR(r, g, b, a);
-    self.address.textColor = COLOR(r, g, b, a);
+    self.name.textColor         = COLOR(r, g, b, a);
+    self.phoneNumber.textColor   = COLOR(r, g, b, a);
+    self.address.textColor      = COLOR(r, g, b, a);
+    self.landmark.textColor     = COLOR(r, g, b, a);
+    
     [self.cancel setTitleColor:COLOR(r, g, b, a) forState:UIControlStateNormal];
     [self.edit setTitleColor:COLOR(r, g, b, a) forState:UIControlStateNormal];
     
@@ -53,6 +55,9 @@
     self.name.textColor = COLOR(r, g, b, a);
     self.phoneNumber.textColor = COLOR(r, g, b, a);
     self.address.textColor = COLOR(r, g, b, a);
+    self.landmark.textColor     = COLOR(r, g, b, a);
+    
+    
     [self.cancel setTitleColor:COLOR(r, g, b, a) forState:UIControlStateNormal];
     [self.edit setTitleColor:COLOR(r, g, b, a) forState:UIControlStateNormal];
     self.hLine.backgroundColor = COLOR((r+30), (r+30), (r+30), a);
