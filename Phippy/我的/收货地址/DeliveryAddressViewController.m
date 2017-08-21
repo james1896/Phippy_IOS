@@ -17,7 +17,10 @@
 @property(nonatomic,strong) NSMutableArray *dataArray;
 
 @end
-@implementation DeliveryAddressViewController
+@implementation DeliveryAddressViewController{
+    NSMutableArray *_dataArray;
+}
+
 @dynamic dataArray;
 
 - (instancetype)init
@@ -32,30 +35,41 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
+   
     self.title = @"收货地址";
     [self.phippyNavigationController addBackButton];
   
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = COLOR(238, 238, 238, 1);
     
-    self.dataArray = [[NSMutableArray alloc]initWithCapacity:0];
-    
-    [self.dataArray addObject:@{@"name":@"james",@"phone":@"09162151896",@"address":@"dela costa evune antel spa hotel dela costa evune antel spa hotel makati, manila"}];
-    
-    [self.dataArray addObject:@{@"name":@"evan",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"}];
-    
-    [self.dataArray addObject:@{@"name":@"toby",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"}];
-    
-    [self.dataArray addObject:@{@"name":@"lucy",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"}];
+   
 
     
     
 }
 
+- (NSMutableArray *)dataArray{
+    if(!_dataArray){
+        _dataArray = [[NSMutableArray alloc] initWithContentsOfFile:[PHIUserManager getPathForDeliveryAddressData]];
+        if(!_dataArray){
+            _dataArray = [[NSMutableArray alloc]initWithCapacity:0];
+            
+            [_dataArray addObject:@{@"name":@"james",@"phone":@"09162151896",@"address":@"dela costa evune antel spa hotel dela costa evune antel spa hotel makati, manila"}];
+            
+            [_dataArray addObject:@{@"name":@"evan",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"}];
+            
+            [_dataArray addObject:@{@"name":@"toby",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"}];
+            
+            [_dataArray addObject:@{@"name":@"lucy",@"phone":@"09162151896",@"address":@"antel spa hotel makati, manila"}];
+        }
+    }
+    return _dataArray;
+}
+
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
     
-//    self.dataArray writeToFile:<#(nonnull NSString *)#> atomically:<#(BOOL)#>
+    [self.dataArray writeToFile: [PHIUserManager getPathForDeliveryAddressData] atomically:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

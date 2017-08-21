@@ -26,4 +26,6 @@ typedef NS_ENUM(NSInteger,PHINetworkStatus){
 @property (nonatomic) BOOL downloadImageOnlyWifi;
 
 @property (nonatomic)PHINetworkStatus networkStatus;
+
++ (NSString *)getPathForDeliveryAddressData;
 @end

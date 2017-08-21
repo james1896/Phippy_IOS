@@ -14,6 +14,24 @@
 
 #pragma mark lift cycle
 
++ (NSString *)getPathForDeliveryAddressData{
+    return [NSString stringWithFormat:@"%@/DeliveryAddress",[self getDocumentPath]];
+}
+
++ (NSString *)getDocumentPath{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    return [paths objectAtIndex:0];
+}
+
++ (NSString *)getCachePath{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+   return [paths objectAtIndex:0];
+}
+
++ (NSString *)getTmpPath{
+return NSTemporaryDirectory();
+}
+
 static PHIUserManager * _instance = nil;
 + (instancetype)shareManager{
     static dispatch_once_t onceToken ;
