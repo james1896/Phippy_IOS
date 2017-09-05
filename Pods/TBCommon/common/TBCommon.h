@@ -10,6 +10,8 @@
 
 @interface TBCommon : NSObject
 
++ (NSString *)getSystemLanguage;
++ (NSString *)getVersionNumber;
 //获得ip地址
 + (NSString *)getIPAddress:(BOOL)preferIPv4;
 //获得uuid

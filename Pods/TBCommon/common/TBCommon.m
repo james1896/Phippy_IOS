@@ -25,6 +25,16 @@
 #define IP_ADDR_IPv6    @"ipv6"
 @implementation TBCommon
 
++ (NSString *)getVersionNumber{
+    //获取当前设备语言
+    NSArray *appLanguages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
+    return  [appLanguages objectAtIndex:0];
+}
+
++ (NSString *)getSystemLanguage{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];//获取项目版本
+}
+
 + (NSString *)getUUID
 {
     NSString * strUUID = (NSString *)[TBKeyChain load:@"com.company.app.usernamepassword"];

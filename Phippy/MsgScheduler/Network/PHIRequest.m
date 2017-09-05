@@ -12,6 +12,23 @@
 
 @implementation PHIRequest
 
++ (void)initializeUserWithIP:(NSString *)ip userId:(NSString *)userId
+                        time:(NSString *)time uuid:(NSString *)uuid
+                      device:(NSString *)device version:(NSString *)version
+                    language:(NSString *)language
+                     success:(success)success failure:(failure)failure{
+    NSString *url = [NSString stringWithFormat:@"%@/initializeUser",TB_BASE_URL];
+    NSDictionary *parameters = @{@"ip":ip,
+                               @"userid":userId,
+                               @"time":@"2017",
+                                 @"uuid":uuid,
+                                 @"device":device,
+                                 @"version":version,
+                                 @"language":language};
+    
+    [self handlePOSTWithURL:url Parameters:parameters originalParas:parameters success:success failure:failure];
+}
+
 + (void)storeWithParameters:(NSDictionary *)parameters success:(success)success failure:(failure)failure{
 
     NSString *url = [NSString stringWithFormat:@"%@/getstore",TB_BASE_URL];

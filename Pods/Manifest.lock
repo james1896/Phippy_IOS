@@ -36,19 +36,20 @@ DEPENDENCIES:
   - IQKeyboardManager
   - MBProgressHUD (~> 1.0.0)
   - SDWebImage
-  - TBCommon (from `https://github.com/james1896/TBCommon`)
+  - TBCommon (from `https://github.com/james1896/TBCommon`, tag `0.0.2`)
   - TBRequest (from `https://github.com/james1896/TBRequest`)
 
 EXTERNAL SOURCES:
   TBCommon:
     :git: https://github.com/james1896/TBCommon
+    :tag: 0.0.2
   TBRequest:
     :git: https://github.com/james1896/TBRequest
 
 CHECKOUT OPTIONS:
   TBCommon:
-    :commit: 4e7e45122b20c8394c81eaaff7cfba860e9fce5e
     :git: https://github.com/james1896/TBCommon
+    :tag: 0.0.2
   TBRequest:
     :commit: baed66aace59cecc3390e20d8eb77372abe42075
     :git: https://github.com/james1896/TBRequest
@@ -62,6 +63,6 @@ SPEC CHECKSUMS:
   TBCommon: 32b864bc1bdc495be9ed67f1c34f0da3ee1b1dd6
   TBRequest: 3da5b6b94f819012f014612f4ea6adfc61fdfc72
 
-PODFILE CHECKSUM: 62f055d51f78c6b20d0d2d004c3be5730972e252
+PODFILE CHECKSUM: 510b7eed487fd24c53e57ed87a9671d73dd40fd9
 
 COCOAPODS: 1.3.1

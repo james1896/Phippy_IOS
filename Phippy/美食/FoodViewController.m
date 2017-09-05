@@ -13,6 +13,7 @@
 #import "FoodDetailViewController.h"
 
 #import "PHIRequest.h"
+#import "TBCommon.h"
 
 @interface FoodViewController ()
 
@@ -73,7 +74,16 @@
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
-    
+
+    [PHIRequest initializeUserWithIP:[TBCommon getIPAddress:NO] userId:@"userid"
+                                time:@"2017" uuid:[TBCommon getUUID]
+                              device:[TBCommon getDeviceModel] version:[TBCommon getVersionNumber]
+                            language:[TBCommon getSystemLanguage]
+                             success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
 //    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 //    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
 //        // Do something...

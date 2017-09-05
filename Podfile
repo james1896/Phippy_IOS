@@ -7,8 +7,9 @@ target 'Phippy' do
     pod 'SDWebImage'
     pod 'MBProgressHUD', '~> 1.0.0'
     
-    pod 'TBCommon',:git => 'https://github.com/james1896/TBCommon'
+    pod 'TBCommon',:git => 'https://github.com/james1896/TBCommon',:tag=>"0.0.2"
     pod 'TBRequest',:git => 'https://github.com/james1896/TBRequest'
+    
     ##--------------------------------------------------
     ##  facebook 开源的 kvo项目
     ##  如何优雅的使用vko   https://github.com/james1896/Analyze
