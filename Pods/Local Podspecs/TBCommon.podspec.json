@@ -1,6 +1,6 @@
 {
   "name": "TBCommon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "1",
   "description": "3232332",
   "homepage": "https://github.com/james1896/TBCommon",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/james1896/TBCommon.git",
-    "tag": "0.0.1",
+    "tag": "0.0.2",
     "submodules": true
   },
   "platforms": {
