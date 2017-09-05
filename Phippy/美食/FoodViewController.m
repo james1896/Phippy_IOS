@@ -33,13 +33,12 @@
     FoodWechatCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"FoodWechatCell" owner:nil options:nil]lastObject];
     
     NSDictionary *dict = self.dataArray[indexPath.row];
+    
     cell.title.text =dict[MSKEY_FOODSTORE_Name];
-   
     cell.deliveryTime.text = dict[MSKEY_FOODSTORE_Delivertime];
     cell.qisongCondition.text = dict[MSKEY_FOODSTORE_Qisongcondition];
     cell.adress.text = dict[MSKEY_FOODSTORE_Adress];
     cell.contact.text = dict[MSKEY_FOODSTORE_Phone_number];
-    
     [cell.imgView phi_setImageWithURL:nil];
     return cell;
 }
@@ -77,13 +76,15 @@
 
     [PHIRequest initializeUserWithIP:[TBCommon getIPAddress:NO] userId:@"userid"
                                 time:@"2017" uuid:[TBCommon getUUID]
-                              device:[TBCommon getDeviceModel] version:[TBCommon getVersionNumber]
+                              device:[NSString stringWithFormat:@"ios|%@",[TBCommon getDeviceModel]] version:[TBCommon getVersionNumber]
                             language:[TBCommon getSystemLanguage]
                              success:^(NSURLSessionDataTask *task, id responseObject) {
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
+    
+//    NSLog(@"initializeUser: %@",[MsgScheduler initializeUser]);
 //    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 //    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
 //        // Do something...

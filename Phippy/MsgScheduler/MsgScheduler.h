@@ -12,7 +12,9 @@
 
 @interface MsgScheduler : NSObject
 
++ (NSDictionary *)initializeUser;
 + (NSDictionary *)getFoodStore;
 + (NSDictionary *)getGoodsWithStoreID:(NSString *)storeId;
 + (NSDictionary *)getTourArticles;
+
 @end

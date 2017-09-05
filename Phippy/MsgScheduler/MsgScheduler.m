@@ -10,6 +10,8 @@
 #import "PHIDataAgent.h"
 #import "PHIProcessor.h"
 
+#import "PHIRequest.h"
+#import "TBCommon.h"
 @interface MsgScheduler()
 
 @property(nonatomic,strong) PHIDataAgent *dataAgent;
@@ -18,6 +20,21 @@
 
 @implementation MsgScheduler
 
++ (NSDictionary *)initializeUser{
+    __block NSDictionary *dict = @{};
+    [PHIRequest initializeUserWithIP:[TBCommon getIPAddress:NO] userId:@"userid"
+                                time:@"2017" uuid:[TBCommon getUUID]
+                              device:[NSString stringWithFormat:@"ios|%@",[TBCommon getDeviceModel]] version:[TBCommon getVersionNumber]
+                            language:[TBCommon getSystemLanguage]
+                             success:^(NSURLSessionDataTask *task, id responseObject) {
+                                 dict = responseObject;
+                             } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                                 
+                             }];
+    
+    
+    return dict;
+}
 
 //---------------------------------------
 //food
