@@ -56,7 +56,6 @@
 		A68394461F171D5900790D30 /* EmergencyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A68394441F171D5900790D30 /* EmergencyTableViewCell.m */; };
 		A68394471F171D5900790D30 /* EmergencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68394451F171D5900790D30 /* EmergencyTableViewCell.xib */; };
 		A68C4D4B1F21F76700DBF094 /* PHIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D471F21F76700DBF094 /* PHIRequest.m */; };
-		A68C4D4C1F21F76700DBF094 /* TBRuquest.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D491F21F76700DBF094 /* TBRuquest.m */; };
 		A68C4D4D1F21F76700DBF094 /* readMe_img.png in Resources */ = {isa = PBXBuildFile; fileRef = A68C4D4A1F21F76700DBF094 /* readMe_img.png */; };
 		A68C4D501F21FCE100DBF094 /* MsgScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D4F1F21FCE100DBF094 /* MsgScheduler.m */; };
 		A68C4D541F2202B300DBF094 /* NSDictionary+MsgScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C4D531F2202B300DBF094 /* NSDictionary+MsgScheduler.m */; };
@@ -180,8 +179,6 @@
 		A68394451F171D5900790D30 /* EmergencyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmergencyTableViewCell.xib; sourceTree = "<group>"; };
 		A68C4D461F21F76700DBF094 /* PHIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHIRequest.h; sourceTree = "<group>"; };
 		A68C4D471F21F76700DBF094 /* PHIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHIRequest.m; sourceTree = "<group>"; };
-		A68C4D481F21F76700DBF094 /* TBRuquest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRuquest.h; sourceTree = "<group>"; };
-		A68C4D491F21F76700DBF094 /* TBRuquest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRuquest.m; sourceTree = "<group>"; };
 		A68C4D4A1F21F76700DBF094 /* readMe_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = readMe_img.png; sourceTree = "<group>"; };
 		A68C4D4E1F21FCE100DBF094 /* MsgScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgScheduler.h; sourceTree = "<group>"; };
 		A68C4D4F1F21FCE100DBF094 /* MsgScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgScheduler.m; sourceTree = "<group>"; };
@@ -519,8 +516,6 @@
 			children = (
 				A68C4D461F21F76700DBF094 /* PHIRequest.h */,
 				A68C4D471F21F76700DBF094 /* PHIRequest.m */,
-				A68C4D481F21F76700DBF094 /* TBRuquest.h */,
-				A68C4D491F21F76700DBF094 /* TBRuquest.m */,
 				A67DE3451F248D5300970036 /* UIImageView+PHIWebCache.h */,
 				A67DE3461F248D5300970036 /* UIImageView+PHIWebCache.m */,
 			);
@@ -691,9 +686,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Phippy/Pods-Phippy-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -706,13 +704,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Phippy-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8ECB7A3736F6B30D33CA6C9D /* [CP] Embed Pods Frameworks */ = {
@@ -771,7 +772,6 @@
 				A68C4D611F22062200DBF094 /* PHIParser.m in Sources */,
 				A609859A1F2EC4A6002344E3 /* LoginViewController.m in Sources */,
 				A6D6BEF31F399E9F00314887 /* OrderTableViewCell.m in Sources */,
-				A68C4D4C1F21F76700DBF094 /* TBRuquest.m in Sources */,
 				A683943C1F170FC400790D30 /* AboutUsViewController.m in Sources */,
 				A625C0B61F1314A800C28072 /* BaseTabViewController.m in Sources */,
 				A625C0AF1F1313DC00C28072 /* FoodViewController.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "PHIRequest.h"
 
-#define TB_BASE_URL    @"http://10.71.66.2:5001"
+#define TB_BASE_URL    @"http://10.71.66.2:5001/user"
 
 @implementation PHIRequest
 

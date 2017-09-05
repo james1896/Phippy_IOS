@@ -42,10 +42,6 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = COLOR(238, 238, 238, 1);
     
-   
-
-    
-    
 }
 
 - (NSMutableArray *)dataArray{

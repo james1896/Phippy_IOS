@@ -6,9 +6,9 @@
 //  Copyright © 2017 kg.self.edu. All rights reserved.
 //
 
-#import "TBRuquest.h"
+#import "TBRequest.h"
 
-@interface PHIRequest : TBRuquest
+@interface PHIRequest : TBRequest
 
 + (void)storeWithParameters:(NSDictionary *)parameters success:(success)success failure:(failure)failure;
 

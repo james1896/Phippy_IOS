@@ -1,14 +1,14 @@
 # platform :ios, ‘8.0’
 
 target 'Phippy' do
-    pod 'AFNetworking', '~> 3.1.0'
+#    pod 'AFNetworking', '~> 3.1.0'
     pod 'IQKeyboardManager'
     pod 'FMDB'
     pod 'SDWebImage'
     pod 'MBProgressHUD', '~> 1.0.0'
     
-    
-
+    pod 'TBCommon',:git => 'https://github.com/james1896/TBCommon'
+    pod 'TBRequest',:git => 'https://github.com/james1896/TBRequest'
     ##--------------------------------------------------
     ##  facebook 开源的 kvo项目
     ##  如何优雅的使用vko   https://github.com/james1896/Analyze

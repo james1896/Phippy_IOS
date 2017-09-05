@@ -6,10 +6,10 @@
 //  Copyright © 2017 toby. All rights reserved.
 //
 
-#import "TBRuquest.h"
+#import "TBRequest.h"
 #import "AFNetworking.h"
 
-@implementation TBRuquest
+@implementation TBRequest
 
 + (instancetype)manager{
     

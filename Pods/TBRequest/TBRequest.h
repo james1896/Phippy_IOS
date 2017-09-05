@@ -24,7 +24,7 @@ typedef void(^success)(NSURLSessionDataTask *task, id responseObject);
 typedef void(^failure)(NSURLSessionDataTask *task, NSError *error);
 
 
-@interface TBRuquest : NSObject
+@interface TBRequest : NSObject
 
 /**
  manager
