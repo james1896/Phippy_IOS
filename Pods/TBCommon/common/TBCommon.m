@@ -57,23 +57,23 @@
 
 /*****************************************/
 //获取设备当前网络IP地址
-+ (NSString *)getIPAddress:(BOOL)preferIPv4
-{
-    NSArray *searchArray = preferIPv4 ?
-    @[ /*IOS_VPN @"/" IP_ADDR_IPv4, IOS_VPN @"/" IP_ADDR_IPv6,*/ IOS_WIFI @"/" IP_ADDR_IPv4, IOS_WIFI @"/" IP_ADDR_IPv6, IOS_CELLULAR @"/" IP_ADDR_IPv4, IOS_CELLULAR @"/" IP_ADDR_IPv6 ] :
-    @[ /*IOS_VPN @"/" IP_ADDR_IPv6, IOS_VPN @"/" IP_ADDR_IPv4,*/ IOS_WIFI @"/" IP_ADDR_IPv6, IOS_WIFI @"/" IP_ADDR_IPv4, IOS_CELLULAR @"/" IP_ADDR_IPv6, IOS_CELLULAR @"/" IP_ADDR_IPv4 ] ;
-    
-    NSDictionary *addresses = [self getIPAddresses];
-    NSLog(@"addresses: %@", addresses);
-    
-    __block NSString *address;
-    [searchArray enumerateObjectsUsingBlock:^(NSString *key, NSUInteger idx, BOOL *stop)
-     {
-         address = addresses[key];
-         if(address) *stop = YES;
-     } ];
-    return address ? address : @"0.0.0.0";
-}
+//+ (NSString *)getIPAddress:(BOOL)preferIPv4
+//{
+//    NSArray *searchArray = preferIPv4 ?
+//    @[ /*IOS_VPN @"/" IP_ADDR_IPv4, IOS_VPN @"/" IP_ADDR_IPv6,*/ IOS_WIFI @"/" IP_ADDR_IPv4, IOS_WIFI @"/" IP_ADDR_IPv6, IOS_CELLULAR @"/" IP_ADDR_IPv4, IOS_CELLULAR @"/" IP_ADDR_IPv6 ] :
+//    @[ /*IOS_VPN @"/" IP_ADDR_IPv6, IOS_VPN @"/" IP_ADDR_IPv4,*/ IOS_WIFI @"/" IP_ADDR_IPv6, IOS_WIFI @"/" IP_ADDR_IPv4, IOS_CELLULAR @"/" IP_ADDR_IPv6, IOS_CELLULAR @"/" IP_ADDR_IPv4 ] ;
+//    
+//    NSDictionary *addresses = [self getIPAddresses];
+//    NSLog(@"addresses: %@", addresses);
+//    
+//    __block NSString *address;
+//    [searchArray enumerateObjectsUsingBlock:^(NSString *key, NSUInteger idx, BOOL *stop)
+//     {
+//         address = addresses[key];
+//         if(address) *stop = YES;
+//     } ];
+//    return address ? address : @"0.0.0.0";
+//}
 
 //获取所有相关IP信息
 + (NSDictionary *)getIPAddresses
@@ -107,13 +107,14 @@
                 if(type) {
                     NSString *key = [NSString stringWithFormat:@"%@/%@", name, type];
                     addresses[key] = [NSString stringWithUTF8String:addrBuf];
+                    
                 }
             }
         }
         // Free memory
         freeifaddrs(interfaces);
     }
-    return [addresses count] ? addresses : nil;
+    return [addresses count] ? addresses[@"en1/ipv4"] : nil;
 }
 
 

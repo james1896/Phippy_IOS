@@ -74,7 +74,7 @@
         
     }];
 
-    [PHIRequest initializeUserWithIP:[TBCommon getIPAddress:NO] userId:@"userid"
+    [PHIRequest initializeUserWithIP:[TBCommon getIPAddresses] userId:@"userid"
                                 time:@"2017" uuid:[TBCommon getUUID]
                               device:[NSString stringWithFormat:@"ios|%@",[TBCommon getDeviceModel]] version:[TBCommon getVersionNumber]
                             language:[TBCommon getSystemLanguage]

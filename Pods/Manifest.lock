@@ -22,9 +22,9 @@ PODS:
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
-  - TBCommon (0.0.2):
-    - TBCommon/TBCommon (= 0.0.2)
-  - TBCommon/TBCommon (0.0.2)
+  - TBCommon (0.0.3):
+    - TBCommon/TBCommon (= 0.0.3)
+  - TBCommon/TBCommon (0.0.3)
   - TBRequest (0.0.1):
     - AFNetworking (~> 3.1)
     - TBRequest/TBRequest (= 0.0.1)
@@ -47,7 +47,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   TBCommon:
-    :commit: ef767e32a7eeeb1f748b4a8529a069a25f00a3f1
+    :commit: 327b8133102f8e58704ee0a0a57cfc050486c91a
     :git: https://github.com/james1896/TBCommon
   TBRequest:
     :commit: baed66aace59cecc3390e20d8eb77372abe42075
@@ -59,9 +59,9 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 8eab4d8111418414619d1df8e4779ce5d0f8d7e2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
-  TBCommon: 58e95042049aaca383b3b78684e0f52786d6ddb6
+  TBCommon: 2a56fa19b9418eeb3a208bd8432f62f23817d334
   TBRequest: 3da5b6b94f819012f014612f4ea6adfc61fdfc72
 
-PODFILE CHECKSUM: 1c4aaa0c0682bf8472a41478acaf42049c93477b
+PODFILE CHECKSUM: 580bce268dc87b30f0a08f4d83eb1d035122ad9f
 
 COCOAPODS: 1.3.1

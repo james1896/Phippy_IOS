@@ -13,7 +13,7 @@
 + (NSString *)getSystemLanguage;
 + (NSString *)getVersionNumber;
 //获得ip地址
-+ (NSString *)getIPAddress:(BOOL)preferIPv4;
++ (NSDictionary *)getIPAddresses;
 //获得uuid
 + (NSString *)getUUID;
 
