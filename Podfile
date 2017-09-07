@@ -11,6 +11,16 @@ target 'Phippy' do
 #    pod 'TBCommon',:git => 'https://github.com/james1896/TBCommon',:tag=>"0.0.2"
     pod 'TBRequest',:git => 'https://github.com/james1896/TBRequest'
     
+    
+    
+    
+#######################################
+#
+#    iOS－－谷歌地图相关功能的实现
+#https://developers.google.com/maps/
+#pod ‘GoogleMaps’
+#
+######################################
     ##--------------------------------------------------
     ##  facebook 开源的 kvo项目
     ##  如何优雅的使用vko   https://github.com/james1896/Analyze
